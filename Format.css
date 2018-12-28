@@ -47,7 +47,7 @@ div#container{
 .fact-contain li{
 	padding: 4px 0;
 }
-.fact-contain ul li :before{
+.fact-contain ul li:before{
 	content: url(image/star.gif);
 	margin-right: 4px;
 }
