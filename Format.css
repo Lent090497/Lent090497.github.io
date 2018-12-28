@@ -44,11 +44,11 @@ div#container{
 	list-style: none;
 	margin-left: 60px;
 }
-.fact li{
+.fact-contain li{
 	padding: 4px 0;
 }
-.fact ul li ::before{
-	content: url(image/star.png);
+.fact-contain ul li :before{
+	content: url(image/star.gif);
 	margin-right: 4px;
 }
 
