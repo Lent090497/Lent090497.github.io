@@ -1,0 +1,39 @@
+body{
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+div#container{
+	width: 500px;
+	margin: 0 auto;
+	border: 1px solid #0033FF; 
+}
+.title{
+	background: url(image/title_bg.gif) repeat-x;
+	height: 25px;
+	line-height: 1.6;
+	font-size: 16px;
+	padding-left: 4px;
+}
+.player-info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.player-info img{
+	width: 100px;
+	height: 90px;
+}
+.info{
+	margin-left: 15px;
+	height: 100px;
+	width: 100%;
+	overflow: scroll;
+}
+.info ul{
+	list-style: none;
+}
