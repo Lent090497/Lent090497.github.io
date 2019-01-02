@@ -32,6 +32,7 @@ div.container{
 	margin-left: 15px;
 	height: 100px;
 	width: 100%;
+	font-size: 15px;
 	overflow: scroll;
 }
 .info ul{
@@ -43,6 +44,7 @@ div.container{
 .fact-contain{
 	list-style: none;
 	margin-left: 45px;
+	font-size: 15px;
 }
 .fact li{
 	padding: 4px 0;
