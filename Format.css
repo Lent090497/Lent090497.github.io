@@ -93,8 +93,11 @@ p.post-info{
 	text-align: center;
 	font-size: 17px;
 }
+.comment-td{
+	width: 100px;
+}
 .comment table input[type="text"]{
-	width: 135px;
+	width: 125px;
 	height: 16px;
 }
 
