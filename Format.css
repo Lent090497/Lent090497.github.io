@@ -62,9 +62,9 @@ div.container{
 	position: relative;
 }
 p.post-info{
-	margin-left: 90px;
+	margin-left: 65px;
 	padding: 1px 0;
-	font-size: 14px;
+	font-size: 13px;
 }
 .post-info a{
 	-webkit-text-decoration: none;
@@ -83,7 +83,7 @@ p.post-info{
 	border-right: 15px solid transparent;
 	border-top: 15px solid #ECECEC;
 	top: 100%;
-	left: 45px;
+	left: 25px;
 }
 .comment{
 	padding: 20px 6px;
