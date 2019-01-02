@@ -59,6 +59,7 @@ div.container{
 .post-contain{
 	background: #ECECEC;
 	padding: 4px 6px;
+	position: relative;
 }
 p.post-info{
 	margin-left: 90px;
