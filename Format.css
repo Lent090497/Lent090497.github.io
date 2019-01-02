@@ -83,18 +83,15 @@ p.post-info{
 	border-right: 15px solid transparent;
 	border-top: 15px solid #ECECEC;
 	top: 100%;
-	left: 100%;
+	left: 45px;
 }
 .comment{
 	padding: 20px 6px;
-	font-size: 14px;
+	font-size: 15px;
 }
 .comment h4{
 	text-align: center;
 	font-size: 17px;
-}
-.comment-td{
-	width: 100px;
 }
 .comment table input[type="text"]{
 	width: 125px;
