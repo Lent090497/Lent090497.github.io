@@ -1,0 +1,41 @@
+body{
+	font-family: arial, serif;
+	font-size: 0.6875em;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+div.container{
+	width: 1000px;
+	margin: 0 auto;
+	background:  #121214;
+	color: #797782;
+	display: flex;
+	padding: 25px 25px;
+}
+.title-white{
+	color: #F7F2E0;
+	padding-top: 5px;
+}
+.content-left{
+	width: 50%;
+	height: auto;
+	float: left;
+}
+.title{
+	margin-top: 10px;
+}
+.content-box{
+	border-bottom: 1px dotted #949796;
+	padding: 10px 10px;
+}
+.content-box:after{
+	display: block;
+	clear: both;
+	height: 1px;
+}
+.content-box img{
+	float: left;
+	margin-right: 10px;
+}
