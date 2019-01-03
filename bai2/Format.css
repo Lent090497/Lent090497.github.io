@@ -24,18 +24,26 @@ div.container{
 	float: left;
 }
 .title{
-	margin-top: 10px;
+	padding: 10px 10px;
 }
-.content-box{
+.group-box{
 	border-bottom: 1px dotted #949796;
 	padding: 10px 10px;
 }
-.content-box:after{
+.group-box:after{
 	display: block;
 	clear: both;
 	height: 1px;
 }
-.content-box img{
+.group-box img{
 	float: left;
 	margin-right: 10px;
+	height: 100px;
+	width: 200px;
+}
+.content-text{
+	text-align: justify;
+}
+.content-text p{
+	padding-top:10px;
 }
