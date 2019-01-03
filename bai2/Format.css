@@ -1,7 +1,7 @@
 body{
-	font-family: arial, serif;
+	font-family: "Arial", Times, serif;
 	font-size: 0.6875em;
-	background: 
+	background: #1C1C1C;
 }
 *{
 	margin: 0;
@@ -114,7 +114,7 @@ div.background{
 	visibility: hidden;
 	display: block;
 	height: 1px;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 .box-right h4{
 	padding: 10px 0;
