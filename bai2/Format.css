@@ -1,6 +1,7 @@
 body{
 	font-family: arial, serif;
 	font-size: 0.6875em;
+	background: 
 }
 *{
 	margin: 0;
@@ -8,6 +9,7 @@ body{
 }
 div.container{
 	width: 1000px;
+	height: auto;
 	margin: 0 auto;
 	background:  #121214;
 	color: #797782;
@@ -16,34 +18,105 @@ div.container{
 }
 .title-white{
 	color: #F7F2E0;
-	padding-top: 5px;
 }
 .content-left{
 	width: 50%;
 	height: auto;
 	float: left;
+	margin-left: 10px;
 }
 .title{
 	padding: 10px 10px;
 }
 .group-box{
 	border-bottom: 1px dotted #949796;
-	padding: 10px 10px;
+	padding: 10px 0px;
 }
 .group-box:after{
 	display: block;
 	clear: both;
-	height: 1px;
+	height: 0px;
+	visibility: hidden;
+	content: "";
 }
 .group-box img{
 	float: left;
 	margin-right: 10px;
 	height: 100px;
-	width: 200px;
+	width: 150px;
 }
 .content-text{
 	text-align: justify;
 }
 .content-text p{
 	padding-top:10px;
+}
+a.info {
+	padding: 10px 0;
+	float: left;
+	text-decoration: none;
+	color: white;
+}
+a.info:before{
+	content: url(image/info.gif);
+	float: left;
+	margin-right: 5px;
+}
+.content-2{
+	padding: 100px 0;
+}
+.content-2 p{
+	padding: 4px 0;
+}
+.list{
+	width: 50%;
+	float: left;
+}
+.list ul{
+	list-style: none;
+	padding: 20px 0;
+}
+.list ul li{
+	line-height: 20px;
+}
+.list ul li:before{
+	width: 0; 
+  	height: 0; 
+  	border-top: 10px solid transparent;
+  	border-bottom: 10px solid transparent;
+    border-left: 20px solid white;
+    position: relative;
+}
+.list li a{
+	color: white; 
+	text-decoration: underline;
+	padding: 0 5px;
+}
+.content-right{
+	float: left;
+	width: 25%;
+	height: auto;
+	margin-left: 20px;
+}
+div.background{
+	width: 100%
+	height: 55%;
+	background:  #232326;
+	padding: 10px 0;
+}
+.box-right{
+	border-top: 1px solid #949796;
+	margin: 45px 30px;
+}
+.box-right:before{
+	content: "";
+	clear: both;
+	visibility: hidden;
+	display: block;
+	height: 1px;
+	margin-bottom: 50px;
+}
+.box-right h4{
+	padding: 10px 0;
+	color: white;
 }
