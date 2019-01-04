@@ -42,6 +42,7 @@ div.container{
 }
 .fact .title{
 	background: none;
+	padding: 20px 4px;
 }
 .fact-contain{
 	list-style: none;
