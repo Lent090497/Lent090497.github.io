@@ -20,10 +20,10 @@ div.container{
 	color: #F7F2E0;
 }
 .content-left{
-	width: 50%;
+	width: 40%;
 	height: auto;
 	float: left;
-	margin-left: 100px;
+	margin-left: 150px;
 }
 .title{
 	padding: 10px 10px;
@@ -49,7 +49,7 @@ div.container{
 	text-align: justify;
 }
 .content-text p{
-	padding: 10px 0;
+	padding: 10px 10px;
 }
 a.info {
 	padding: 10px 10px;
