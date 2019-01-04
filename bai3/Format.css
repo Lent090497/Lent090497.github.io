@@ -8,15 +8,40 @@ body{
 }
 div.container{
 	margin: 0 auto;
+	height: 800px;
 	color: #595959;
 	background: #000000;
 }
-.header{
-	height: 25%;
+.head{
+	height: 200px;
 	width: 100%;
+	background: url(image/banner.gif);
+	position: relative;
 }
-.header img{
-	width: 100%;
+.head-menu{
+	position: absolute;
+	bottom: -65px;
+}
+.head-menu ul
+{
+	list-style-type: none;
+	overflow: hidden;
+	font-size: 17pt;
+	margin-left: 30px;
+}
+.head-menu li{
+	float: left;
+	text-align: center;
+	display: inline-block;
+	padding: 0 5px;
+}
+.head-menu li a {
+	text-decoration: none;
+	display: block;
+	color: white;
+}
+.head-menu a span{
+	display: block;
 }
 .content{
 
