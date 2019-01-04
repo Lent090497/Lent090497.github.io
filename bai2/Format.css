@@ -15,6 +15,7 @@ div.container{
 	color: #797782;
 	display: flex;
 	padding: 25px 25px;
+	justify-content: center;
 }
 .title-white{
 	color: #F7F2E0;
@@ -23,7 +24,6 @@ div.container{
 	width: 40%;
 	height: auto;
 	float: left;
-	margin-left: 150px;
 }
 .title{
 	padding: 10px 10px;
