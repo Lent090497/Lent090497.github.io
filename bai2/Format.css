@@ -1,5 +1,5 @@
 body{
-	font-family: "Arial", Times, serif;
+	font-family: "Times New Roman", Times, serif;
 	font-size: 0.6875em;
 	background: #1C1C1C;
 }
@@ -41,7 +41,7 @@ div.container{
 }
 .group-box img{
 	float: left;
-	margin-right: 10px;
+	margin-right: 20px;
 	height: 100px;
 	width: 150px;
 }
@@ -49,10 +49,10 @@ div.container{
 	text-align: justify;
 }
 .content-text p{
-	padding-top:10px;
+	padding: 10px 0;
 }
 a.info {
-	padding: 10px 0;
+	padding: 10px 10px;
 	float: left;
 	text-decoration: none;
 	color: white;
@@ -63,13 +63,13 @@ a.info:before{
 	margin-right: 5px;
 }
 .content-2{
-	padding: 100px 0;
+	padding: 100px 10px;
 }
 .content-2 p{
 	padding: 4px 0;
 }
 .list{
-	width: 50%;
+	width: auto;
 	float: left;
 }
 .list ul{
@@ -131,5 +131,5 @@ div.background{
 	padding: 0 10px;
 }
 .info-right{
-	padding: 40px 10px;
+	padding-top: 40px;
 }
