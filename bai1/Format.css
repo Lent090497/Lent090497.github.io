@@ -30,11 +30,12 @@ div.container{
 	margin-left: 15px;
 }
 .info{
-	margin-left: 15px;
+	margin-left: 5px;
 	height: 100px;
 	width: 100%;
 	font-size: 15px;
 	overflow: scroll;
+	padding: 0 10px;
 }
 .info ul{
 	list-style: none;

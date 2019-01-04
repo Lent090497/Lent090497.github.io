@@ -1,0 +1,32 @@
+body{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 13px;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+div.container{
+	margin: 0 auto;
+	color: #595959;
+	background: #000000;
+}
+.header{
+	height: 25%;
+	width: 100%;
+}
+.header img{
+	width: 100%;
+}
+.content{
+
+}
+.content-left{
+
+}
+.content-right{
+
+}
+.footer{
+
+}
