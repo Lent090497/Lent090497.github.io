@@ -58,25 +58,30 @@ div.container{
 .content-left{
 	background: #1f1f1f;
 	height: auto;
-	width: 20%;
+	width: 15%;
 	padding: 44px 20px; 
 	float: left;
 }
 .box-top{
 	border-top: 1px solid #7e7e7e;
-	padding: 55px 20px;
+	padding: 28px 0;
 }
-.box-top:before{
+.box-top:after{
 	content: "";
 	display: block;
 	clear: both;
 	visibility: hidden;
+	height: 60px;
+}
+.box-top p{
+	margin-left: 10px;
+	text-align: left;
 }
 .box-bottom{
 	border-top: 0.5px solid #2c2c2c;
-	padding: 30px 20px;
+	padding: 30px 10px;
 }
-.box-bottom:before{
+.box-bottom:after{
 	content: "";
 	display: block;
 	clear: both;
@@ -104,7 +109,7 @@ div.container{
 .content-right{
 	margin: 44px 38px;
 	float: left;
-	width: 40%;
+	width: 30%;
 }
 .content-right input[type="text"]{
 	background: #2c2c2c;
@@ -145,7 +150,7 @@ a.lauchwebsite{
 }
 .footer-box{
 	border-top: 0.5px solid #2c2c2c;
-	width: 55%;
+	width: 65%;
 	margin-left: 69px;
 }
 .footer-box: after{
