@@ -8,26 +8,33 @@ body{
 }
 div.container{
 	margin: 0 auto;
-	height: 800px;
+	height: 1100px;
 	color: #595959;
 	background: #000000;
 }
 .head{
-	height: 200px;
+	height: 255px;
 	width: 100%;
-	background: url(image/banner.gif);
 	position: relative;
+}
+.head img{
+	height: 255px;
+	width: 100%;
 }
 .head-menu{
 	position: absolute;
-	bottom: -65px;
+	bottom: -49px;
+}
+.head-menu img{
+	width: 138px;
+	height: 89px;
 }
 .head-menu ul
 {
 	list-style-type: none;
 	overflow: hidden;
-	font-size: 17pt;
-	margin-left: 30px;
+	font-size: 20px;
+	margin-left: 69px;
 }
 .head-menu li{
 	float: left;
@@ -44,14 +51,109 @@ div.container{
 	display: block;
 }
 .content{
-
+	margin: 113px 69px;
+	height: auto;
+	width: 100%;
 }
 .content-left{
-
+	background: #1f1f1f;
+	height: auto;
+	width: 20%;
+	padding: 44px 20px; 
+	float: left;
+}
+.box-top{
+	border-top: 1px solid #7e7e7e;
+	padding: 55px 20px;
+}
+.box-top:before{
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.box-bottom{
+	border-top: 0.5px solid #2c2c2c;
+	padding: 30px 20px;
+}
+.box-bottom:before{
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.box-bottom ul{
+	list-style-type: none;
+}
+.box-bottom a{
+	color: #595959;
+	padding: 0 10px;
+}
+.box-bottom li:before{
+	content: "";
+    border-color: rgba(107, 76, 76, 0) #797782;
+    border-style: solid;
+    border-width: 0.25em 0 0.25em 0.25em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 0.65em;
+    position: relative;
 }
 .content-right{
-
+	padding: 44px 20px;
+	float: left;
+	width: 30%;
+}
+.content-right input[type="text"]{
+	background: #2c2c2c;
+	height: 19px;
+	width: 119px;
+	border: none;
+}
+.box{
+	border-bottom: 0.5px dotted #2c2c2c;
+	float: left;
+	margin: 16px 10px 10px 0;
+}
+.box:before{
+	content: "";
+	clear: both;
+	display: block;
+	height: 4px;
+	visibility: hidden;
+}
+.box p{
+	padding: 15px 0;
+	text-align: left;
+	font-size: 11px;
+}
+a.lauchwebsite{
+	text-decoration: none;
+	color: #ffffff;
+}
+.lauchwebsite:before{
+	content: url(image/info.gif);
+	float: left;
+	padding: 0 10px;
+	padding-bottom: 40px;
 }
 .footer{
-
+	width: 100%;
+	float: left;
+}
+.footer-box{
+	border-top: 0.5px solid #2c2c2c;
+	width: 55%;
+	margin-left: 69px;
+}
+.footer-box: after{
+	content: "";
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+.footer-box p{
+	padding: 10px 10px;
 }
