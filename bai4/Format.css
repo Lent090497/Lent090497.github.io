@@ -17,7 +17,6 @@ body{
 }
 .content {
 	width: 100%;
-
 }
 .content a{
 	color: #0a6395;
@@ -31,10 +30,6 @@ body{
 	content: "";
 	clear: both;
 	visibility: hidden;
-}
-.border img{
-	float: left;
-	margin-right: 10px;
 }
 
 .border span{
@@ -55,11 +50,42 @@ body{
 .horo-background{
 	background: url(image/img-3.gif);
 	height: 45px;
+	display: 
+}
+.horo-background p{
+	padding: 10px 20px;
 }
 .content-text{
-	width: 40%;
-	float: left;
+	display: flex;
 }
-.content-text img{
-	float: left;
+.text{
+	padding: 10px 10px;
+}
+.day{
+	color: #595959;
+	margin-top: 4px ;
+	margin-bottom: 15px;
+}
+.photo{
+	padding: 10px 15px;
+}
+.border-2{
+	border-top: 1px solid #595959;
+	margin-top: 10px;
+}
+.boder-2: after{
+	clear: both;
+	visibility: hidden;
+	content: "";
+	padding: 10px;
+}
+.border-2-competions{
+	height: 77px;
+	width: 100%;
+	background: white;
+	border: 1px solid #595959;
+}
+.border-2-competions p{
+	padding: 10px 10px;
+	color: #4d5d73;
 }
