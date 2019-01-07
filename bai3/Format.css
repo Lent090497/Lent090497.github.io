@@ -109,7 +109,7 @@ div.container{
 .content-right{
 	margin: 44px 38px;
 	float: left;
-	width: 30%;
+	width: 28%;
 }
 .content-right input[type="text"]{
 	background: #2c2c2c;
@@ -150,7 +150,7 @@ a.lauchwebsite{
 }
 .footer-box{
 	border-top: 0.5px solid #2c2c2c;
-	width: 65%;
+	width: 50%;
 	margin-left: 69px;
 }
 .footer-box: after{
