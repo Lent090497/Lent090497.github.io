@@ -102,9 +102,9 @@ div.container{
     position: relative;
 }
 .content-right{
-	padding: 44px 20px;
+	margin: 44px 38px;
 	float: left;
-	width: 30%;
+	width: 40%;
 }
 .content-right input[type="text"]{
 	background: #2c2c2c;
@@ -115,7 +115,7 @@ div.container{
 .box{
 	border-bottom: 0.5px dotted #2c2c2c;
 	float: left;
-	margin: 16px 10px 10px 0;
+	margin: 16px 0 10px 10px;
 }
 .box:before{
 	content: "";
