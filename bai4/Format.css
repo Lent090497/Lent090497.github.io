@@ -10,7 +10,7 @@ body{
 	margin: 10px auto;
 	background: #e6f3fb;
 	height: auto;
-	width: 317px;
+	width: 300px;
 	justify-content: center;
 	padding: 10px 10px;
 
@@ -37,37 +37,46 @@ body{
 }
 .box{
 	background: #f9f1c2;
-	float: left;
 	width: 100%;
 	height: auto;
-	margin-top: 3px;
+	margin-top: 1px;
 	padding: 10px 0;
 }
 .box span{
 	font-weight: bold;
 	color: #0a6395;
 }
+.box p{
+	margin-left: 10px;
+}
 .horo-background{
 	background: url(image/img-3.gif);
 	height: 45px;
-	display: 
 }
 .horo-background p{
 	padding: 10px 20px;
 }
 .content-text{
 	display: flex;
-}
-.text{
 	padding: 10px 10px;
+}
+.content-text p{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.content-text h3{
+	margin-left: 10px;
+}
+.content-text a{
+	padding: 0 10px;
 }
 .day{
 	color: #595959;
-	margin-top: 4px ;
+	margin-top: 2px ;
 	margin-bottom: 15px;
 }
 .photo{
-	padding: 10px 15px;
+	padding: 10px 2px;
 }
 .border-2{
 	border-top: 1px solid #595959;
@@ -88,4 +97,11 @@ body{
 .border-2-competions p{
 	padding: 10px 10px;
 	color: #4d5d73;
+}
+.text-blue{
+	color: #0a6395;
+}
+.text-2{
+	margin-top: 10px;
+	text-align: left;
 }
