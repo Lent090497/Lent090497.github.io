@@ -15,6 +15,7 @@ body{
 .head{
 	display: flex;
 	position: relative;
+	padding: 10px 20px;
 }
 .contact{
 	border: 2px;
