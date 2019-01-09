@@ -1,14 +1,15 @@
 body{
 	font-family: Georgia, "Times New Roman", Times, serif;
+	padding: 7px;
 }
 *{
 	margin: 0;
 	padding: 0;
 }
-div.container{
+div.contain{
 	width: 500px;
 	margin: 0 auto;
-	border: 1px solid #0033FF; 
+	border: 1px solid #dfdfdf; 
 }
 .title{
 	background: url(image/title_bg.gif) repeat-x;
@@ -18,10 +19,6 @@ div.container{
 	padding-left: 4px;
 }
 .player-info{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 }
 .player-info img{
@@ -42,11 +39,11 @@ div.container{
 }
 .fact .title{
 	background: none;
-	padding: 20px 4px;
+	padding: 17px 4px;
 }
 .fact-contain{
 	list-style: none;
-	margin-left: 45px;
+	margin-left: 30px;
 	font-size: 15px;
 	padding-right: 40px;
 }
@@ -64,19 +61,15 @@ div.container{
 }
 .post-contain{
 	background: #ECECEC;
-	padding: 4px 6px;
+	padding: 4px 15px;
 	position: relative;
 }
 p.post-info{
-	margin-left: 65px;
+	margin-left: 50px;
 	padding: 1px 0;
 	font-size: 13px;
 }
 .post-info a{
-	-webkit-text-decoration: none;
-	-moz-text-decoration: none;
-	-ms-text-decoration: none;
-	-o-text-decoration: none;
 	text-decoration: none;
 	color: #0c35f1;
 }
@@ -89,18 +82,20 @@ p.post-info{
 	border-right: 15px solid transparent;
 	border-top: 15px solid #ECECEC;
 	top: 100%;
-	left: 25px;
+	left: 16px;
 }
 .comment{
-	padding: 20px 6px;
+	padding-top: 30px;
+	padding-left: 3px;
 	font-size: 15px;
 }
 .comment h4{
-	text-align: center;
+	margin-left: 215px;
 	font-size: 17px;
 }
 .comment table input[type="text"]{
-	width: 125px;
-	height: 16px;
+	width: 145px;
+	height: 22px;
 }
+
 
