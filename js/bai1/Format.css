@@ -1,0 +1,11 @@
+
+div.border{
+	background: red;
+	height: 25px;
+	width: 25px;
+	border-radius: 17.5px;
+}
+.product{
+	width: 100%;
+
+}
