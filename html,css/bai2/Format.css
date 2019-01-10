@@ -47,6 +47,9 @@ div.container{
 .group{
 	display: flex;
 }
+.padding{
+	margin-left: -10px;
+}
 a.info {
 	padding: 10px 0px;
 	float: left;
