@@ -35,23 +35,21 @@ function add_child(){
 	product_name.setAttribute("id","product_name");
 	product_name.innerHTML = name;
 
-	var img = document.createElement("div");
-	img.setAttribute("class", "img");
 
 	var img_delete = document.createElement("img");
 	img_delete.setAttribute("src", "image/delete-icon.png");
 
-	img.appendChild(img_delete);
+	
 	parent.appendChild(index);
 	parent.appendChild(product_name);
-	parent.appendChild(img);
+	parent.appendChild(img_delete);
 	list_child.appendChild(parent);
 
 	//create event for buttom delete product
 
 	img_delete.onclick = function()
 	{
-		var deleted = close.parentNode;
+		var deleted = img_delete.parentNode;
         var parentDelete = deleted.parentNode;
         parentDelete.removeChild(deleted);
         var dir = deleted.children[0].innerHTML;
