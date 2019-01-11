@@ -39,23 +39,22 @@ div.contain{
 }
 .fact .title{
 	background: none;
-	padding: 17px 4px;
+	padding: 14px 4px;
 }
 .fact-contain{
 	list-style: none;
-	margin-left: 30px;
+	padding: 0 30px;
 	font-size: 15px;
-	padding-right: 40px;
 }
 .fact li{
-	padding: 4px 0;
+	padding: 2px 30px;
 }
 .fact ul li:before{
 	content: url(image/star.gif);
 	margin-right: 4px;
 }
 .post{
-	margin-top: 40px;
+	margin-top: 55px;
 	padding: 0 4px;
 	font-size: 15px;
 }
@@ -85,16 +84,16 @@ p.post-info{
 	left: 16px;
 }
 .comment{
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-left: 3px;
 	font-size: 15px;
 }
-.comment h4{
+.comment h3{
 	margin-left: 215px;
 	font-size: 17px;
 }
 .comment table input[type="text"]{
-	width: 155px;
+	width: 150px;
 	height: 22px;
 }
 
