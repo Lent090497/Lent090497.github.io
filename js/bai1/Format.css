@@ -40,9 +40,10 @@ body{
 	text-align: center;
 	border: 1px solid grey;
 }
-.img{
+.list_child img{
 	right: 20px;
 	position: absolute;
+	float: right;
 }
 
 
