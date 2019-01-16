@@ -1,5 +1,5 @@
 body{
-	font-family: Times New Roman, Times, serif;
+	font-family: 'Times New Roman', serif;
 	padding: 7px;
 }
 *{
@@ -15,7 +15,7 @@ div.contain{
 	background: url(image/title_bg.gif) repeat-x;
 	height: 25px;
 	line-height: 1.6;
-	font-size: 16px;
+	font-size: 19px;
 	padding-left: 4px;
 }
 .player-info{
@@ -94,6 +94,13 @@ p.post-info{
 .comment table input[type="text"]{
 	width: 155px;
 	height: 22px;
+}
+.comment textarea{
+	resize: none;
+}
+::placeholder{
+	color: #000000;
+	opacity: 1;
 }
 
 
