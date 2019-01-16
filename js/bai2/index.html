@@ -6,9 +6,26 @@
         <link rel="stylesheet" type="text/css" href="Format.css">
     </head>
     <body>
+        <div class="contain">
         <div class="container" id="container">
-            <input class="text" id="calendar-js" type="text" onclick="createTable()"/>
+            <div class="content">
+                User name:
+                <input type="text" id="txt_userName"><span id="val_name"></span>
+            </div>
+            <div class="content">
+                Password:
+                <input type="password" id="txt_passWord"><span id="val_pass"></span>
+            </div>
+            <div class="content">
+                Email:
+                <input type="text" id="txt_email"><span id="val_email"></span>
+            </div>
+            <input class="text" id="calendar-js" type="text" onclick="createTable()"/><span id="val_calender"></span>
+            
         </div>
+        <input type="submit" name="btn_sunbmit" value="Submit" onclick="check_validate()">
+        <input type="submit" name="btn_reFresh" value="Refresh">
+    </div>
         <script language="javascript" src="js.js"></script>
     </body>
 </html>
