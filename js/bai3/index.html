@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Pie Chart</title>
-  <link rel="stylesheet" href="css/stysheet.css">
-  <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/canvasjs.min.js"></script>
-  <script type="text/javascript" src="js/charts.js"></script>
-</head>
-<body>
-  <div id="pie_chart">
-    
-  </div>
-</body>
+  <head>
+  	<title>Pie chart</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['', 'percentage'],
+          ['unsuccess', 20],
+          ['success', 80]
+        ]);
+
+        var options = {
+          legend: 'none',
+          pieSliceText: 'none',
+          pieStartAngle: 30,
+          is3D: true,
+          tooltip: { 
+          },
+          slices: {
+            0: { color: '#a70313'},
+            1: { color: '#38b6fd', offset: 0.05 }
+          }
+
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="pie_chart" style="width: 900px; height: 500px;"></div>
+  </body>
 </html>
