@@ -247,3 +247,90 @@ function createNav(table) {
     rowNav.appendChild(nextYear);
     table.appendChild(rowNav);
 }
+
+//Validate
+function check_validate(){
+   
+    check_userName();
+    check_password();
+    check_email();
+    check_Birthday();
+}
+function check_userName(){
+    var userName= document.getElementById("txt_userName").value;
+    if(userName.trim().length==0)
+    {
+        document.getElementById("val_name").innerHTML="(*)User name don't empty";
+        return false;
+    }
+    if(userName.trim().length< 8){
+        document.getElementById("val_name").innerHTML="(*)Please enter your user name more 8 characters";
+        return false;
+    }
+    else{
+        document.getElementById("val_name").innerHTML="";
+        return false;
+    }
+}
+function check_password(){
+    var password= document.getElementById("txt_passWord").value;
+    if(password.trim().length==0)
+    {
+        document.getElementById("val_pass").innerHTML="(*)Password don't empty";
+        return false;
+    }
+    if(password.trim().length< 8){
+        document.getElementById("val_pass").innerHTML="(*)Please enter your password more 8 characters";
+        return false;
+    }
+    else{
+        document.getElementById("val_pass").innerHTML="";
+        return false;
+    }
+}
+function check_email(){
+    var email= document.getElementById("txt_email").value;
+    if(email.trim().length==0){
+        document.getElementById("val_email").innerHTML="(*)Email don't empty";
+        return false;
+    }
+    if(email.trim().length< 8){
+        document.getElementById("val_email").innerHTML="(*)Please enter your email more 8 characters";
+        return false;
+    }
+    if(email.indexOf('@')<=0){
+        document.getElementById("val_email").innerHTML="(*)Invalid @ position";
+        return false;
+    }
+    if ((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.')) {
+        document.getElementById("val_email").innerHTML="(*)Email don't availible";
+        return false;
+    }
+    else{
+         document.getElementById("val_email").innerHTML="";
+        return false;
+    }
+}
+function check_Birthday(){
+    var calendar=document.getElementById("calendar-js").value;
+
+    var birthday= new Date(calendar);
+    var datenow= new Date();
+    birthday.setHours(0,0,0,0);
+    datenow.setHours(0,0,0,0);
+
+    if(calendar.trim().length==0){
+        document.getElementById("val_calender").innerHTML="(*)Birthday don't empty";
+        return false;
+    }
+    if(birthday.valueOf()>=datenow.valueOf())
+    {
+        document.getElementById("val_calender").innerHTML="(*)Birthday don't availible";
+        return false;
+    }
+    else{
+        document.getElementById("val_calender").innerHTML="";
+        return false;
+    }
+
+}

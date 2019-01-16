@@ -3,17 +3,48 @@ body {
   background-color: #F9F8F9;
   font-size: 20px;
 }
-
-.container {
-  margin: 0 auto;
-  width: 420px;
+.contain{
+	margin: 0 auto;
+  	width: 650px;
+  	position: relative;
 }
-
+.container {
+	width: 350px;
+}
+.content{
+	display: flex;
+	padding: 10px 0;
+}
+.container span{
+	color: red;
+	position: absolute;
+	left: 300px;
+	padding: 0 5px;
+}
+.container input[type="text"]{
+	position: absolute;
+	left: 100px;
+}
+.container input[type="password"]{
+	position: absolute;
+	left: 100px;
+}
+.contain input[type="submit"]{
+	margin-top: 30px;
+	margin-right: 20px;
+	height: 50px;
+	background: #50bdfb;
+	border: 1px solid #50bdfb;
+	border-radius: 5%;
+	color: white;
+	font-weight: bold;
+}
 table, th, td {
-  height: 10px;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
+	margin-top: 20px;
+	height: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
 }
 
 th, td{
@@ -52,8 +83,6 @@ select {
   background-image: url("image/Calendar-icon.png");
   background-repeat: no-repeat;
   background-position: right;
-  font-size: 15px;
-  height: 25px;
 }
 
 .choice-js:hover {
