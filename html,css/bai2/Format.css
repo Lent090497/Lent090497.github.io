@@ -1,6 +1,6 @@
 body{
-	font-family: Times New Roman, serif;
-	font-size: 0.6875em;
+	font-family: 'Times New Roman', serif;
+	font-size: 12px;
 	background: #1C1C1C;
 }
 *{
@@ -21,12 +21,12 @@ div.container{
 	color: #F7F2E0;
 }
 .content-left{
-	width: 37%;
+	width: 40%;
 	height: auto;
 	padding: 10px 10px;
 }
 .group-box{
-	border-bottom: 1px dotted #949796;
+	border-bottom: 0.5px dotted #3f3f41;
 	padding-top: 40px;
 	padding-bottom: 10px;
 }
@@ -38,9 +38,9 @@ div.container{
 	padding-left:10px;
 }
 .content-text{
-	text-align: justify;
+	text-align: left;
 	padding-bottom: 10px;
-	padding-left: 20px;
+	padding-left: 17px;
 }
 .content-text p{
 	padding-top: 10px;
@@ -64,8 +64,8 @@ a.info:before{
 	margin-right: 5px;
 }
 .content-2{
-	padding-top: 85px;
-	padding-bottom: 125px;
+	padding-top: 65px;
+	padding-bottom: 110px;
 }
 .content-2 p{
 	padding: 4px 0;
@@ -73,13 +73,13 @@ a.info:before{
 .list{
 	width: auto;
 	float: left;
+	padding-top: 5px;
 }
 .list ul{
 	list-style: none;
-	padding: 5px 0;
 }
 .list ul li{
-	line-height: 20px;
+	line-height: 15px;
 }
 .list li:before{
 	content: "";
@@ -96,19 +96,19 @@ a.info:before{
 .list li a{
 	text-decoration: underline;
 	padding: 0 10px;
-	color: #797782;
+	color: #595959;
 }
 .content-right{
-	width: 23%;
+	width: 24%;
 	height: auto;
 	margin-left: 20px;
 }
 div.background{
 	width: 100%
 	height: 50%;
-	background: #232326;
+	background: #232227;
 	padding-top: 35px;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 
 }
 .box-right{
@@ -126,11 +126,11 @@ div.background{
 	margin-bottom: 10px;
 }
 .box-right img{
-	padding: 20px 5px;
+	padding: 17px 5px;
 }
 .box-right p{
-	padding-top: 5px;
+	padding-top: 3px;
 }
 .info-right{
-	padding-top: 40px;
+	padding-top: 30px;
 }
