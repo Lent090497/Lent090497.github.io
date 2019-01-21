@@ -1,0 +1,49 @@
+body{
+	font-size: 12px;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+div.container{
+	width: 400px;
+	height: auto;
+	margin: 0 auto;
+	justify-content: center;
+	display: block;
+	position: relative;
+}
+.menu{
+	padding: 10px 65px;
+}
+.menu-img{
+	display: flex;
+}
+.menu ul{
+	list-style-type: none;
+}
+.info {
+	border: 1px solid #9e751b;
+	padding: 10px 10px;
+	display: none;
+	background: white;
+}
+.info img{
+	margin-left: 50px;
+	margin-top:10px;
+}
+.info h1{
+	text-align: center;
+}
+.about{
+	border: 1px solid #9e751b;
+	padding: 10px 10px;
+	background: white;
+	display: none;
+	position: absolute;
+}
+.about-btnclose{
+	position: absolute;
+	top: -20px;
+	margin-left: 370px;
+}
