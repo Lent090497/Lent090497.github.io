@@ -1,0 +1,49 @@
+body{
+	font-family: 'Times New Roman', serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 900px;
+	margin: 0 auto;
+	justify-content: center;
+	position: relative;
+
+}
+.content{
+	width: 800px;
+	background: url("../image/bg_itm_lineup.jpg");
+	display: flex;
+	padding: 50px 30px;
+}
+.arrow{
+	margin-top: 100px;
+}
+.slide{
+	width: 700px;
+	height: 300px;
+	padding: 0 10px;
+	display: block;
+}
+ul{
+	
+	margin-left: 90px;
+	list-style-type: none;
+}
+ul li{
+	display: inline;
+}
+ul li.active{
+	opacity: 0.5;
+}
+.myslide{
+	position: absolute;
+	top: 20px;
+	left: 110px;
+}
+.slide-img{
+	display: none;
+
+}
