@@ -8,15 +8,15 @@ body{
 .container{
 	width: 900px;
 	margin: 0 auto;
+	background: url("../image/bg_itm_lineup.jpg");
 	justify-content: center;
 	position: relative;
 
 }
 .content{
 	width: 800px;
-	background: url("../image/bg_itm_lineup.jpg");
 	display: flex;
-	padding: 50px 30px;
+	padding: 80px 50px;
 }
 .arrow{
 	margin-top: 100px;
@@ -29,7 +29,7 @@ body{
 }
 ul{
 	
-	margin-left: 90px;
+	margin-left: 200px;
 	list-style-type: none;
 }
 ul li{
