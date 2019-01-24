@@ -28,22 +28,22 @@ function add_child(){
 
 	var index = document.createElement("div");
 	index.setAttribute("class","border");
-	index.setAttribute("id", "index");
 	index.innerHTML = child.length + 1;
 
 	var product_name = document.createElement("p");
-	product_name.setAttribute("id","product_name");
 	product_name.innerHTML = name;
 
 
 	var img_delete = document.createElement("img");
 	img_delete.setAttribute("src", "image/delete-icon.png");
 
-	
+	//add product
 	parent.appendChild(index);
 	parent.appendChild(product_name);
 	parent.appendChild(img_delete);
 	list_child.appendChild(parent);
+	//clear textbox
+	document.getElementById('txt_nameProduct').value=" ";
 
 	//create event for buttom delete product
 
