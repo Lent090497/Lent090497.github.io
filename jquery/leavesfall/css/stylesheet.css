@@ -1,0 +1,19 @@
+body{}
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	width: 1300px;
+	height: 700px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-image: url('../images/autumn_leaves1.png'),url('../images/autumn_leaves2.png');
+	background-repeat: no-repeat;
+	background-color: #FFFFCC;
+	background-position: left top, right top;
+}
+.leaves{
+	position: relative;
+	margin-right: 50px;
+}
