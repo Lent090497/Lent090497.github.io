@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$('.background').mousemove(function(event) {
 		/* Act on the event */
-		$('.cloud img').css({"left": event.pageX/60});
+		$('.cloud').css({"left": event.pageX/60});
+		$('.bird').css({"left": event.pageX/60});
 	});	
 });
