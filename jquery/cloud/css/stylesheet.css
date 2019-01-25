@@ -1,0 +1,25 @@
+body{
+
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	margin: 0 auto;
+	width: 1400px;
+	height: 450px;
+	background-image: url(../images/tail.jpg);
+	position: relative;
+}
+.background img{
+	position: absolute;
+	margin-top: 57px;
+	padding: 0 100px;
+}
+.cloud img{
+	position: absolute;
+	margin-top: 57px;
+	margin-left: 50px;
+	padding: 0 100px;
+}
