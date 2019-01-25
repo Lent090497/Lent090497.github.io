@@ -67,6 +67,20 @@ div.border{
 }
 .main-product{
 	display: flex;
+	
+}
+.btn{
+	position: relative;
+}
+.btn-left{
+	position: absolute;
+	margin-top: -70px;
+	margin-left: 65px;
+}
+.btn-right{
+	position: absolute;
+	margin-top: -70px;
+	margin-left: 30px;
 }
 .foot{
 	padding: 62px 0;
