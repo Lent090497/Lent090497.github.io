@@ -1,0 +1,223 @@
+body{
+	font-family: 'Kozuka Gothic Pr6N',serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	max-width: 1200px;
+	min-width: 640px;
+	width: 100%;
+	margin: 0 auto;
+}
+.header{
+
+}
+.content{
+	width: 75%;
+	height: auto;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	margin-left: 17%;
+	padding-bottom: 10%;
+	justify-content: center
+
+}
+.content1-rectangle{
+	height: 60px;
+	background: #babbbb;
+	background: rgba(255,255,255,0.5);
+	padding-left: 45%;
+	display: flex;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+}
+.content1-rectangle ul{
+	position: absolute;
+	list-style-type: none;
+	right: 5%;
+	top: 30%; 	
+
+}
+.content1-rectangle li{
+	display: inline;
+}
+.content1-rectangle span{
+	padding-right: 10px;
+}
+.sticker{
+	padding-left: 42%;
+	padding-top: 20px;
+}
+.content2{
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 25%;
+	box-sizing: border-box;
+}
+.content2-chatwoman{
+	width: auto;
+	background-image: url(../images/icon-woman.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	padding-left: 60px;
+	padding-right: 20%;
+}
+.content2-chatman{
+	background-image: url(../images/icon-man.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	padding-right: 30px;
+	padding-left: 30%;
+	margin-right: 10%;
+}
+.content3{
+	box-sizing: border-box;
+	display: flex;
+	padding: 10px 10px;
+}
+.content3-chatleft{
+	background-image: url(../images/icon-woman.png);
+	background-repeat: no-repeat;
+	background-position: 0 70%;
+	padding-left: 70px;
+	margin-right: 10px;
+}
+.box-chatwoman{
+	width: auto;
+	height: auto;
+	background-color: #fee8d2;
+	border-radius: 3%;
+	background-image: url(../images/icon-sound.png);
+	background-repeat: no-repeat;
+	background-position: 20px 50%;
+	position: relative;
+	margin-top: 10px;
+	padding-left: 50px;
+}
+.box-chatwoman:before{
+	position: absolute;
+	content:"";
+	border-top: 10px solid transparent;
+	border-right: 10px solid #fee8d2;
+	bottom: 10px;
+	left: -10px;
+}
+
+.box-chatwoman2{
+	width: auto;
+	height: auto;
+	background-color: #fee8d2;
+	border-radius: 3%;
+	background-image: url(../images/icon-sound.png);
+	background-repeat: no-repeat;
+	background-position: 20px 50%;
+	position: relative;
+	margin-top: 10px;
+	margin-right: 20%;
+	padding-left: 50px;
+}
+.box-chatwoman2:before{
+	position: absolute;
+	content:"";
+	border-top: 10px solid transparent;
+	border-right: 10px solid #fee8d2;
+	bottom: 10px;
+	left: -10px;
+}
+.box-chatman{
+	height: auto;
+	position: relative;
+	background-color: #e2f3f2;
+	border-radius: 3%;
+	margin-right: 30px;
+	padding: 10px 50px;
+	background-image: url(../images/icon-sound.png);
+	background-repeat: no-repeat;
+	background-position: 20px 50%;
+	margin-top: 10px;
+}
+.box-chatman:after{
+	position: absolute;
+	content:"";
+	border-top: 10px solid transparent;
+	border-left: 10px solid #e2f3f2;
+	bottom: 10px;
+	right: -10px;
+}
+.box-chatman2{
+	height: auto;
+	position: relative;
+	background-color: #e2f3f2;
+	border-radius: 3%;
+	margin-right: 30px;
+	padding: 10px 20px;
+	margin-top: 10px;
+}
+.box-chatman2:after{
+	position: absolute;
+	content:"";
+	border-top: 10px solid transparent;
+	border-left: 10px solid #e2f3f2;
+	bottom: 10px;
+	right: -10px;
+}
+.content3-chatright{
+	padding-right: 10px;
+}
+.content3-chatright1{
+	background-image: url(../images/icon-man.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	padding-right: 50px;
+
+}
+.box-chatman2_content1{
+	background-image: url(../images/icon-sound.png);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 30px;
+}
+.box-chatman2_content2{
+	border-top: 1px solid #008098;
+	background-image: url(../images/icon-sound.png);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 30px;
+}
+.box-chatman2_content2:after{
+	content: "";
+	clear: both;
+	visibility: hidden;
+}
+.content_arrow{
+	padding-left: 30%;
+}
+.content_picman{
+	display: none;
+	margin-left: 27%;
+}
+.content_picman img{
+	padding-left: 15%;
+}
+.text-blue{
+	color: #008098;
+}
+.footer{
+	padding: 10px 0;
+}
+.btn-pc{
+	padding-left: 45%;
+}
+img{
+	cursor: pointer;
+}
+@media screen and (max-width: 700px){
+	.content_picman{
+		display: flex;
+	}
+} 
