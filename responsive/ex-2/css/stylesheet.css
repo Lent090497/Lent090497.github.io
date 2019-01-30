@@ -27,6 +27,7 @@ body{
 	display: block;
 	overflow: hidden;
 	padding-bottom: 10%;
+	margin-top: -10px;
 }
 .content-title{
 	font-size: 42px;
@@ -34,33 +35,34 @@ body{
 }
 .content_title{
 	text-align: center;
+	padding: 10px 0;
 }
 .content-list{
 	display: flex;
 	padding: 20px 0;
-	position: relative;
+	
 }
 .box-grey{
 	position: absolute;
 	height: 20px;
-	width: 41%;
+	width: 100%;
 	padding: 10px 10px;
 	background-color: #cccccc;
-	bottom: 10px;
+	bottom: -50px;
 }
 .border{
+	width: : 100%;
 	border-top: 1px solid #000000;
 	margin: 0 50px;
 	display: block;
+	margin-bottom: 30px;
+	position: relative;
 }
 .boder: before{
 	content: "";
 	clear: both;
 	visibility: hidden;
 	height: 1px;
-}
-.border img{
-	width: 100%;
 }
 @media screen and (max-width: 800px){
 	.content-list{

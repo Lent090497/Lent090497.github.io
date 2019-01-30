@@ -16,8 +16,8 @@ $(document).ready(function () {
                    $('.container').css('background','none');
                    $('.border').css('border-top','1px solid #000000');
                    $('.content img').eq(1).attr('src','images/TOP_02.png');
-                   $('.content img').eq(2).attr('src','images/img_1.jpg');
-                   $('.content img').eq(4).attr('src','images/img_3.jpg');
+                   $('.content img').eq(2).attr('src','images/img_1.png');
+                   $('.content img').eq(4).attr('src','images/img_3.png');
                    $('.box-grey').css('background','#cccccc');
                },0);
            });
