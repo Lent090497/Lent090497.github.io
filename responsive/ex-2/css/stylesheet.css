@@ -1,0 +1,78 @@
+body{
+	font-family: 'Kozuka Gothic Pro', serif;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.header img{
+	width: 100%;
+}
+.footer img{
+	width: 100%;
+}
+.content{
+	width: 100%;
+	max-width: 1280px;
+	min-width: 650px;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+	padding-bottom: 10%;
+}
+.content-title{
+	font-size: 42px;
+	text-align: center;
+}
+.content_title{
+	text-align: center;
+}
+.content-list{
+	display: flex;
+	padding: 20px 0;
+	position: relative;
+}
+.box-grey{
+	position: absolute;
+	height: 20px;
+	width: 41%;
+	padding: 10px 10px;
+	background-color: #cccccc;
+	bottom: 10px;
+}
+.border{
+	border-top: 1px solid #000000;
+	margin: 0 50px;
+	display: block;
+}
+.boder: before{
+	content: "";
+	clear: both;
+	visibility: hidden;
+	height: 1px;
+}
+.border img{
+	width: 100%;
+}
+@media screen and (max-width: 800px){
+	.content-list{
+		display: block;
+		padding: 0;
+	}
+	.box-grey{
+		position: static;
+		width: 100%;
+		text-align: center;
+	}
+	.border{
+		padding: 50px 0;
+	}
+}
