@@ -16,16 +16,27 @@ body{
 .content{
 	width: 800px;
 	display: flex;
-	padding: 80px 50px;
+	padding: 50px 50px;
 }
 .arrow{
 	margin-top: 100px;
 }
 .slide{
-	width: 700px;
-	height: 300px;
+	width: 640px;
+	height: 335px;
 	padding: 0 10px;
-	display: block;
+	overflow: hidden;
+	
+	
+}
+.slide-wrap{
+	width: 3280px;
+	margin-left: 0;
+	transition: margin-left 1s;
+	display: flex;
+}
+.slide-wrap img{
+	float: left;
 }
 ul{
 	
