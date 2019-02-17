@@ -66,6 +66,7 @@ body{
 }
 .content-chat2-left{
 	width: 50%;
+	padding-left: 10px;
 }
 .content-chat2-right{
 	width: 50%;
@@ -73,7 +74,7 @@ body{
 .content-chat2_woman{
 	width: 100%;
 	display: flex;
-	padding: 5px 0;
+	padding: 5px 10px;
 }
 .content-chat2_woman_right{
 	width: 100%;
