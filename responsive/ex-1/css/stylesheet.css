@@ -110,6 +110,9 @@ body{
 	display: flex;
 	padding: 20px 0;
 }
+img{
+	cursor: pointer;
+}
 .btn{
 	width: 60%;
 	padding-left: 10%;
