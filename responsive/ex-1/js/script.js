@@ -1,15 +1,48 @@
 $(document).ready(function() {
-	$('.content-bot_menu2 ul li').hover(function() {
-		/* Stuff to do when the mouse enters the element */
-		var locate=$('.content-bot_menu2 ul li').index($(this));
-		$('.content-bot_menu2 ul li img').eq(locate).attr({
-			'src':'images/cmn_gnavi_on_0'+(locate+1)+'.png',
-		})
-	}, function() {
-		/* Stuff to do when the mouse leaves the element */
-		var locate=$('.content-bot_menu2 ul li').index($(this));
-		$('.content-bot_menu2 ul li img').eq(locate).attr({
-			'src':'images/cmn_gnavi_0'+(locate+1)+'.png',
-		})
-	});
+	changePicman();
+	changeLanguage();
 });
+function changeLanguage(){
+	$('#checkE').change(function() {
+		/* Act on the event */
+		if(this.checked){
+			$('.text-blue').css('display','block');
+		}else{
+			$('.text-blue').css('display','none');
+		}
+	});
+	$('#checkJ').change(function() {
+		/* Act on the event */
+		if(this.checked){
+			$('.textJ').css('display','block');
+		}else{
+			$('.textJ').css('display','none');
+		}
+	});
+}
+function changePicman(){
+	$('#smile').click(function(event) {
+		/* Act on the event */
+		if($(this).attr('src')=='images/pic-man-smile.png')
+		{
+			$(this).attr('src','images/pic-man-sad.png');
+			$('#sad').attr('src','images/pic-man-smile.png');
+		}
+		else if($(this).attr('src')=='images/pic-man-sad.png'){
+			$(this).attr('src','images/pic-man-smile.png');
+			$('#sad').attr('src','images/pic-man-sad.png');
+		}
+	});
+	$('#sad').click(function(event) {
+		/* Act on the event */
+		if($(this).attr('src')=='images/pic-man-smile.png')
+		{
+			$(this).attr('src','images/pic-man-sad.png');
+			$('#smile').attr('src','images/pic-man-smile.png');
+		}
+		else if($(this).attr('src')=='images/pic-man-sad.png'){
+			$(this).attr('src','images/pic-man-smile.png');
+			$('#smile').attr('src','images/pic-man-sad.png');
+		}
+	});
+}
