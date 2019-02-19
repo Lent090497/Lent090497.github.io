@@ -1,74 +1,15 @@
 $(document).ready(function() {
-	changeLanguage();
-	changeIconFeel();
+	$('.content-bot_menu2 ul li').hover(function() {
+		/* Stuff to do when the mouse enters the element */
+		var locate=$('.content-bot_menu2 ul li').index($(this));
+		$('.content-bot_menu2 ul li img').eq(locate).attr({
+			'src':'images/cmn_gnavi_on_0'+(locate+1)+'.png',
+		})
+	}, function() {
+		/* Stuff to do when the mouse leaves the element */
+		var locate=$('.content-bot_menu2 ul li').index($(this));
+		$('.content-bot_menu2 ul li img').eq(locate).attr({
+			'src':'images/cmn_gnavi_0'+(locate+1)+'.png',
+		})
+	});
 });
-//function change language
-function changeLanguage(){
-	$('#check1').change(function() {
-		//check checkbox Japan checked?
-		if(this.checked){
-			$('.textE').css('display','none');
-		}
-		else{
-			$('.textE').css('display','block');
-		}
-	});
-	//check checkbox English checked?
-	$('#check2').change(function() {
-		if(this.checked){
-			$('.textJ').css('display','none');
-		}
-		else{
-			$('.textJ').css('display','block');
-		}
-	});
-}
-//function change icon feel
-function changeIconFeel(){
-	//event locate1 click
-	$('#locate1').click(function() {
-		if($(this).attr('src')=='images/pic-man-smile.png'){
-			$(this).attr({
-				'src':'images/pic-man-sad.png'
-			});
-			$('#locate2').attr({
-				'src':'images/pic-man-smile.png'
-			})
-			$('.content-chat2-left').css('display','block');
-			$('.content-chat2-right').css('display','none');
-		}
-		else{
-			$(this).attr({
-				'src':'images/pic-man-smile.png'
-			});
-			$('#locate2').attr({
-				'src':'images/pic-man-sad.png'
-			})
-			$('.content-chat2-left').css('display','none');
-			$('.content-chat2-right').css('display','block');
-		}
-	});
-	//event locate2 click
-	$('#locate2').click(function(event) {
-		if($(this).attr('src')=='images/pic-man-smile.png'){
-			$(this).attr({
-				'src':'images/pic-man-sad.png'
-			});
-			$('#locate1').attr({
-				'src':'images/pic-man-smile.png'
-			})
-			$('.content-chat2-left').css('display','block');
-			$('.content-chat2-right').css('display','none');
-		}
-		else{
-			$(this).attr({
-				'src':'images/pic-man-smile.png'
-			});
-			$('#locate1').attr({
-				'src':'images/pic-man-sad.png'
-			})
-			$('.content-chat2-left').css('display','none');
-			$('.content-chat2-right').css('display','block');
-		}
-	});
-}
