@@ -10,6 +10,9 @@ body{
 	height: auto;
 	margin: 0 auto;
 }
+.header{
+	width: 100%;
+}
 .header img{
 	width: 100%;
 }
@@ -245,9 +248,9 @@ input[type=checkbox]{
 	width: 20px;
 	height: 20px;
 }
-@media only screen and (max-width: 800px){
-	.content{
-		width: 340px;
+@media only screen and (max-width: 640px){
+	.header img{
+		width: 800px;
 	}
 	.icon1{
 		display: inherit;
@@ -257,9 +260,11 @@ input[type=checkbox]{
 	}
 	.content-chat1_woman{
 		padding-left: 10px;
+		float: left;
 	}
 	.content-chat1_man{
 		padding-left:45%;
+		float: right;
 	}
 	.icon-feel{
 		display: flex;
@@ -279,11 +284,10 @@ input[type=checkbox]{
 	}
 	.content-chat2_man{
 		float: right;
-		padding-left: 0;
-		width: 55%;
 	}
 	.content-chat2_woman_right{
 		padding-left: 10px;
+		float: left;
 	}
 	.content-header{
 		height: 70px;
@@ -296,6 +300,9 @@ input[type=checkbox]{
 	}
 	li{
 		display: block;
+	}
+	.content-header span{
+		margin-left: -5px;
 	}
 	.content-footer_sp{
 		display: flex;

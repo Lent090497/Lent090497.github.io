@@ -10,7 +10,12 @@
 <body>
 	<div class="container">
 		<div class="header">
-			<img src="images/header-pc.png">
+			<picture>
+				<source srcset="images/header-sp.png" media="(max-width: 640px)">
+				<source srcset="images/header-pc.png" media="(min-width: 640px)">
+				<img src="images/header-pc.png">
+			</picture>
+			
 		</div>
 		<div class="content">
 			<img src="images/header-dow.png">
@@ -82,8 +87,8 @@
 				</div>
 				<div class="arrow">
 					<picture>
-					<source srcset="images/arrow.png" media="(min-width: 800px)">
-					<source srcset="images/pic-arow-sp.png" media="(max-width: 800px)">
+					<source srcset="images/arrow.png" media="(min-width: 640px)">
+					<source srcset="images/pic-arow-sp.png" media="(max-width: 640px)">
 					<img src="images/arrow.png">
 					</picture>
 				</div>
