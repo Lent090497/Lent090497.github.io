@@ -8,10 +8,13 @@ body{
 }
 .container{
 	margin: 0 auto;
-	width: 100%;
+	
 	height: auto;
 	overflow: hidden;
 	box-sizing: border-box;
+}
+.container img{
+	width: 100%;
 }
 .header img{
 	width: 100%;
@@ -20,14 +23,17 @@ body{
 	width: 100%;
 }
 .content{
-	width: 100%;
-	max-width: 1280px;
-	min-width: 650px;
+	width: 1280px;
+	max-width: 800px;
+	min-width: 640px;
 	margin: 0 auto;
 	display: block;
 	overflow: hidden;
 	padding-bottom: 10%;
 	margin-top: -10px;
+}
+.content img{
+	margin-bottom: -10px;
 }
 .content-title{
 	font-size: 42px;
@@ -38,22 +44,19 @@ body{
 	padding: 10px 0;
 }
 .content-list{
-	display: flex;
 	padding: 20px 0;
 	
 }
 .box-grey{
-	position: absolute;
-	height: 20px;
 	width: 100%;
 	padding: 10px 10px;
 	background-color: #cccccc;
 	bottom: -50px;
+	float: left;
 }
 .border{
-	width: : 100%;
 	border-top: 1px solid #000000;
-	margin: 0 50px;
+	margin: 0 20px;
 	display: block;
 	margin-bottom: 30px;
 	position: relative;
@@ -64,17 +67,59 @@ body{
 	visibility: hidden;
 	height: 1px;
 }
-@media screen and (max-width: 800px){
-	.content-list{
-		display: block;
+.info-left{
+	margin-right: 4%;
+}
+.info-right{
+	margin-left: 4%;
+}
+.btn-left{
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 9%;
+	padding-bottom: 20px;
+}
+.btn-right{
+	padding-bottom: 20px;
+	width: 50%;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.btn-sp{
+	display: none;
+	padding-bottom: 30px;
+}
+.btn-pc{
+	display: flex;
+}
+.content-list_info{
+	display: flex;
+}
+ul{
+	list-style-type: none;
+}
+@media screen and (max-width: 640px){
+	.container{
+		width: 800px;
+	}
+	.content-list_info {
 		padding: 0;
+		display: block;
 	}
 	.box-grey{
-		position: static;
 		width: 100%;
 		text-align: center;
 	}
-	.border{
-		padding: 50px 0;
+	.btn-left, .btn-rght{
+		display: none;
+	}
+	.btn-pc{
+		display: none;
+	}
+	.btn-sp{
+		display: flex;
+	}
+	.info-right{
+		margin-left: 0;
 	}
 }
