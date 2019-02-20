@@ -1,57 +1,45 @@
 $(document).ready(function() {
-	showMenu();
-	showProduct();
-	//changeHover();
-	closeProduct();
-
-});
-var preclick=0;
-function showMenu(){
-	//event click on li
-	$('.menu ul li').click(function() {
-		var locate=$('.menu ul li').index($(this));
-		//check class's active exist? 
-		if($(this).hasClass('active')){
-			$(this).children('.info').slideUp('slow');
-			$(this).children('.menu-img').attr({
-				"src":  "image/about" + (locate+1) + "_mb.jpg" 
+	var locate=0;
+	$('ul li').click(function showMenu(event) {
+		/* Act on the event */
+		var index=$('ul li').index($(this))
+		var img_about1 = $('.js-about').eq(index).attr('src');
+		var img_about2="image/about" + (index+1) + "_mb.jpg";
+		
+		if(img_about1===img_about2){
+			if(index!=locate){
+				$('.js-info').slideUp();
+				$('.js-about').eq(locate).attr({
+				'src': 'image/about' + (locate+1) + '_mb.jpg'
+				})
+			}
+			$('.js-about').eq(index).attr({
+				'src': 'image/about' + (index+1) + '_mb_hover.jpg'
 			})
-			$(this).removeClass('active');				
+			$(this).children('.js-info').slideToggle();
+			locate=index;
+
 		}
 		else{
-			$('.info').slideUp();
-			$(this).children('.info').slideDown('slow');		
-			$('.menu ul li').removeClass('active');
-			$(this).addClass('active');
-			$('.menu-img').eq(locate).attr({
-				"src":  "image/about" +(locate+1)  + "_mb_hover.jpg" 
-			});
-			if(preclick!=locate){
-				$('.menu ul li').eq(preclick).children('.menu-img').attr({
-				"src":  "image/about" + (preclick+1) + "_mb.jpg" 
-				})	
-			}
-
-			preclick=locate;
+			$('.js-about').eq(index).attr({
+				'src': 'image/about' + (index+1) + '_mb.jpg'
+			})
+			$(this).children('.js-info').slideToggle();
 		}
+		showProduct();
 	});
-
-}
+});
 function showProduct(){
 	//event click button show info product
 	$('.info img').click(function() {
 		var locate=$('.info img').index($(this));
-		if(locate % 2==0){
-			$('#about-1').show();
-			$('#about-1').animate({
-				top: '+20px',
-			});
-		}else{
-			$('#about-2').show();
-			$('#about-2').animate({
-				top: '+20px',
-			});
-		}
+		var idDiv = locate % 2 == 0 ? '#about-1':'#about-2';
+		$(idDiv).show().animate({
+			top: '+60px',
+		})
+		$('ul li').css('pointer-events','none');	
+		closeProduct();
+		
 	});
 }
 function closeProduct(){
@@ -59,7 +47,8 @@ function closeProduct(){
 	$('.about-btnclose img').click(function() {
 		$('.about').hide();
 		$('.about').animate({
-			top: '-20px',
+			top: '-60px',
 		});
+		$('ul li').css('pointer-events','auto');
 	});
 }

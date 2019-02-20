@@ -29,8 +29,8 @@ div.container{
 	background: white;
 }
 .info img{
-	margin-left: 50px;
 	margin-top:10px;
+	padding-left: 20%;
 }
 .info h1{
 	text-align: center;
