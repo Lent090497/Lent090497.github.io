@@ -7,7 +7,7 @@ $(document).ready(function() {
 	
 
 	//event next click
-	$("#next").click(function clickNext() {
+	$("#js-next").click(function clickNext() {
 		num++;
 		//check change image
 		if(num>lastImage){
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		time();
 	});
 	//event next click
-	$('#prev').click(function clickPre() {
+	$('#js-prev').click(function clickPre() {
 		
 		num--;
 		//check change image
@@ -37,12 +37,12 @@ $(document).ready(function() {
 	});
 	$('ul li img').click(function() {
 		num=$(this).attr("stt")-1;
-		$('#next').click();
+		$('#js-next').click();
 	});
 	time();
 });
 function time(){
 	interval = setInterval(function(){
-		$('#next').click();
+		$('#js-next').click();
 	},5000)
 }
