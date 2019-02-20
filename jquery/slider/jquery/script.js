@@ -1,9 +1,10 @@
 
+var interval;
+var num=0;
 $(document).ready(function() {
-	var num=0;
-	var time=5000;
 	var firstImage= $('.js-slide img:first').attr('stt');
 	var lastImage= $('.js-slide img:last').attr('stt');
+	
 
 	//event next click
 	$("#next").click(function clickNext() {
@@ -16,12 +17,8 @@ $(document).ready(function() {
 		$('.js-slide-wrap').css('margin-left', margin_left +'px');
 		$('li').removeClass('active');
 		$('li').eq(num).addClass('active');
-		$(this).data('clicked', 'true');
-		$(document).on('page:change', function(){       
-	    	$(document).unbind('click', '#next').on('click', '#next',function() {
-	        	clearInterval(timeinerval);
-	    	}); 
-		});
+		clearInterval(interval);
+		time();
 	});
 	//event next click
 	$('#prev').click(function clickPre() {
@@ -42,7 +39,10 @@ $(document).ready(function() {
 		num=$(this).attr("stt")-1;
 		$('#next').click();
 	});
-	var timeinerval=setInterval(function(){
-		$('#next').click();
-	},time)
+	time();
 });
+function time(){
+	interval = setInterval(function(){
+		$('#next').click();
+	},5000)
+}
