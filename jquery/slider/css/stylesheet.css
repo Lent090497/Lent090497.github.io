@@ -30,13 +30,12 @@ body{
 	
 }
 .slide-wrap{
-	width: 3280px;
-	margin-left: 0;
 	transition: margin-left 1s;
 	display: flex;
 }
 .slide-wrap img{
 	float: left;
+	margin-left: -0.6px;
 }
 ul{
 	
