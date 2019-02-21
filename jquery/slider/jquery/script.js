@@ -13,10 +13,7 @@ $(document).ready(function() {
 		if(num>lastImage){
 			num=firstImage;
 		}
-		var margin_left = -648*num;
-		$('.js-slide-wrap').css('margin-left', margin_left +'px');
-		$('li').removeClass('active');
-		$('li').eq(num).addClass('active');
+		changeSlide();
 		clearInterval(interval);
 		time();
 	});
@@ -28,17 +25,22 @@ $(document).ready(function() {
 		if(num<firstImage){
 			num=lastImage;
 		}
-		var margin_left = -648*num;
-		$('.js-slide-wrap').css('margin-left', margin_left + 'px');
-		$('li').removeClass('active');
-		$('li').eq(num).addClass('active');
-		
+		changeSlide();
+		clearInterval(interval);
+		time();
 
 	});
 	$('ul li img').click(function() {
 		num=$(this).attr("stt")-1;
 		$('#js-next').click();
 	});
+	//functiom change slide
+	function changeSlide(){
+		var margin_left = -648*num;
+		$('.js-slide-wrap').css('margin-left', margin_left +'px');
+		$('li').removeClass('active');
+		$('li').eq(num).addClass('active');
+	}
 	time();
 });
 function time(){
