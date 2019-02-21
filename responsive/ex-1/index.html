@@ -11,8 +11,8 @@
 	<div class="container">
 		<div class="header">
 			<picture>
-				<source srcset="images/header-sp.png" media="(max-width: 640px)">
-				<source srcset="images/header-pc.png" media="(min-width: 640px)">
+				<source srcset="images/header-sp.png" media="(max-width: 800px)">
+				<source srcset="images/header-pc.png" media="(min-width: 800px)">
 				<img src="images/header-pc.png">
 			</picture>
 			
@@ -25,8 +25,14 @@
 						<img src="images/icon-voice-all.png">
 					</div>
 					<ul>
-						<li><label for="check1">日本語<input type="checkbox" id="check1"></li>
-						<li><label for="check2"><span>English</span><input type="checkbox" id="check2"></li>
+						<li><p>
+							<input type="checkbox" id="js-check1" checked="checked">
+							<label for="js-check1" id="js-label1"><span></span>日本語</label>
+						</p></li>
+						<li><p>
+							<input type="checkbox" id="js-check2" checked="checked">
+							<label for="js-check2" id="js-label2"><span>English</span></label>
+						</p></li>
 					</ul>
 				</div>
 				<div class="content-sticker"></div>
@@ -40,8 +46,8 @@
 								<img src="images/icon-sound.png">
 							</div>
 							<div class="text">
-								<p class="textJ"><span>エドワードさん 、すみません</span></p>
-								<p class="textE">dummy dummy dummy dummy dummy</p>
+								<p class="js-textJ"><span>エドワードさん</span>、すみません</p>
+								<p class="textE js-textE">dummy dummy dummy dummy dummy</p>
 							</div>
 						</div>
 					</div>
@@ -54,9 +60,8 @@
 								<img src="images/icon-sound.png">
 							</div>
 							<div class="text">
-								<p class="text3 textJ">なん</p>
-								<p class="textJ">はい、何ですか。</p>
-								<p class="textE">dummy dummy dummy dummy</p>
+								<p class="js-textJ">はい、<ruby>何<rt>なん</rt></ruby>ですか。</p>
+								<p class="textE js-textE">dummy dummy dummy dummy</p>
 							</div>
 						</div>
 					</div>
@@ -75,11 +80,10 @@
 								<img src="images/icon-sound.png">
 							</div>
 							<div class="text">
-								<p class="text2" textJ>いま</p>
-								<p class="textJ">今、日本まつりで <br>
+								<p class="js-textJ"><ruby>今<rt>いま</rt></ruby>、日本まつりで <br>
 								<span>ヨサコイが おしえられる人</span> をさがしてるんですが…。<br>
 								おねがいできませんか。</p>
-								<p class="textE">dummy dummy dummy dummy dummy dummy dummy<br>
+								<p class="textE js-textE">dummy dummy dummy dummy dummy dummy dummy
 								dummy dummy  dummy dummy dummy dummy</p>
 							</div>
 						</div>
@@ -87,17 +91,21 @@
 				</div>
 				<div class="arrow">
 					<picture>
-					<source srcset="images/arrow.png" media="(min-width: 640px)">
-					<source srcset="images/pic-arow-sp.png" media="(max-width: 640px)">
+					<source srcset="images/arrow.png" media="(min-width: 800px)">
+					<source srcset="images/pic-arow-sp.png" media="(max-width: 800px)">
 					<img src="images/arrow.png">
 					</picture>
 				</div>
 				<div class="icon-feel">
-					<img src="images/pic-man-smile.png" id="locate1">
-					<img src="images/pic-man-sad.png" id="locate2">
+					<div class="icon-feel_left">
+						<img src="images/pic-man-smile.png" id="js-locate1">
+					</div>
+					<div class="icon-feel_right">
+						<img src="images/pic-man-sad.png" id="js-locate2">
+					</div>
 				</div>
 				<div class="content-chat2">
-					<div class="content-chat2-left">
+					<div class="content-chat2-left js-content-chat2-left">
 						<div class="content-chat2_man">
 							<div class="box-chatman">
 								<div class="content-chat">
@@ -105,8 +113,8 @@
 										<img src="images/icon-sound.png">
 									</div>
 									<div class="text">
-										<p class="textJ"><span>ヨサコイ</span> ですか。いいですよ。</p>
-										<p class="textE">dummy dummy dummy dummy</p>
+										<p class="js-textJ"><span>ヨサコイ</span> ですか。いいですよ。</p>
+										<p class="textE js-textE">dummy dummy dummy dummy</p>
 									</div>
 								</div>
 							</div>
@@ -116,13 +124,10 @@
 						</div>
 						<div class="content-chat2_man">
 							<div class="box-chatman">
-								<div class="content-chat">
-									<div class="iconsound">
-										<img src="images/icon-sound.png">
-									</div>
+								<div class="content-chat-left_man">
 									<div class="text">
-										<p class="textJ">はじめてですが、やってみます。</p>
-										<p class="textE">dummy dummy dummy dummy</p>
+										<p class="js-textJ">はじめてですが、やってみます。</p>
+										<p class="textE js-textE">dummy dummy dummy dummy</p>
 									</div>
 								</div>
 							</div>
@@ -140,21 +145,18 @@
 										<img src="images/icon-sound.png">
 									</div>
 									<div class="text">
-										<p class="textJ">ありがとうございます。<br>よろしく おねがいします。</p>
-										<p class="textE">dummy dummy dummy </p>
+										<p class="js-textJ">ありがとうございます。<br>よろしく おねがいします。</p>
+										<p class="textE js-textE">dummy dummy dummy </p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="content-chat2_man">
 							<div class="box-chatman">
-								<div class="content-chat">
-									<div class="iconsound">
-										<img src="images/icon-sound.png">
-									</div>
+								<div class="content-chat-left_man">
 									<div class="text">
-										<p class="textJ">こちらこそ。</p>
-										<p class="textE">dummy dummy dummy dummy</p>
+										<p class="js-textJ">こちらこそ。</p>
+										<p class="textE js-textE">dummy dummy dummy dummy</p>
 									</div>
 								</div>
 							</div>
@@ -163,7 +165,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="content-chat2-right">
+					<div class="content-chat2-right js-content-chat2-right">
 						<div class="content-chat2_man">
 							<div class="box-chatman">
 								<div class="content-chat">
@@ -171,8 +173,8 @@
 										<img src="images/icon-sound.png">
 									</div>
 									<div class="text">
-										<p class="textJ">じしん、ありません。<br>すみません。</p>
-										<p class="textE">dummy dummy dummy dummy</p>
+										<p class="js-textJ">じしん、ありません。<br>すみません。</p>
+										<p class="textE js-textE">dummy dummy dummy dummy</p>
 									</div>
 								</div>
 								<div class="content-chat">
@@ -181,8 +183,8 @@
 									</div>
 									<div class="border">
 										<div class="text">
-											<p class="textJ">その 日は つごうが わるいです。</p>
-											<p class="textE">dummy dummy dummy dummy</p>
+											<p class="js-textJ">その 日は つごうが わるいです。</p>
+											<p class="textE js-textE">dummy dummy dummy dummy</p>
 										</div>
 									</div>
 								</div>
@@ -191,15 +193,12 @@
 								<img src="images/icon-man.png">
 							</div>
 						</div>
-						<div class="content-chat2_man">
+						<div class="content-chat2-right_man">
 							<div class="box-chatman">
-								<div class="content-chat">
-									<div class="iconsound">
-										<img src="images/icon-sound.png">
-									</div>
+								<div class="content-chat-right_man">
 									<div class="text">
-										<p class="textJ">こちらこそ。</p>
-										<p class="textE">dummy dummy dummy dummy</p>
+										<p class="js-textJ">こちらこそ。</p>
+										<p class="textE js-textE">dummy dummy dummy dummy</p>
 									</div>
 								</div>
 							</div>
@@ -207,7 +206,7 @@
 								<img src="images/icon-man.png">
 							</div>
 						</div>
-						<div class="content-chat2_woman_right">
+						<div class="content-chat2-right_woman">
 							<div class="icon1">
 								<img src="images/icon-woman.png">
 							</div>
@@ -217,8 +216,8 @@
 										<img src="images/icon-sound.png">
 									</div>
 									<div class="text">
-										<p class="textJ">そうですか。ざんねんです。</p>
-										<p class="textE">dummy dummy dummy</p>
+										<p class="js-textJ">そうですか。ざんねんです。</p>
+										<p class="textE js-textE">dummy dummy dummy</p>
 									</div>
 								</div>
 							</div>
@@ -227,25 +226,25 @@
 				</div>
 				<div class="content-footer_sp">
 					<div class="pre">
-						<img src="images/btn-pre-sp.png">
+						<a href="#"><img src="images/btn-pre-sp.png"></a>
 					</div>
 					<div class="btn">
-						<img src="images/btn-sp.png">
+						<a href="#"><img src="images/btn-sp.png"></a>
 					</div>
 					<div class="next">
-						<img src="images/btn-next-sp.png">
+						<a href="#"><img src="images/btn-next-sp.png"></a>
 					</div>
 				</div>
 			</div>
 			<div class="content-footer_pc">
 				<div class="pre">
-					<img src="images/btn-pre-pc.jpg">
+					<a href="#"><img src="images/btn-pre-pc.jpg"></a>
 				</div>
 				<div class="btn">
-					<img src="images/btn-pc.jpg">
+					<a href="#"><img src="images/btn-pc.jpg"></a>
 				</div>
 				<div class="next">
-					<img src="images/btn-next-sp.png">
+					<a href="#"><img src="images/btn-next-pc.jpg"></a>
 				</div>
 			</div>
 		</div>

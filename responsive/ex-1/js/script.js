@@ -1,74 +1,86 @@
 $(document).ready(function() {
-	changeLanguage();
-	changeIconFeel();
-});
-//function change language
-function changeLanguage(){
-	$('#check1').change(function() {
+	//event change language
+	$('#js-check1').change(function changeLanguage() {
 		//check checkbox Japan checked?
 		if(this.checked){
-			$('.textE').css('display','none');
+			$('.js-textJ').css('display','block');
+			
 		}
 		else{
-			$('.textE').css('display','block');
+			$('.js-textJ').css('display','none');
+			
 		}
 	});
 	//check checkbox English checked?
-	$('#check2').change(function() {
+	$('#js-check2').change(function() {
 		if(this.checked){
-			$('.textJ').css('display','none');
+			$('.js-textE').css('display','block');
 		}
 		else{
-			$('.textJ').css('display','block');
+			$('.js-textE').css('display','none');
 		}
 	});
-}
-//function change icon feel
-function changeIconFeel(){
-	//event locate1 click
-	$('#locate1').click(function() {
+	/*--------------------------------------------------*/
+
+	//event click icon click
+	$('#js-locate1').click(function changeIcon() {
 		if($(this).attr('src')=='images/pic-man-smile.png'){
 			$(this).attr({
 				'src':'images/pic-man-sad.png'
 			});
-			$('#locate2').attr({
+			$('#js-locate2').attr({
 				'src':'images/pic-man-smile.png'
 			})
-			$('.content-chat2-left').css('display','block');
-			$('.content-chat2-right').css('display','none');
+			changeChat1();
 		}
 		else{
 			$(this).attr({
 				'src':'images/pic-man-smile.png'
 			});
-			$('#locate2').attr({
+			$('#js-locate2').attr({
 				'src':'images/pic-man-sad.png'
 			})
-			$('.content-chat2-left').css('display','none');
-			$('.content-chat2-right').css('display','block');
+			changeChat2();
 		}
 	});
 	//event locate2 click
-	$('#locate2').click(function(event) {
+	$('#js-locate2').click(function(event) {
 		if($(this).attr('src')=='images/pic-man-smile.png'){
 			$(this).attr({
 				'src':'images/pic-man-sad.png'
 			});
-			$('#locate1').attr({
+			$('#js-locate1').attr({
 				'src':'images/pic-man-smile.png'
 			})
-			$('.content-chat2-left').css('display','block');
-			$('.content-chat2-right').css('display','none');
+			changeChat1();
 		}
 		else{
 			$(this).attr({
 				'src':'images/pic-man-smile.png'
 			});
-			$('#locate1').attr({
+			$('#js-locate1').attr({
 				'src':'images/pic-man-sad.png'
 			})
+			changeChat2();
+		}
+	});
+	$(window).resize(function(event) {
+		/* Act on the event */
+		if($(document).width()>800){
+			$('.content-chat2-left').css('display','block');
+			$('.content-chat2-right').css('display','block');
+		}
+		else{
 			$('.content-chat2-left').css('display','none');
 			$('.content-chat2-right').css('display','block');
 		}
 	});
-}
+	function changeChat2(){
+		$('.js-content-chat2-left').css('display','none');
+		$('.js-content-chat2-right').css('display','block');
+	}
+	function changeChat1(){
+		$('.js-content-chat2-left').css('display','block');
+		$('.js-content-chat2-right').css('display','none');
+	}
+});

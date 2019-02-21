@@ -1,5 +1,6 @@
 body{
 	font-family: 'Kozuka Gothic Pro', serif;
+	overflow: scroll;
 }
 *{
 	margin: 0;
@@ -12,18 +13,20 @@ body{
 }
 .header{
 	width: 100%;
+
 }
 .header img{
 	width: 100%;
 }
 .content{
+	min-width: 540px;
+	max-width: 1280px;
 	width: 800px;
 	margin: 0 auto;
-	min-width: 640px;
-	max-width: 1280px;
 }
 .content-wrap{
 	background-image: url(../images/bg-inner.jpg);
+	padding-bottom: 150px;
 	overflow: hidden;
 }
 .content-header{
@@ -57,14 +60,15 @@ body{
 	margin-top: 5px;
 	padding-left: 17%;
 	display: flex;
-	padding-right: 10px;
+	padding-right: 9%;
+	float: left;
 }
 .content-chat1_man{
-	padding-left: 47%;
 	display: flex;
+	float: right;
+	padding-right: 8%;
 }
 .content-chat2{
-	padding-bottom: 100px;
 	display: flex;
 }
 .content-chat2-left{
@@ -73,18 +77,19 @@ body{
 }
 .content-chat2-right{
 	width: 50%;
+	padding-right: 10px;
 }
 .content-chat2_woman{
 	width: 100%;
 	display: flex;
 	padding: 5px 10px;
 }
-.content-chat2_woman_right{
-	width: 100%;
+.content-chat2-right_woman{
 	display: flex;
-	padding: 5px 0;
-	padding-left: 22%;
-	float: left;
+    position: relative;
+    float: right;
+    padding-right: 17%;
+    padding-top: 5px;
 }
 .content-chat2_icon{
 	position: relative;
@@ -97,14 +102,25 @@ body{
 .content-chat2_man{
 	display: flex;
 	position: relative;
-	padding-left: 15%;
+	float: right;
+}
+.content-chat2-right_man{
+	display: flex;
+	position: relative;
+	float: right;
+	padding-right: 15%;
 }
 .content-chat{
 	display: flex;
+	padding: 5px 10px;
+}
+.content-chat-right_man, .content-chat-left_man{
+	padding-right: 49px;
+	padding-left: 10px;
 }
 .content-footer_sp{
+    padding-top: 40px;
 	display: none;
-	padding: 20px 0;
 }
 .content-footer_pc{
 	display: flex;
@@ -114,23 +130,24 @@ img{
 	cursor: pointer;
 }
 .btn{
-	width: 60%;
-	padding-left: 10%;
+	width: 70%;
+	padding-left: 25%;
 }
 .pre{
-	width: 20%;
-	float: left; 
+	width: 15%;
 	padding-left: 10px;
 	padding-top: 10px;
+	float: left;
 }
 
 .next{
-	width: 5%;
-	float: right;
+	width: 15%;
 	padding-top: 10px;
+	padding-right: 10px;
+	float: right;
 }
 .next img{
-	
+	float: right;
 }
 .border{
 	border-top: 1px solid #008098;
@@ -142,12 +159,21 @@ img{
 
 }
 .icon-feel{
+	width: 100%;
 	display: none;
-	padding-left: 17%;
 }
-.icon-feel img{
-	padding-left: 17%;
+.icon-feel_left, .icon-feel_right{
+	width: 50%;
 }
+.icon-feel_left img{
+	margin-right: 30px;
+	float: right;
+}
+.icon-feel_right img{
+	margin-left: 90px;
+	float: left;
+}
+
 .icon{
 	display: block;
 	position: relative;
@@ -169,7 +195,7 @@ img{
 .iconsound{
 	position: relative;
 	display: block;
-	margin-right: 30px;
+	margin-right: 40px;
 }
 .iconsound img{
 	position: absolute;
@@ -183,18 +209,11 @@ img{
 	background-color: white;
 }
 .textE{
+	word-break: break-all;
 	color: #008098;
 }
-.textJ{}
-.text2{
-	font-size: 9px;
-}
-.text3{
-	padding-left: 20%;
-	font-size: 9px;
-}
 .arrow img{
-	padding-left: 24%;
+	padding-left: 20%;
 }
 
 .box-chatwoman{
@@ -203,7 +222,7 @@ img{
 	background-color: #fee8d2;
 	border-radius: 3%;
 	position: relative;
-	padding: 0 5px;
+	padding-left: 5px;
 }
 .box-chatwoman:before{
 	position: absolute;
@@ -220,7 +239,7 @@ img{
 	border-radius: 3%;
 	margin-top: 5px;
 	margin-right: 10px;
-	padding: 0 5px;
+	padding-left: 15px;
 }
 .box-chatman:after{
 	position: absolute;
@@ -235,25 +254,66 @@ img{
 }
 ul{
 	list-style-type: none;
-}
-li{
-	display: inline;
-	padding-left: 10px;
+	display: flex;
 }
 li span{
 	color: #008098;
 	font-weight: bold;
 }
-input{
+input[type='checkbox']{
+	display: none;
+}
+label{
+	font-size: 10px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	font-size: 13px;
+	margin-right: 7px;
+}
+label:after{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	text-align: center;
 	margin-left: 7px;
+	background-color: #f3f3f3;
+	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+	border-radius: 3px;
 }
-input[type=checkbox]{
-	width: 20px;
-	height: 20px;
+input[type='checkbox']:checked + label:after{
+	content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #fcc800;
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 15px;
 }
-@media only screen and (max-width: 640px){
-	.header img{
-		width: 800px;
+@media only screen and (max-width: 800px){
+	.content-chat{
+		padding-right: 0;
+	}
+	.btn{
+		padding-left: 10%;
+	}
+	.footer{
+		display: none;
+	}
+	.content{
+		width: 540px;
+	}
+	.container{
+		width: 560px;
+	}
+	.box-chatman{
+		margin-left: 10px;
+		width: 83%;
+	}
+	.box-chatwoman{
+		width: 100%;
+		margin-right: 20px;
 	}
 	.icon1{
 		display: inherit;
@@ -262,12 +322,12 @@ input[type=checkbox]{
 		line-height: 20px;
 	}
 	.content-chat1_woman{
+		width: 100%;
 		padding-left: 10px;
-		float: left;
 	}
 	.content-chat1_man{
-		padding-left:45%;
-		float: right;
+		width: 100%;
+		padding-right: 0;
 	}
 	.icon-feel{
 		display: flex;
@@ -275,33 +335,43 @@ input[type=checkbox]{
 	.arrow{
 		padding-left: 15%;
 	}
+	.content-chat-right_man, .content-chat-left_man{
+		padding-left: 45px; 	
+	}
+	
 	.content-chat2-left{
 		display: none;
 		width: 100%;
 	}
 	.content-chat2-right{
 		width: 100%;
+		padding-right: 0;
 	}
 	.content-chat2_icon{
-		display: inherit;
+		display: block;
 	}
 	.content-chat2_man{
-		float: right;
+		width: 100%;
 	}
-	.content-chat2_woman_right{
+	.content-chat2-right_man{
+		width: 100%;
+		padding-right: 0;
+	}
+	.content-chat2-right_woman{
+		width: 100%;
 		padding-left: 10px;
 		float: left;
 	}
 	.content-header{
 		height: 70px;
 	}
-	.content-chat2{
+	.content-wrap{
 		padding-bottom: 0;
 	}
 	.content-header ul{
 		padding-top: 0;
 	}
-	li{
+	ul{
 		display: block;
 	}
 	.content-header span{
