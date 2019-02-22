@@ -14,9 +14,6 @@ body{
 	margin: 0 auto;
 	position: relative;
 }
-.container img{
-	width: auto;
-}
 .content-top{
 	background-image: url(../images/image/bg.png);
 	padding: 40px 10.1%;
@@ -26,42 +23,63 @@ body{
 	padding-left: 25%;
 }
 
-.content-case_box1{
+.content-case_box1_pc{
+	height: auto;
+	width: 50%;
+	border-radius: 15px;
 	background-image: url(../images/image/duck_01.png);
 	background-repeat: no-repeat;
-	padding-left: 4%;
-	padding-top: 10%;
-	padding-bottom: 1%;
-	padding-right: 24.5%;
-	border-radius: 15px;
 }
-.content-case_box2{
+.content-case_box2_pc{
+	height: auto;
+	width: 50%;
+	border-radius: 15px;
 	background-image: url(../images/image/duck_02.png);
 	background-repeat: no-repeat;
-	padding-right: 22%;
-	padding-top: 10%;
-	padding-left: 4%;
 }
-.content-case_box3{
+.content-case_box3_pc{
+	width: 50%;
+	border-radius: 15px;
 	background-image: url(../images/image/duck_03.png);
 	background-repeat: no-repeat;
-	padding-left: 4%;
-	padding-top: 10%;
-	padding-bottom: 1%;
-	padding-right: 23%;
-	border-radius: 15px;
 
 }
-.content-case_box4{
+.content-case_box4_pc{
+	width: 50%;
+	border-radius: 15px;
 	background-image: url(../images/image/duck_04.png);
-	padding-right: 25%;
-	padding-top: 10%;
-	padding-left: 4%;
 	background-repeat: no-repeat;
 }
+.content-case_box1_sp{
+	height: auto;
+	width: 100%;
+	background-image: url(../images/image/duck_sp_01.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 30px;
+}
+.content-case_box2_sp{
+	height: auto;
+	width: 100%;
+	background-image: url(../images/image/duck_sp_02.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 20px;
+}
+.content-case_box3_sp{
+	width: 100%;
+	background-image: url(../images/image/duck_sp_03.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 15px;
+}
+.content-case_box4_sp{
+	width: 100%;
+	border-radius: 15px;
+	background-image: url(../images/image/duck_sp_04.jpg);
+	background-repeat: no-repeat;
+	padding-bottom: 20px;
+}
 .content-case{
+	padding: 0 5%;
 	margin-top: 10%;
-	padding-left: 5%;
 }
 .content-case ul{
 	margin-top: -4px;
@@ -77,6 +95,19 @@ body{
 	padding-top: 23%;
 	background-repeat: no-repeat;
 	margin-top: -10px;
+}
+.text-pc{
+	padding-left: 10%;
+	padding-top: 20%;
+	overflow: hidden;
+}
+.text-sp{
+	text-align: justify;
+	padding-left: 50%;
+	padding-top: 20%;
+	padding-right: 10%;
+	font-size: 16px;
+	overflow: hidden;	
 }
 .text1{
 	text-align: center;
@@ -123,6 +154,13 @@ body{
 	background-color: #f9544c;
 	padding-left: 11%;
 	padding-top: 5px;
+	margin-top: -12px;
+}
+.content-bot ul{
+	padding-bottom: 20px;
+}
+.content-bot li img{
+	border-radius: 20px;
 }
 .content-bot{
 	background-image: url(../images/image/img_13.png);
@@ -130,7 +168,6 @@ body{
 	background-position: left bottom;
 	padding-top: 5%;
 	padding-left: 12%;
-	padding-bottom: 5%;
 }
 .footer{
 	padding-left: 11%;
@@ -160,14 +197,33 @@ body{
 	position: absolute;
 	margin: 10px 0;
 }
+.footer-blue{
+	margin: -10px 0;
+}
+.footer-blue img{
+	width: 100%;
+}
 ul{
 	list-style-type: none;
 	display: flex;
 	padding-left: 0;
 }
 @media only screen and (max-width: 640px){
-	.content-bot ul{
-		padding-top: 10%;
+	.text-pc{
+		padding-right: 50%;
+		font-size: 16px;
+	}
+	.content-bot-lineup{
+		padding-top: 5%;
+		padding-left: 36%;
+	}
+	.content-bot img{
+		width: 49%;
+		padding-bottom: 5%;
+		border-radius: 50px;
+	}
+	.content-bot{
+		padding: 0 3%;
 	}
 	.content-wrap{
 		margin: 0 10.1%;
@@ -177,6 +233,7 @@ ul{
 	}
 	.content-bot ul{
 		display: block;
+		padding-bottom: 10%;
 	}
 	.content-bot ul li{
 		display: inline;
@@ -218,12 +275,9 @@ ul{
 	.content-case-study_sp{
 		display: block;
 	}
-	.content-case_box1{
-		background-repeat: no-repeat;
-	}
 	.content-case{
-		padding-left: 15%;
-		padding-top: 9%;
+		padding-top: 20%;
+		padding-left:7%;
 		padding-bottom: 30px;
 	}
 	.container{
@@ -235,11 +289,7 @@ ul{
 		text-align: left;
 	}
 	.content-case_box1, .content-case_box2, .content-case_box3, .content-case_box4{
-		padding-top: 18%;
-		padding-left: 10%;
-	}
-	.content-case_box2, .content-case_box4{
-		padding-bottom: 7%;
+		width: 100%;
 	}
 	
 	li img{
