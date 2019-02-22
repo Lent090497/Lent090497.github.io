@@ -18,13 +18,17 @@ body{
 }
 .header img{
 	width: 100%;
+	margin-bottom: -10px;
+}
+.footer{
+	margin-bottom: -10px;
 }
 .footer img{
 	width: 100%;
 }
 .content{
 	width: 1280px;
-	max-width: 800px;
+	max-width: 1200px;
 	min-width: 640px;
 	margin: 0 auto;
 	display: block;
@@ -32,9 +36,7 @@ body{
 	padding-bottom: 10%;
 	margin-top: -10px;
 }
-.content img{
-	margin-bottom: -10px;
-}
+
 .content-title{
 	font-size: 42px;
 	text-align: center;
@@ -48,11 +50,8 @@ body{
 	
 }
 .box-grey{
-	width: 100%;
-	padding: 10px 10px;
+	padding: 10px 25px;
 	background-color: #cccccc;
-	bottom: -50px;
-	float: left;
 }
 .border{
 	border-top: 1px solid #000000;
@@ -67,39 +66,41 @@ body{
 	visibility: hidden;
 	height: 1px;
 }
-.info-left{
-	margin-right: 4%;
-}
-.info-right{
-	margin-left: 4%;
-}
-.btn-left{
+.info{
 	width: 50%;
-	padding-left: 20px;
-	padding-right: 9%;
-	padding-bottom: 20px;
+	padding: 0 5px;
 }
-.btn-right{
-	padding-bottom: 20px;
+.btn{
 	width: 50%;
-	padding-left: 3%;
-	padding-right: 3%;
+	margin: 0 23px;
+	padding-bottom: 5%;
 }
 .btn-sp{
 	display: none;
 	padding-bottom: 30px;
 }
+.btn-sp a{
+	width: 100%;
+}
 .btn-pc{
+	width: 100%;
 	display: flex;
 }
 .content-list_info{
 	display: flex;
 }
+a{
+	text-decoration: none;
+	color: black;
+}
 ul{
 	list-style-type: none;
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 1000px){
 	.container{
+		width: 800px;
+	}
+	.content{
 		width: 800px;
 	}
 	.content-list_info {
@@ -110,16 +111,13 @@ ul{
 		width: 100%;
 		text-align: center;
 	}
-	.btn-left, .btn-rght{
-		display: none;
-	}
 	.btn-pc{
 		display: none;
 	}
 	.btn-sp{
 		display: flex;
 	}
-	.info-right{
-		margin-left: 0;
+	.info{
+		width: 100%;
 	}
 }
