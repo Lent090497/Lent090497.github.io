@@ -3,21 +3,21 @@ $(document).ready(function() {
 	$('#js-check1').change(function changeLanguage() {
 		//check checkbox Japan checked?
 		if(this.checked){
-			$('.js-textJ').css('display','block');
+			$('.js-textJ').css('opacity','1');
 			
 		}
 		else{
-			$('.js-textJ').css('display','none');
+			$('.js-textJ').css('opacity','0');
 			
 		}
 	});
 	//check checkbox English checked?
 	$('#js-check2').change(function() {
 		if(this.checked){
-			$('.js-textE').css('display','block');
+			$('.js-textE').css('opacity','1');
 		}
 		else{
-			$('.js-textE').css('display','none');
+			$('.js-textE').css('opacity','0');
 		}
 	});
 	/*--------------------------------------------------*/
