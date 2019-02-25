@@ -13,9 +13,11 @@ body{
 	margin: 0 auto;
 }
 .content{
-	width: 65%;
+	width: 68%;
 	justify-content: center;
 	margin: 0 auto;
+	margin-top: -0.7%;
+	line-height: 25px;
 }
 .content-wrap{
 	background-image: url(../images/bg-inner.jpg);
@@ -34,12 +36,12 @@ body{
 .content-header ul{
 	position: absolute;
 	right: 0;
-	padding-top: 2.5%;
+	padding-top: 2%;
 }
 .content-header_sound {
 	padding: 1% 0;
 	padding-left: 45%;
-	margin-bottom: -10px;
+	margin-bottom: -1.4%;
 }
 .content-sticker{
 	height: 100px;
@@ -55,14 +57,14 @@ body{
 .content-chat1_woman{
 	padding-left: 19%;
 	display: flex;
-	padding-right: 9%;
+	padding-right: 18%;
 	float: left;
 }
 .content-chat1_man{
 	display: flex;
 	float: right;
 	padding: 1% 0;
-	padding-right: 14%;
+	padding-right: 15.2%;
 }
 .content-chat2{
 	width: 100%;
@@ -201,8 +203,7 @@ img{
 	top: 35%;
 }
 .text{
-	padding: 5px 0;
-	line-height: 25px;
+	padding: 3% 0;
 }
 .text span{
 	background-color: white;
@@ -225,7 +226,7 @@ img{
 	background-color: #fee8d2;
 	border-radius: 3%;
 	position: relative;
-	margin-left: 60px;
+	margin-left: 70px;
 }
 .box-chatwoman:before{
 	position: absolute;
@@ -240,7 +241,7 @@ img{
 	position: relative;
 	background-color: #e2f3f2;
 	border-radius: 3%;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 .box-chatman:after{
 	position: absolute;
@@ -272,10 +273,11 @@ label{
 	margin-right: 20px;
 }
 label:after{
+	position: absolute;
 	content: "";
 	width: 13px;
 	height: 12px;
-	margin-left: 5px;
+	margin-left: 13px;
 	display: inline-block;
 	background: url(../images/no_checked.jpg) left top no-repeat;
 }
