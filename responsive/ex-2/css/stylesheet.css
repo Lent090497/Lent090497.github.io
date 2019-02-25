@@ -1,4 +1,5 @@
 body{
+	font-size: 17px;
 }
 *{
 	margin: 0;
@@ -6,7 +7,8 @@ body{
 }
 .container{
 	margin: 0 auto;
-	max-width: 100%;
+	width: 1280px;
+	max-width: 1280px;
 	min-width: 640px;
 	height: auto;
 	overflow: hidden;
@@ -26,7 +28,7 @@ body{
 	width: 100%;
 }
 .content{
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	display: block;
 	overflow: hidden;
@@ -40,6 +42,7 @@ body{
 	padding-top: 40px;
 }
 .content_title{
+	font-size: 24px;
 	text-align: center;
 	padding: 10px 0;
 }
@@ -47,9 +50,16 @@ body{
 	padding: 20px 0;
 	
 }
+.text-title{
+	font-size: 24px;
+}
 .box-grey{
 	padding: 10px 5%;
+	font-size: 14px;
 	background-color: #cccccc;
+}
+.border img{
+	margin-bottom: 2%;
 }
 .border{
 	border-top: 1px solid #000000;
