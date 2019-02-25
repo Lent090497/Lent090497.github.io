@@ -1,33 +1,28 @@
 body{
 	font-family: 'Kozuka Gothic Pro', serif;
-	overflow: scroll;
+	font-size: 17px;
 }
 *{
 	margin: 0;
 	padding: 0;
 }
 .container{
-	width: 100%;
+	min-width: 768px;
+	max-width: 1280px;
 	height: auto;
 	margin: 0 auto;
-}
-.header{
-	width: 100%;
-
 }
 .header img{
 	width: 100%;
 }
 .content{
-	min-width: 540px;
-	max-width: 1280px;
-	width: 800px;
+	width: 65%;
+	justify-content: center;
 	margin: 0 auto;
 }
 .content-wrap{
 	background-image: url(../images/bg-inner.jpg);
-	padding-bottom: 150px;
-	overflow: hidden;
+	padding-bottom: 13.7%;
 }
 .content-header{
 	width: 100%;
@@ -36,29 +31,32 @@ body{
 	background: rgba(255,255,255,0.5);
 	display: flex;
 }
+.content-header img{
+	width: 100%;
+}
 .content-header ul{
 	position: absolute;
-	right: 10px;
-	padding-top: 20px;
+	right: 0;
+	padding-top: 2.5%;
 }
 .content-header_sound {
+	padding: 1% 0;
 	padding-left: 45%;
-}
-.content-header_sound img{
-	padding-top: 10px;
+	margin-bottom: -10px;
 }
 .content-sticker{
-	margin-top: 10px;
 	height: 100px;
-	width: 100%;
-	background-image: url(../images/sticker.png);
-	background-repeat: no-repeat;
-	background-position: center;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	background: url(../images/sticker.png) no-repeat center;
 	width: 100%;
 }
+.content-chat1{
+	width: 100%;
+	float: left;
+}
 .content-chat1_woman{
-	margin-top: 5px;
-	padding-left: 17%;
+	padding-left: 19%;
 	display: flex;
 	padding-right: 9%;
 	float: left;
@@ -66,30 +64,32 @@ body{
 .content-chat1_man{
 	display: flex;
 	float: right;
-	padding-right: 8%;
+	padding: 1% 0;
+	padding-right: 14%;
 }
 .content-chat2{
+	width: 100%;
 	display: flex;
 }
 .content-chat2-left{
 	width: 50%;
-	padding-left: 10px;
+	padding-left: 2%;
 }
 .content-chat2-right{
 	width: 50%;
-	padding-right: 10px;
+	padding-right: 8%;
 }
 .content-chat2_woman{
 	width: 100%;
 	display: flex;
-	padding: 5px 10px;
+	padding: 1% 0;
 }
 .content-chat2-right_woman{
 	display: flex;
     position: relative;
     float: right;
-    padding-right: 17%;
-    padding-top: 5px;
+    margin-right: 3%;
+    padding: 1% 0;
 }
 .content-chat2_icon{
 	position: relative;
@@ -103,20 +103,21 @@ body{
 	display: flex;
 	position: relative;
 	float: right;
-}
-.content-chat2-right_man{
-	display: flex;
-	position: relative;
-	float: right;
-	padding-right: 15%;
+	padding: 1% 0;
 }
 .content-chat{
 	display: flex;
-	padding: 5px 10px;
+	padding: 5px 0;
+	margin-left: 20px;
+	margin-right: 20px;
 }
-.content-chat-right_man, .content-chat-left_man{
-	padding-right: 49px;
-	padding-left: 10px;
+.content-chat-left_man{
+	padding-right: 45px;
+	padding-left: 20px;
+}
+.content-chat-right_man{
+	padding-right: 80px;
+	padding-left: 20px;
 }
 .content-footer_sp{
     padding-top: 40px;
@@ -130,7 +131,7 @@ img{
 	cursor: pointer;
 }
 .btn{
-	width: 70%;
+	width: 67%;
 	padding-left: 25%;
 }
 .pre{
@@ -150,7 +151,7 @@ img{
 	float: right;
 }
 .border{
-	border-top: 1px solid #008098;
+	border-bottom: 1px solid #008098;
 }
 .border:before{
 	content: "";
@@ -166,18 +167,17 @@ img{
 	width: 50%;
 }
 .icon-feel_left img{
-	margin-right: 30px;
+	margin-right: 20%;
 	float: right;
 }
 .icon-feel_right img{
-	margin-left: 90px;
+	margin-left: 22%;
 	float: left;
 }
 
 .icon{
 	display: block;
 	position: relative;
-	padding-right: 60px;
 }
 .icon img{
 	position: absolute;
@@ -211,9 +211,13 @@ img{
 .textE{
 	word-break: break-all;
 	color: #008098;
+	font-size: 15px;
 }
-.arrow img{
-	padding-left: 20%;
+.arrow {
+	width: 100%;
+	height: 55px;
+	background: url(../images/arrow.png) no-repeat center;
+	float: left;
 }
 
 .box-chatwoman{
@@ -222,7 +226,7 @@ img{
 	background-color: #fee8d2;
 	border-radius: 3%;
 	position: relative;
-	padding-left: 5px;
+	margin-left: 60px;
 }
 .box-chatwoman:before{
 	position: absolute;
@@ -237,9 +241,7 @@ img{
 	position: relative;
 	background-color: #e2f3f2;
 	border-radius: 3%;
-	margin-top: 5px;
 	margin-right: 10px;
-	padding-left: 15px;
 }
 .box-chatman:after{
 	position: absolute;
@@ -264,11 +266,11 @@ input[type='checkbox']{
 	display: none;
 }
 label{
-	font-size: 10px;
+	font-size: 14px;
 	display: inline-block;
 	cursor: pointer;
 	position: relative;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 label:after{
 	content: "";
@@ -282,6 +284,9 @@ input[type='checkbox']:checked + label:after{
 	background: url(../images/checked.jpg) left top no-repeat;
 }
 @media only screen and (max-width: 800px){
+	.content-wrap{
+		background: url(../images/bg_sp.png);
+	}
 	.content-chat{
 		padding-right: 0;
 	}
@@ -290,12 +295,6 @@ input[type='checkbox']:checked + label:after{
 	}
 	.footer{
 		display: none;
-	}
-	.content{
-		width: 540px;
-	}
-	.container{
-		width: 560px;
 	}
 	.box-chatman{
 		margin-left: 10px;
@@ -323,7 +322,8 @@ input[type='checkbox']:checked + label:after{
 		display: flex;
 	}
 	.arrow{
-		padding-left: 15%;
+		height: 80px;
+		background: url(../images/pic-arow-sp.png) no-repeat center;
 	}
 	.content-chat-right_man, .content-chat-left_man{
 		padding-left: 45px; 	
