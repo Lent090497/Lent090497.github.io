@@ -6,7 +6,8 @@ body{
 }
 .container{
 	margin: 0 auto;
-	
+	max-width: 1200px;
+	min-width: 640px;
 	height: auto;
 	overflow: hidden;
 	box-sizing: border-box;
@@ -25,9 +26,6 @@ body{
 	width: 100%;
 }
 .content{
-	width: 1280px;
-	max-width: 1200px;
-	min-width: 640px;
 	margin: 0 auto;
 	display: block;
 	overflow: hidden;
@@ -95,13 +93,7 @@ a{
 ul{
 	list-style-type: none;
 }
-@media screen and (max-width: 1000px){
-	.container{
-		width: 800px;
-	}
-	.content{
-		width: 800px;
-	}
+@media screen and (max-width: 768px){
 	.content-list_info {
 		padding: 0;
 		display: block;
