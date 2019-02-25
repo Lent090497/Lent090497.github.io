@@ -28,12 +28,11 @@ body{
 	width: 100%;
 }
 .content{
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 	display: block;
 	overflow: hidden;
-	padding-bottom: 10%;
-	margin-top: -10px;
+	padding-bottom: 5%;
 }
 
 .content-title{
@@ -41,7 +40,7 @@ body{
 	text-align: center;
 	padding-top: 40px;
 }
-.content_title{
+.text_title{
 	font-size: 24px;
 	text-align: center;
 	padding: 10px 0;
@@ -54,7 +53,7 @@ body{
 	font-size: 24px;
 }
 .box-grey{
-	padding: 10px 5%;
+	padding: 2.5% 5%;
 	font-size: 14px;
 	background-color: #cccccc;
 }
@@ -81,7 +80,7 @@ body{
 .btn{
 	width: 50%;
 	margin: 0 23px;
-	padding-bottom: 5%;
+	padding-bottom: 6%;
 }
 .btn-sp{
 	display: none;
