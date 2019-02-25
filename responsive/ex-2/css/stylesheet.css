@@ -6,7 +6,7 @@ body{
 }
 .container{
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 100%;
 	min-width: 640px;
 	height: auto;
 	overflow: hidden;
@@ -26,6 +26,7 @@ body{
 	width: 100%;
 }
 .content{
+	width: 80%;
 	margin: 0 auto;
 	display: block;
 	overflow: hidden;
@@ -47,7 +48,7 @@ body{
 	
 }
 .box-grey{
-	padding: 10px 25px;
+	padding: 10px 5%;
 	background-color: #cccccc;
 }
 .border{
@@ -101,6 +102,7 @@ ul{
 	.box-grey{
 		width: 100%;
 		text-align: center;
+		padding: 10px 0;
 	}
 	.btn-pc{
 		display: none;
