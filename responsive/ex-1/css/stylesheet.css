@@ -22,7 +22,7 @@ body{
 }
 .content-wrap{
 	background-image: url(../images/bg-inner.jpg);
-	padding-bottom: 13.7%;
+	padding-bottom: 20%;
 }
 .content-header{
 	width: 100%;
@@ -74,6 +74,7 @@ body{
 .content-chat2-left{
 	width: 50%;
 	padding-left: 2%;
+	padding-right: 1%;
 }
 .content-chat2-right{
 	width: 50%;
@@ -107,13 +108,13 @@ body{
 }
 .content-chat{
 	display: flex;
-	padding: 5px 0;
 	margin-left: 20px;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 .content-chat-left_man{
 	padding-right: 45px;
 	padding-left: 20px;
+	padding-bottom: 10px;
 }
 .content-chat-right_man{
 	padding-right: 80px;
@@ -151,6 +152,7 @@ img{
 	float: right;
 }
 .border{
+	width: 100%;
 	border-bottom: 1px solid #008098;
 }
 .border:before{
