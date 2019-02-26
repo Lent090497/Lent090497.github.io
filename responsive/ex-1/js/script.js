@@ -79,8 +79,4 @@ $(document).ready(function() {
 			$('.content-chat2-left').css('display','block');
 			$('.content-chat2-right').css('display','block');
 		}
-		else{
-			$('.content-chat2-left').css('display','none');
-			$('.content-chat2-right').css('display','block');
-		}
 	});
