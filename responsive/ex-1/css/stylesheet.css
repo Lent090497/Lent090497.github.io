@@ -9,6 +9,7 @@ body{
 .container{
 	min-width: 768px;
 	max-width: 1280px;
+	justify-content: center;
 	height: auto;
 	margin: 0 auto;
 }
@@ -21,7 +22,7 @@ body{
 }
 .content-wrap{
 	background-image: url(../images/bg-inner.jpg);
-	padding-bottom: 20%;
+	padding-bottom: 14.8%;
 }
 .content-header{
 	width: 100%;
@@ -29,9 +30,6 @@ body{
 	background: #a8aaaa;
 	background: rgba(255,255,255,0.5);
 	display: flex;
-}
-.content-header img{
-	width: 100%;
 }
 .content-header ul{
 	position: absolute;
@@ -287,9 +285,6 @@ input[type='checkbox']:checked + label:after{
 	background: url(../images/checked.jpg) left top no-repeat;
 }
 @media only screen and (max-width: 768px){
-	.content-wrap{
-		background: url(../images/bg_sp.png);
-	}
 	.content-chat{
 		padding-right: 0;
 	}
@@ -359,6 +354,7 @@ input[type='checkbox']:checked + label:after{
 		height: 70px;
 	}
 	.content-wrap{
+		background: url(../images/bg_sp.png);
 		padding-bottom: 0;
 	}
 	.content-header ul{

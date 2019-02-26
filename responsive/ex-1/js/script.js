@@ -64,17 +64,6 @@ $(document).ready(function() {
 			changeChat2();
 		}
 	});
-	$(window).resize(function(event) {
-		/* Act on the event */
-		if($(document).width()>800){
-			$('.content-chat2-left').css('display','block');
-			$('.content-chat2-right').css('display','block');
-		}
-		else{
-			$('.content-chat2-left').css('display','none');
-			$('.content-chat2-right').css('display','block');
-		}
-	});
 	function changeChat2(){
 		$('.js-content-chat2-left').css('display','none');
 		$('.js-content-chat2-right').css('display','block');
@@ -84,3 +73,14 @@ $(document).ready(function() {
 		$('.js-content-chat2-right').css('display','none');
 	}
 });
+	$(window).resize(function(event) {
+		/* Act on the event */
+		if($(document).width()>=1280){
+			$('.content-chat2-left').css('display','block');
+			$('.content-chat2-right').css('display','block');
+		}
+		else{
+			$('.content-chat2-left').css('display','none');
+			$('.content-chat2-right').css('display','block');
+		}
+	});
