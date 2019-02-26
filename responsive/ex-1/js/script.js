@@ -31,7 +31,8 @@ $(document).ready(function() {
 			$('#js-locate2').attr({
 				'src':'images/pic-man-smile.png'
 			})
-			changeChat1();
+			$('.content-chat2-left').show();
+			$('.content-chat2-right').hide();
 		}
 		else{
 			$(this).attr({
@@ -40,7 +41,8 @@ $(document).ready(function() {
 			$('#js-locate2').attr({
 				'src':'images/pic-man-sad.png'
 			})
-			changeChat2();
+			$('.content-chat2-left').hide();
+			$('.content-chat2-right').show();
 		}
 	});
 	//event locate2 click
@@ -52,7 +54,8 @@ $(document).ready(function() {
 			$('#js-locate1').attr({
 				'src':'images/pic-man-smile.png'
 			})
-			changeChat1();
+			$('.content-chat2-left').hide();
+			$('.content-chat2-right').show();
 		}
 		else{
 			$(this).attr({
@@ -61,22 +64,19 @@ $(document).ready(function() {
 			$('#js-locate1').attr({
 				'src':'images/pic-man-sad.png'
 			})
-			changeChat2();
+			$('.content-chat2-left').show();
+			$('.content-chat2-right').hide();
 		}
 	});
-	function changeChat2(){
-		$('.js-content-chat2-left').css('display','none');
-		$('.js-content-chat2-right').css('display','block');
-	}
-	function changeChat1(){
-		$('.js-content-chat2-left').css('display','block');
-		$('.js-content-chat2-right').css('display','none');
-	}
 });
 	$(window).resize(function(event) {
 		/* Act on the event */
-		if($(document).width()>=1280){
-			$('.content-chat2-left').css('display','block');
-			$('.content-chat2-right').css('display','block');
+		if($(document).width()>=1000){
+			$('.content-chat2-left').show();
+			$('.content-chat2-right').show();
+		}
+		else{
+			$('.content-chat2-left').show();
+			$('.content-chat2-right').hide();
 		}
 	});
