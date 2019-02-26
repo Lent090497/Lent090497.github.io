@@ -41,11 +41,11 @@ body{
 .content-header_sound {
 	padding: 1% 0;
 	padding-left: 45%;
-	margin-bottom: -1.4%;
+	margin-bottom: -1%;
 }
 .content-sticker{
 	height: 100px;
-	margin-top: 3%;
+	margin-top: 3.8%;
 	margin-bottom: 2%;
 	background: url(../images/sticker.png) no-repeat center;
 	width: 100%;
@@ -55,7 +55,7 @@ body{
 	float: left;
 }
 .content-chat1_woman{
-	padding-left: 19%;
+	padding-left: 18%;
 	display: flex;
 	padding-right: 18%;
 	float: left;
@@ -202,6 +202,9 @@ img{
 	position: absolute;
 	top: 35%;
 }
+.text2{
+	padding: 1% 0;
+}
 .text{
 	padding: 3% 0;
 }
@@ -273,7 +276,6 @@ label{
 	margin-right: 20px;
 }
 label:after{
-	position: absolute;
 	content: "";
 	width: 13px;
 	height: 12px;
