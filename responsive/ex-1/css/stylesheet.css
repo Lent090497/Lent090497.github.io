@@ -86,11 +86,12 @@ body{
 	display: flex;
     position: relative;
     float: right;
-    margin-right: 3%;
+    margin-right: 5%;
     padding: 1% 0;
 }
 .content-chat2_icon{
 	position: relative;
+	margin-left: 20px;
 	display: none;
 }
 .content-chat2_icon img{
@@ -109,12 +110,12 @@ body{
 	margin-right: 10px;
 }
 .content-chat-left_man{
-	padding-right: 45px;
+	padding-right: 40px;
 	padding-left: 20px;
 	padding-bottom: 10px;
 }
 .content-chat-right_man{
-	padding-right: 80px;
+	padding-right: 75px;
 	padding-left: 20px;
 }
 .content-footer_sp{
@@ -173,19 +174,28 @@ img{
 	margin-left: 22%;
 	float: left;
 }
-
-.icon{
+.icon_woman{
 	display: block;
 	position: relative;
+	margin-right: 70px;
 }
-.icon img{
+.icon_woman img{
+	position: absolute;
+	bottom: 0;
+}
+.icon_man{
+	display: block;
+	position: relative;
+	margin-left: 20px;
+}
+.icon_man img{
 	position: absolute;
 	bottom: 0;
 }
 .icon1{
 	display: none;
 	position: relative;
-	padding-right: 60px;
+	margin-right: 70px;
 }
 .icon1 img{
 	position: absolute;
@@ -227,7 +237,6 @@ img{
 	background-color: #fee8d2;
 	border-radius: 3%;
 	position: relative;
-	margin-left: 70px;
 }
 .box-chatwoman:before{
 	position: absolute;
@@ -242,7 +251,6 @@ img{
 	position: relative;
 	background-color: #e2f3f2;
 	border-radius: 3%;
-	margin-right: 20px;
 }
 .box-chatman:after{
 	position: absolute;
