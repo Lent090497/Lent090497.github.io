@@ -9,8 +9,8 @@ body{
 }
 .container{
 	max-width: 1200px;
-	min-width: 640px;
-	width: 1200px;
+	min-width: 768px;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
 }
@@ -29,6 +29,7 @@ body{
 	border-radius: 15px;
 	background-image: url(../images/image/duck_01.png);
 	background-repeat: no-repeat;
+	padding-bottom: 5%;
 }
 .content-case_box2_pc{
 	height: auto;
@@ -100,6 +101,7 @@ body{
 	padding-left: 10%;
 	padding-top: 20%;
 	overflow: hidden;
+	padding-right: 44%;
 }
 .text-sp{
 	text-align: justify;
@@ -127,7 +129,16 @@ body{
 	display: none;
 }
 .content-wrap-btn1{
+	width: 100%;
 	display: flex;
+	background: url(../images/image/06_bg.png);
+}
+.content-wrap-btn1 a{
+	width: 50%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .content-wrap img{
 	margin: -10px 0;
@@ -208,7 +219,7 @@ ul{
 	display: flex;
 	padding-left: 0;
 }
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 768px){
 	.text-pc{
 		padding-right: 50%;
 		font-size: 16px;
@@ -276,12 +287,9 @@ ul{
 		display: block;
 	}
 	.content-case{
-		padding-top: 20%;
+		padding-top: 25%;
 		padding-left:7%;
 		padding-bottom: 30px;
-	}
-	.container{
-		width: 760px;
 	}
 	.text1{
 		padding-left: 8%;
