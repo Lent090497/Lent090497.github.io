@@ -71,7 +71,7 @@ $(document).ready(function() {
 });
 	$(window).resize(function(event) {
 		/* Act on the event */
-		if($(document).width()>=1000){
+		if($(document).width()>=769){
 			$('.content-chat2-left').show();
 			$('.content-chat2-right').show();
 		}

@@ -1,6 +1,6 @@
 body{
 	font-family: 'Kozuka Gothic Pro', serif;
-	font-size: 17px;
+	font-weight: 300;
 }
 *{
 	margin: 0;
@@ -12,7 +12,7 @@ body{
 	margin: 0 auto;
 }
 .content{
-	width: 68%;
+	width: 96%;
 	margin: 0 auto;
 	margin-top: -0.7%;
 	line-height: 25px;
@@ -24,13 +24,17 @@ body{
 	width: 100%;
 }
 .content-chat1{
+	width: 100%;
 	float: left;
 }
 .content-wrap{
 	background-image: url(../images/bg-inner.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-bottom: 14.8%;
+
+}
+.content-wrap-chat{
+	padding: 0 2em;
 }
 .content-header{
 	width: 100%;
@@ -57,103 +61,90 @@ body{
 	width: 100%;
 }
 .content-chat1_woman{
-	padding-left: 18%;
+	width: 100%;
 	display: flex;
-	padding-right: 18%;
 	float: left;
 }
 .content-chat1_man{
+	width: 100%;
 	display: flex;
-	float: right;
-	padding: 1% 0;
-	padding-right: 15.2%;
+	padding: 1em 0;
 }
 .content-chat2{
 	width: 100%;
 	display: flex;
+	padding-bottom: 0.5em;
 }
 .content-chat2-left{
-	width: 50%;
-	padding-left: 2%;
-	padding-right: 1%;
+	width: 100%;
 }
 .content-chat2-right{
-	width: 50%;
-	padding-right: 8%;
+	width: 100%;
+	display: none;
 }
 .content-chat2_woman{
 	width: 100%;
 	display: flex;
-	padding: 1% 0;
+	padding: 0.5em 0;
 }
 .content-chat2-right_woman{
+	width: 100%;
 	display: flex;
     position: relative;
-    float: right;
-    margin-right: 5%;
-    padding: 1% 0;
+    float: left;
+    padding: 0.5em 0;
 }
-.content-chat2_icon{
-	position: relative;
-	margin-left: 20px;
-	display: none;
-}
-.content-chat2_icon img{
-	position: absolute;
-	bottom: 0;
-}
-.content-chat2_man{
+.content-chat2_man,
+.content-chat2-right_man{
+	width: 100%;
 	display: flex;
 	position: relative;
 	float: right;
-	padding: 1% 0;
+	padding: 0.5em 0;
 }
 .content-chat{
 	display: flex;
-	margin-left: 20px;
-	margin-right: 10px;
+	margin-left: 2em;
+	margin-right: 1em;
 }
 .content-chat-left_man{
-	padding-right: 40px;
-	padding-left: 20px;
-	padding-bottom: 10px;
+	padding-right: 3em;
+	padding-left: 2em;
+	padding-bottom: 1em;
 }
 .content-chat-right_man{
 	padding-right: 75px;
 	padding-left: 20px;
 }
 .content-footer_sp{
-    padding-top: 40px;
-	display: none;
+    padding-top: 2em;
+    padding-bottom: 3em;
+	display: flex;
 }
 .content-footer_pc{
-	display: flex;
+	display: none;
 	padding: 20px 0;
 }
 img{
 	cursor: pointer;
 }
 .btn{
-	width: 67%;
-	padding: 0 5%;
+	width: 50%;
 }
 .pre{
-	width: 15%;
-	padding-left: 10px;
-	padding-top: 10px;
+	width: 30%;
+	padding-top: 1em;
 	float: left;
 }
 
 .next{
-	width: 15%;
-	padding-top: 10px;
-	padding-right: 10px;
+	width: 20%;
+	padding-top: 1em;
 	float: right;
 }
 .next img{
-	
 	float: right;
-}
+} 
 .border{
 	width: 100%;
 	border-bottom: 1px solid #008098;
@@ -165,42 +156,45 @@ img{
 
 }
 .icon-feel{
+	display: flex;
 	width: 100%;
-	display: none;
 }
 .icon-feel_left, .icon-feel_right{
 	width: 50%;
 }
 .icon-feel_left img{
-	margin-right: 20%;
+	margin-right: 5em;
 	float: right;
 }
 .icon-feel_right img{
-	margin-left: 22%;
+	margin-left: 7em;
 	float: left;
 }
-.icon_woman{
+.icon_woman,
+.content-chat2_woman_icon{
+	width: 10%;
 	display: block;
 	position: relative;
-	margin-right: 70px;
 }
-.icon_woman img{
+.icon_woman img,
+.content-chat2_woman_icon img{
 	position: absolute;
 	bottom: 0;
 }
-.icon_man{
+.icon_man, 
+.content-chat2_icon{
 	display: block;
 	position: relative;
-	margin-left: 20px;
+	padding-left: 0.8em;
 }
-.icon_man img{
+.icon_man img, 
+.content-chat2_icon img{
 	position: absolute;
 	bottom: 0;
 }
 .icon1{
-	display: none;
+	width: 10%;
 	position: relative;
-	margin-right: 70px;
 }
 .icon1 img{
 	position: absolute;
@@ -237,7 +231,7 @@ img{
 	padding-left: 50%;
 }
 .box-chatwoman{
-	width: auto;
+	width: 90%;
 	height: auto;
 	background-color: #fee8d2;
 	border-radius: 3%;
@@ -252,6 +246,7 @@ img{
 	left: -10px;
 }
 .box-chatman{
+	width: 90%;
 	height: auto;
 	position: relative;
 	background-color: #e2f3f2;
@@ -270,7 +265,6 @@ img{
 }
 ul{
 	list-style-type: none;
-	display: flex;
 }
 li span{
 	color: #008098;
@@ -281,10 +275,9 @@ input[type='checkbox']{
 }
 label{
 	font-size: 14px;
-	display: inline-block;
 	cursor: pointer;
 	position: relative;
-	margin-right: 20px;
+	margin-right: 2em;
 }
 label:after{
 	content: "";
@@ -292,135 +285,125 @@ label:after{
 	height: 12px;
 	margin-left: 13px;
 	display: inline-block;
-	background: url(../images/no_checked.jpg) left top no-repeat;
+	background: url(../images/checked.jpg) left top no-repeat;
 }
 
 input[type='checkbox']:checked + label:after{
-	background: url(../images/checked.jpg) left top no-repeat;
+	background: url(../images/no_checked.jpg) left top no-repeat;
 }
-@media only screen and (max-width: 475px){
-	
-	.arrow img{
-		margin-left: 1%;
-	}
-	.container{
-		min-width: 375px;
-	}
-	.icon_woman, .icon1{
-		margin-right: 10%;
-	}
-	.icon_man{
-		margin-left: 0;
-	}
-	.content-chat2_icon{
-		margin-left: 0;
-	}
+@media only screen and (min-width: 769px){
 	.content-chat1_woman{
-		padding-left: 0;
+		width: auto;
+		padding-left: 16%;
+		padding-right: 15%;
 	}
-	.content{
-		width: 100%;
+	.btn{
+		padding-left: 6em;
 	}
-	.icon-feel_right img{
-		float: left;
-		padding: 0 5px;
-	}
-	.icon-feel_left img{
-		float: right;
-		padding: 0 5px;
-	}
-	.box-chatwoman{
-		margin-left: 20px;
-	}
-	.box-chatman{
-		margin-right: 10px;
-	}
-}
-@media only screen and (max-width: 768px){
 	.pre, .next{
-		padding: 0;
-	}
-	.next img, .pre img, .btn img{
-		width: 100%;
-	}
-	.content-chat{
-		padding-right: 0;
-	}
-	.footer{
-		display: none;
-	}
-	.box-chatman{
-		margin-left: 10px;
-		width: 79%;
-	}
-	.box-chatwoman{
-		width: 100%;
-		margin-right: 10px;
-	}
-	.icon1{
-		display: flex;
-	}
-	.text{
-		line-height: 20px;
-	}
-	.content-chat1_woman{
-		padding-left: 10px;
-		padding-right: 0;
-	}
-	.content-chat1_man{
-		width: 100%;
-		padding-right: 0;
-	}
-	.icon-feel{
-		display: flex;
-	}
-	.content-chat-right_man, .content-chat-left_man{
-		padding-left: 20%; 	
-	}
-	
-	.content-chat2-left{
-		display: none;
-		width: 100%;
-	}
-	.content-chat2-right{
-		width: 100%;
-		padding-right: 0;
-	}
-	.content-chat2_icon{
-		display: block;
-	}
-	.content-chat2_man{
-		width: 100%;
-	}
-	.content-chat2-right_man{
-		width: 100%;
-		padding-right: 0;
-	}
-	.content-chat2-right_woman{
-		width: 100%;
-		padding-left: 0;
-		float: left;
-	}
-	.content-header{
-		height: 70px;
-	}
-	.content-wrap{
-		background: url(../images/bg_sp.png);
-		padding-bottom: 0;
-	}
-	.content-header ul{
 		padding-top: 0;
 	}
-	ul{
-		display: block;
-	}
-	.content-header span{
-		margin-left: -5px;
-	}
 	.content-footer_sp{
-		display: flex;
-	}
-	.content-footer_pc{
 		display: none;
 	}
+	.content-footer_pc{
+		display: flex;
+	}
+	.content-chat2-right_man{
+		width: auto;
+		padding-right: 3em;
+		padding-top: 0.2em;
+	}
+	.content-chat2_man{
+		width: auto;
+		padding-top: 0.2em;
+	}
+	.content{
+		width: 68%;
+	}
+	.icon_woman,
+	.content-chat2_woman_icon{
+		width: auto;
+		margin-right: 4em;
+	}
+	.icon1{
+		display: none;
+	}
+	.content-chat2_woman{
+		padding-top: 0.2em;
+	}
+	.content-chat2-right_woman{
+		width: auto;
+		float: right;
+		padding-top: 0.2em;
+		padding-right: 3.7em;
+	}
+	.icon-feel{
+		display: none;
+	}
+	.content-chat2-left, .content-chat2-right{
+		display: block;
+	}
+	.content-chat2-left{
+		padding-right: 3.6em;
+	}
+	.content-chat2_icon{
+		display: none;
+	 }
+	.icon_man{
+		width: auto;
+		padding-left: 0.7em;
+	}
+	.content-chat1_man{
+		width: auto;
+		float: right;
+		padding: 0.4em 0;
+		margin-right: 7em;
+	}
+	.box-chatwoman, .box-chatman{
+		width: auto;
+	}
+	.content-header ul{
+		display: flex;
+	}
+	.content-wrap-chat{
+		padding: 0 1.5em;
+		padding-bottom: 7em;
+	}
 }
+@media only screen and (max-width: 475px){
+	.container{
+		min-width: 320px; 
+	}
+	.content-chat2_woman_icon,
+	.icon_woman,
+	.icon1{
+		width: 20%;
+	}
+	.icon-feel_right img{
+		margin-left: 2em;
+	}
+	.icon-feel_left img{
+		margin-right: 2em;
+	}
+	.next, .pre{
+		width: 20%;
+		padding-top: 0.1em;
+	}
+	.btn{
+		width: 80%;
+	}
+	.btn img{
+		width: 100%;
+	}
+	.content-wrap-chat{
+		padding: 0 0.3em;
+	}
+	.icon_man, .content-chat2_icon{
+		width: 15%;
+	}
+	.box-chatman, .box-chatwoman{
+		width: 85%;
+	}
+}
+

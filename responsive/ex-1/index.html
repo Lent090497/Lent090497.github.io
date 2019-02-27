@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MARUGOTO</title>
-	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/stylesheet_pc.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
@@ -15,121 +13,29 @@
 				<img src="images/header_pc.png">		
 		</div>
 		<div class="content">
-			<img src="images/header_dow_pc.png">
+			<div class="content-header_logo">
+				<img src="images/header_dow_pc.png">
+			</div>
 			<div class="content-wrap">
 				<div class="content-header">
-					<div class="content-header_sound">
-						<img src="images/icon-voice-all.png">
-					</div>
-					<ul>
-						<li><p>
-							<input type="checkbox" id="js-check1" checked="checked">
-							<label for="js-check1" id="js-label1"><span></span>日本語</label>
-						</p></li>
-						<li><p>
-							<input type="checkbox" id="js-check2" checked="checked">
-							<label for="js-check2" id="js-label2"><span>English</span></label>
-						</p></li>
-					</ul>
+						<div class="content-header_sound">
+							<img src="images/icon-voice-all.png">
+						</div>
+						<ul>
+							<li>
+								<label for="js-check1" id="js-label1">日本語</label>
+								<input type="checkbox" id="js-check1" checked="checked">
+							</li>
+							<li>
+								<label for="js-check2" id="js-label2"><span>English</span></label>
+								<input type="checkbox" id="js-check2" checked="checked">
+							</li>
+						</ul>
 				</div>
 				<div class="content-sticker"></div>
-				<div class="content-chat1">
-					<div class="content-chat1_woman">
-						<div class="icon_woman">
-							<img src="images/icon-woman.png">
-						</div>
-						<div class="box-chatwoman">
-							<div class="content-chat">
-								<div class="iconsound">
-									<img src="images/icon-sound.png">
-								</div>
-								<div class="text">
-									<p class="js-textJ"><span>エドワードさん</span>、すみません</p>
-									<p class="textE js-textE">dummy dummy dummy dummy dummy</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="content-chat1_man">
-						<div class="box-chatman">
-							<div class="content-chat">
-								<div class="iconsound">
-									<img src="images/icon-sound.png">
-								</div>
-								<div class="text">
-									<p class="js-textJ">はい、<ruby>何<rt>なん</rt></ruby>ですか。</p>
-									<p class="textE js-textE">dummy dummy dummy dummy</p>
-								</div>
-							</div>
-						</div>
-						<div class="icon_man">	
-							<img src="images/icon-man.png">
-						</div>
-					</div>
-					
-					<div class="content-chat1_woman">
-						<div class="icon_woman">
-							<img src="images/icon-woman.png">
-						</div>
-						<div class="box-chatwoman">
-							<div class="content-chat">
-								<div class="iconsound">
-									<img src="images/icon-sound.png">
-								</div>
-								<div class="text2">
-									<p class="js-textJ"><ruby>今<rt>いま</rt></ruby>、日本まつりで <br>
-									<span>ヨサコイが おしえられる<ruby>人<rt>ひと</rt></ruby></span> をさがしてるんですが…。<br>
-									おねがいできませんか。</p>
-									<p class="textE js-textE">dummy dummy dummy dummy dummy dummy dummy
-									dummy dummy  dummy dummy dummy dummy</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="arrow">
-				</div>
-				<div class="icon-feel">
-					<div class="icon-feel_left">
-						<img src="images/pic-man-smile.png" id="js-locate1">
-					</div>
-					<div class="icon-feel_right">
-						<img src="images/pic-man-sad.png" id="js-locate2">
-					</div>
-				</div>
-				<div class="content-chat2">
-					<div class="content-chat2-left js-content-chat2-left">
-						<div class="content-chat2_man">
-							<div class="box-chatman">
-								<div class="content-chat">
-									<div class="iconsound">
-										<img src="images/icon-sound.png">
-									</div>
-									<div class="text">
-										<p class="js-textJ"><span>ヨサコイ</span> ですか。いいですよ。</p>
-										<p class="textE js-textE">dummy dummy dummy dummy</p>
-									</div>
-								</div>
-							</div>
-							<div class="content-chat2_icon">
-								<img src="images/icon-man.png">
-							</div>
-						</div>
-						<div class="content-chat2_man">
-							<div class="box-chatman">
-								<div class="content-chat-left_man">
-									<div class="text">
-										<p class="js-textJ">はじめてですが、やってみます。</p>
-										<p class="textE js-textE">dummy dummy dummy dummy</p>
-									</div>
-								</div>
-							</div>
-							<div class="content-chat2_icon">
-								<img src="images/icon-man.png">
-							</div>
-						</div>
-						<div class="content-chat2_woman">
+				<div class="content-wrap-chat">
+					<div class="content-chat1">
+						<div class="content-chat1_woman">
 							<div class="icon_woman">
 								<img src="images/icon-woman.png">
 							</div>
@@ -139,69 +45,32 @@
 										<img src="images/icon-sound.png">
 									</div>
 									<div class="text">
-										<p class="js-textJ">ありがとうございます。<br>よろしく おねがいします。</p>
-										<p class="textE js-textE">dummy dummy dummy </p>
+										<p class="js-textJ"><span>エドワードさん</span>、すみません</p>
+										<p class="textE js-textE">dummy dummy dummy dummy dummy</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="content-chat2_man">
-							<div class="box-chatman">
-								<div class="content-chat-right_man">
-									<div class="text">
-										<p class="js-textJ">こちらこそ。</p>
-										<p class="textE js-textE">dummy dummy dummy dummy</p>
-									</div>
-								</div>
-							</div>
-							<div class="content-chat2_icon">
-								<img src="images/icon-man.png">
-							</div>
-						</div>
-					</div>
-					<div class="content-chat2-right js-content-chat2-right">
-						<div class="content-chat2_man">
+						
+						<div class="content-chat1_man">
 							<div class="box-chatman">
 								<div class="content-chat">
 									<div class="iconsound">
 										<img src="images/icon-sound.png">
 									</div>
-									<div class="border">
-										<div class="text">
-											<p class="js-textJ">じしん、ありません。<br>すみません。</p>
-											<p class="textE js-textE">dummy dummy dummy dummy</p>
-										</div>
-									</div>
-								</div>
-								<div class="content-chat">
-									<div class="iconsound">
-										<img src="images/icon-sound.png">
-									</div>
-									<div class="text2">
-										<p class="js-textJ">その <ruby>日<rt>ひ</rt></ruby>は つごうが わるいです。</p>
-										<p class="textE js-textE">dummy dummy dummy dummy</p>
-									</div>
-								</div>
-							</div>
-							<div class="icon_man">
-								<img src="images/icon-man.png">
-							</div>
-						</div>
-						<div class="content-chat2_man">
-							<div class="box-chatman">
-								<div class="content-chat-right_man">
 									<div class="text">
-										<p class="js-textJ">こちらこそ。</p>
+										<p class="js-textJ">はい、<ruby>何<rt>なん</rt></ruby>ですか。</p>
 										<p class="textE js-textE">dummy dummy dummy dummy</p>
 									</div>
 								</div>
 							</div>
-							<div class="icon_man">
+							<div class="icon_man">	
 								<img src="images/icon-man.png">
 							</div>
 						</div>
-						<div class="content-chat2-right_woman">
-							<div class="icon1">
+						
+						<div class="content-chat1_woman">
+							<div class="icon_woman">
 								<img src="images/icon-woman.png">
 							</div>
 							<div class="box-chatwoman">
@@ -209,27 +78,165 @@
 									<div class="iconsound">
 										<img src="images/icon-sound.png">
 									</div>
-									<div class="text">
-										<p class="js-textJ">そうですか。ざんねんです。</p>
-										<p class="textE js-textE">dummy dummy dummy</p>
+									<div class="text2">
+										<p class="js-textJ"><ruby>今<rt>いま</rt></ruby>、日本まつりで <br>
+										<span>ヨサコイが おしえられる<ruby>人<rt>ひと</rt></ruby></span> をさがしてるんですが…。<br>
+										おねがいできませんか。</p>
+										<p class="textE js-textE">dummy dummy dummy dummy dummy dummy dummy
+										dummy dummy  dummy dummy dummy dummy</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="arrow">
+						<picture>
+							<source srcset="images/pic-arow-sp.png" media="(max-width: 768px)">
+							<source srcset="images/arrow.png" media="(min-width:768px)" >
+							<img src="images/pic-arow-sp.png">
+						</picture>
+					</div>
+					<div class="icon-feel">
+						<div class="icon-feel_left">
+							<img src="images/pic-man-smile.png" id="js-locate1">
+						</div>
+						<div class="icon-feel_right">
+							<img src="images/pic-man-sad.png" id="js-locate2">
+						</div>
+					</div>
+					<div class="content-chat2">
+						<div class="content-chat2-left js-content-chat2-left">
+							<div class="content-chat2_man">
+								<div class="box-chatman">
+									<div class="content-chat">
+										<div class="iconsound">
+											<img src="images/icon-sound.png">
+										</div>
+										<div class="text">
+											<p class="js-textJ"><span>ヨサコイ</span> ですか。いいですよ。</p>
+											<p class="textE js-textE">dummy dummy dummy dummy</p>
+										</div>
+									</div>
+								</div>
+								<div class="content-chat2_icon">
+									<img src="images/icon-man.png">
+								</div>
+							</div>
+							<div class="content-chat2_man">
+								<div class="box-chatman">
+									<div class="content-chat-left_man">
+										<div class="text">
+											<p class="js-textJ">はじめてですが、やってみます。</p>
+											<p class="textE js-textE">dummy dummy dummy dummy</p>
+										</div>
+									</div>
+								</div>
+								<div class="content-chat2_icon">
+									<img src="images/icon-man.png">
+								</div>
+							</div>
+							<div class="content-chat2_woman">
+								<div class="content-chat2_woman_icon">
+									<img src="images/icon-woman.png">
+								</div>
+								<div class="box-chatwoman">
+									<div class="content-chat">
+										<div class="iconsound">
+											<img src="images/icon-sound.png">
+										</div>
+										<div class="text">
+											<p class="js-textJ">ありがとうございます。<br>よろしく おねがいします。</p>
+											<p class="textE js-textE">dummy dummy dummy </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-chat2_man">
+								<div class="box-chatman">
+									<div class="content-chat-right_man">
+										<div class="text">
+											<p class="js-textJ">こちらこそ。</p>
+											<p class="textE js-textE">dummy dummy dummy dummy</p>
+										</div>
+									</div>
+								</div>
+								<div class="content-chat2_icon">
+									<img src="images/icon-man.png">
+								</div>
+							</div>
+						</div>
+						<div class="content-chat2-right js-content-chat2-right">
+							<div class="content-chat2-right_man">
+								<div class="box-chatman">
+									<div class="content-chat">
+										<div class="iconsound">
+											<img src="images/icon-sound.png">
+										</div>
+										<div class="border">
+											<div class="text">
+												<p class="js-textJ">じしん、ありません。<br>すみません。</p>
+												<p class="textE js-textE">dummy dummy dummy dummy</p>
+											</div>
+										</div>
+									</div>
+									<div class="content-chat">
+										<div class="iconsound">
+											<img src="images/icon-sound.png">
+										</div>
+										<div class="text2">
+											<p class="js-textJ">その <ruby>日<rt>ひ</rt></ruby>は つごうが わるいです。</p>
+											<p class="textE js-textE">dummy dummy dummy dummy</p>
+										</div>
+									</div>
+								</div>
+								<div class="icon_man">
+									<img src="images/icon-man.png">
+								</div>
+							</div>
+							<div class="content-chat2-right_man">
+								<div class="box-chatman">
+									<div class="content-chat-right_man">
+										<div class="text">
+											<p class="js-textJ">こちらこそ。</p>
+											<p class="textE js-textE">dummy dummy dummy dummy</p>
+										</div>
+									</div>
+								</div>
+								<div class="icon_man">
+									<img src="images/icon-man.png">
+								</div>
+							</div>
+							<div class="content-chat2-right_woman">
+								<div class="icon1">
+									<img src="images/icon-woman.png">
+								</div>
+								<div class="box-chatwoman">
+									<div class="content-chat">
+										<div class="iconsound">
+											<img src="images/icon-sound.png">
+										</div>
+										<div class="text">
+											<p class="js-textJ">そうですか。ざんねんです。</p>
+											<p class="textE js-textE">dummy dummy dummy</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="content-footer_sp">
-					<div class="pre">
-						<a href="#"><img src="images/btn-pre-sp.png"></a>
-					</div>
-					<div class="btn">
-						<a href="#"><img src="images/btn-sp.png"></a>
-					</div>
-					<div class="next">
-						<a href="#"><img src="images/btn-next-sp.png"></a>
-					</div>
-				</div>
 			</div>
+			<div class="content-footer_sp">
+						<div class="pre">
+							<a href="#"><img src="images/btn-pre-sp.png"></a>
+						</div>
+						<div class="btn">
+							<a href="#"><img src="images/btn-sp.png"></a>
+						</div>
+						<div class="next">
+							<a href="#"><img src="images/btn-next-sp.png"></a>
+						</div>
+					</div>
 			<div class="content-footer_pc">
 				<div class="pre">
 					<a href="#"><img src="images/btn-pre-pc.jpg"></a>
