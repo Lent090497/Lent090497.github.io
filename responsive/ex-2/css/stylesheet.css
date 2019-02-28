@@ -1,5 +1,6 @@
 body{
-	font-size: 17px;
+	font-family: 'Hirakaku Pro W3', serif;
+	font-weight: 330;
 }
 *{
 	margin: 0;
@@ -7,11 +8,8 @@ body{
 }
 .container{
 	margin: 0 auto;
-	width: 1280px;
 	max-width: 1280px;
-	min-width: 640px;
 	height: auto;
-	overflow: hidden;
 	box-sizing: border-box;
 }
 .container img{
@@ -99,6 +97,9 @@ ul{
 	list-style-type: none;
 }
 @media screen and (max-width: 768px){
+	.container{
+		min-width: 320px;
+	}
 	.content-list_info {
 		padding: 0;
 		display: block;
@@ -116,5 +117,6 @@ ul{
 	}
 	.info{
 		width: 100%;
+		padding: 0;
 	}
 }
