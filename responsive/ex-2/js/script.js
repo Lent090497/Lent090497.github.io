@@ -10,7 +10,7 @@ $(document).ready(function () {
            $('.js-content img').eq(0).attr('src','images/img_5.png');
            $('.js-content img').eq(2).attr('src','images/img_6.png');
            $('.js-box-grey').css('background','#330000');
-           $("html, body").animate({scrollTop:0},5000, function () {
+           $("html, body").stop().animate({scrollTop:0},5000, function () {
                setTimeout(function () {
                    $("html, body").css("overflow","auto");
                    $('p').css('color','black');
@@ -20,6 +20,7 @@ $(document).ready(function () {
                    $('.js-content img').eq(0).attr('src','images/img_1.png');
                    $('.js-content img').eq(2).attr('src','images/img_3.png');
                    $('.js-box-grey').css('background','#cccccc');
+                   $('body').css('overflow','hidden');
                },0);
            });
        }
