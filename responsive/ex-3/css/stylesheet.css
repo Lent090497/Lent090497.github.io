@@ -1,7 +1,6 @@
 body{
-	font-size: 12px;
 	font-family: 'Kozuka Gothic Pro', serif;
-}
+	font-weight: 330;
 }
 *{
 	margin: 0;
@@ -9,7 +8,6 @@ body{
 }
 .container{
 	max-width: 1200px;
-	min-width: 768px;
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
