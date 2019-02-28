@@ -12,6 +12,10 @@ body{
 	height: auto;
 	box-sizing: border-box;
 }
+.js-container{
+	background: #000000;
+	color: #990202;
+}
 .container img{
 	width: 100%;
 }
@@ -36,6 +40,12 @@ body{
 	font-size: 42px;
 	text-align: center;
 	padding-top: 40px;
+}
+.js-text_info{
+	color: #ffffff;
+}
+.text_btn{
+
 }
 .text_title{
 	font-size: 24px;
@@ -92,7 +102,7 @@ body{
 }
 a{
 	text-decoration: none;
-	color: black;
+	color: #000000;
 }
 ul{
 	list-style-type: none;

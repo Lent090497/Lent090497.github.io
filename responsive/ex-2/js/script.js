@@ -1,28 +1,29 @@
-$(document).ready(function () {
-   $(window).scroll(function () {   
-       if($(this).scrollTop() >= ($(document).height() - $(window).height())) {
-
-           $("html, body").stop();
-           $('p').css('color','red');
-           $('.js-container').css('background','black');
-           $('.js-border').css('border-top','1px solid #330000');
-           $('.js-header img').eq(2).attr('src','images/banner_2.jpg');
-           $('.js-content img').eq(0).attr('src','images/img_5.png');
-           $('.js-content img').eq(2).attr('src','images/img_6.png');
-           $('.js-box-grey').css('background','#330000');
-           $("html, body").stop().animate({scrollTop:0},5000, function () {
+$(window).scroll(function () {
+       if($(window).scrollTop() == ($(document).height() - $(window).height())) {
+          $("html, body").stop();
+          $('.container').addClass('js-container');
+          $('.text-info').addClass('js-text_info');
+          $('a').css('color','#990202');
+          $('.border').css('border-top','1px solid #700000');
+          $('.box-grey').css('background-color','#330000');
+          $('.js-header img').eq(2).attr({
+            'src': 'images/banner_horro.jpg'
+          })
+          $('.content-list img').eq(0).attr('src','images/img_1_horro.png');
+          $('.content-list img').eq(2).attr('src','images/img_3_horro.png');
+          $("html, body").animate({scrollTop:0},5000, function () {
                setTimeout(function () {
-                   $("html, body").css("overflow","auto");
-                   $('p').css('color','black');
-                   $('.js-container').css('background','none');
-                   $('.js-border').css('border-top','1px solid #000000');
-                   $('.js-header img').eq(2).attr('src','images/TOP_02.png');
-                   $('.js-content img').eq(0).attr('src','images/img_1.png');
-                   $('.js-content img').eq(2).attr('src','images/img_3.png');
-                   $('.js-box-grey').css('background','#cccccc');
-                   $('body').css('overflow','hidden');
+                $('.container').removeClass('js-container');
+                $('.text-info').removeClass('js-text_info');
+                $('a').css('color','#000000');
+                $('.border').css('border-top','1px solid #000000');
+                $('.box-grey').css('background-color','#cccccc');
+                $('.js-header img').eq(2).attr({
+                  'src': 'images/banner.png'
+                });
+                $('.content-list img').eq(0).attr('src','images/img_1.png');
+                $('.content-list img').eq(2).attr('src','images/img_3_horro.png');
                },0);
            });
        }
   })
-});
