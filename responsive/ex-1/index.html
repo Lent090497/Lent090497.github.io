@@ -10,7 +10,12 @@
 <body>
 	<div class="container">
 		<div class="header">
-				<img src="images/header_pc.png">		
+			<picture>
+				<source srcset="images/header_sp.png" media="(max-width: 768px)">
+				<source srcset="images/header_pc.png">
+				<img src="images/header_sp.png">
+			</picture>
+						
 		</div>
 		<div class="content">
 			<div class="content-header_logo">
@@ -23,11 +28,11 @@
 						</div>
 						<ul>
 							<li>
-								<label for="js-check1" id="js-label1">日本語</label>
+								日本語<label for="js-check1" id="js-label1"></label>
 								<input type="checkbox" id="js-check1" checked="checked">
 							</li>
 							<li>
-								<label for="js-check2" id="js-label2"><span>English</span></label>
+								<span>English</span><label for="js-check2" id="js-label2"></label>
 								<input type="checkbox" id="js-check2" checked="checked">
 							</li>
 						</ul>
