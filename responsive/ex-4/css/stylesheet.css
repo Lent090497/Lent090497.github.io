@@ -8,7 +8,6 @@ body{
 	padding: 0;
 }
 .container{
-	max-width: 1280px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -23,15 +22,6 @@ body{
 }
 .main{
 	width: 100%;
-}
-.main__top__left--text--pc{
-	display: none;
-	padding: 0.5em 0;
-}
-.main__top__left--text--sp{
-	display: block;
-	padding-top: 2em;
-	padding-bottom: 0.5em;
 }
 .main__share{
 	display: flex;
@@ -64,6 +54,14 @@ body{
 }
 .main__top{
 	display: flex;
+}
+.main__top__left h1{
+	display: none;
+}
+.main__top__left h2,h1{
+	color: #ffffff;
+	padding-top: 10%;
+	text-align: center;
 }
 .main__top__left{
 	width: 40.6%;
@@ -143,11 +141,11 @@ p{
 		padding: 2% 0;
 	}
 	.main__body__normal--pc,
-	.main__top__left--text--pc{
+	.main__top__left h1{
 		display: block;
 	}
 	.main__body__normal--sp,
-	.main__top__left--text--sp
+	.main__top__left h2
 	{
 		display: none;
 	}
