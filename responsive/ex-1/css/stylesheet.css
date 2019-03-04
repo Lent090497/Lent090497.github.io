@@ -45,9 +45,9 @@ body{
 	padding-top: 2%;
 }
 .content-header_sound {
-	padding: 1% 0;
-	padding-left: 45%;
-	margin-bottom: -1%;
+	display: block;
+	margin-left: 0;
+	margin-right: 0; 
 }
 .content-sticker{
 	height: 100px;

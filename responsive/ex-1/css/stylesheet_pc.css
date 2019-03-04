@@ -49,9 +49,12 @@ body{
 	padding-top: 2%;
 }
 .content-header_sound {
-	padding: 1% 0;
-	padding-left: 9em;
-	margin-bottom: -1%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+}
+.content-header_sound img{
+	margin-top: 0.5em;
 }
 .content-sticker{
 	height: 100px;

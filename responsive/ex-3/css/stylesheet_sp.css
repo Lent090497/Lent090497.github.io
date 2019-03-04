@@ -1,0 +1,252 @@
+body{
+	font-family: 'Kozuka Gothic Pro', serif;
+	font-weight: 330;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	max-width: 1200px;
+	min-width: 768px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.content-top{
+	background: url(../images/image/bg.png) no-repeat;
+	background-size: cover;
+}
+.content-btn_facebook{
+	padding-top: 2%;
+	padding-left: 20%;
+}
+.content-case_box1{
+	height: auto;
+	width: 100%;
+	background: url(../images/image/duck_sp_01.jpg);
+	background-size: cover;
+	border-radius: 2em;
+}
+.content-case_box2{
+	width: 100%;
+	background: url(../images/image/duck_sp_02.jpg);
+	background-size: cover;
+	border-radius: 2em;
+}
+.content-case_box3{
+	width: 100%;
+	background: url(../images/image/duck_sp_03.jpg);
+	background-size: cover;
+	border-radius: 2em;
+}
+.content-case_box4{
+	width: 100%;
+	border-radius: 15px;
+	background: url(../images/image/duck_sp_04.jpg) center;
+	background-size: cover;
+	border-radius: 2em;
+}
+.content-case_box{
+	padding: 0.5em 3em;
+}
+.content-case_pc{
+	padding: 0 5%;
+	margin-top: 10%;
+	display: none;
+}
+.content-case_sp{
+	width: 100%;
+	padding-top: 12em;
+}
+.content-case_pc ul{
+	margin-top: -4px;
+}
+.content-case-study_pc{
+	background-image: url(../images/image/img_sp_10.png);
+	background-size: cover;
+	padding-bottom: 5%;
+	margin-top: -10px;
+}
+.content-case-study_sp{
+	display: none;
+	background-image: url(../images/image/img_sp_10.png);
+	padding-top: 23%;
+	background-repeat: no-repeat;
+	margin-top: -10px;
+}
+.text-box13, .text-box24{
+	padding-left: 4em;
+	padding-top: 8em;
+	padding-right: 20em;
+	padding-bottom: 4em;
+	font-size: 1.1em
+}
+.text-box24{
+	padding-left: 20em;
+	padding-right: 4em;
+	padding-bottom: 6em;
+}
+.text1{
+	text-align: left;
+	color: #4d6eb1;
+	font-size: 1.54em;
+	padding: 0 2em;
+	padding-top: 11em;
+}
+.text2{
+	text-align: center;
+	padding: 2.4em 9.5em;
+	color: #4d6eb1;
+}
+.content_infoproduct_pc{
+	display: none;
+}
+.content_infoproduct_pc img{
+	width: 50%;
+}
+.content_infoproduct_sp1{
+	background: url(../images/image/09_sp_img.jpg) no-repeat;
+	background-size: cover;
+	padding: 0 6em;
+	padding-top: 25em;
+	padding-bottom: 3em;
+}
+.content_infoproduct_sp2{
+	background: url(../images/image/10_sp_img.jpg) no-repeat;
+	background-size: cover;
+	padding: 0 6em;
+	padding-top: 25em;
+	padding-bottom: 3em;
+}
+.btn-product{
+	display: none;
+}
+.btn-product1{
+	width: 50%;
+	background: url(../images/image/13_img.jpg) no-repeat left;
+	padding-bottom: 2em;
+}
+.btn-product2{
+	width: 50%;
+	background: url(../images/image/14_img.jpg)no-repeat left;
+}
+.btn-product1 img,
+.btn-product2 img{
+	padding-left: 10em;
+}
+.content-wrap-btn1{
+	width: 100%;
+	display: flex;
+	background: url(../images/image/06_bg.png) left;
+}
+.content-wrap-btn1 a{
+	width: 50%;
+	padding: 1em;
+}
+.content-wrap{ 
+	background-color: #ffffff;
+	border-radius: 1em;
+	padding: 0.5em;
+	padding-bottom: 1em;
+	margin: 0.5em;
+}
+.content-bot-lineup{
+	padding-left: 40%;
+	padding-bottom: 10px;
+}
+.content-bot_menu3 {
+	padding-left: 11%;
+	padding-top: 5%;
+	display: none;
+}
+.content-bot_menu4{
+	padding-left: 11%;
+	padding-top: 2%;	
+	display: none;
+}
+.content-bot_menu2{
+	background-color: #f9544c;
+	padding-left: 11%;
+	padding-top: 5px;
+	margin-top: -12px;
+	display: none;
+}
+.content-bot li{
+	display: inline;
+}
+.content-bot a{
+	width: 50%;
+}
+.content-bot li img{
+	max-width: 100%;
+	width: 48%;
+	border-radius: 2.8em;
+}
+.content-bot{
+	background: url(../images/image/product_bg_main.jpg) no-repeat;
+	background-size: cover;
+	padding-top: 5%;
+	padding-left: 2em;
+}
+.footer{
+	padding-left: 11%;
+	display: none;
+}
+.header-pc{
+	display: none;
+}
+
+.header-sp{
+	display: block;
+}
+.header-sp img{
+	width: 100%;
+}
+.header-sp ul{
+	display: block;
+}
+.header-sp li{
+	margin-bottom: -10px;
+}
+
+.border{
+	border: 1px solid #bab9b9;
+	right: 10.4%;
+	display: flex;
+	position: absolute;
+	margin: 10px 0;
+	display: none;
+}
+.footer-blue{
+	margin: -10px 0;
+	display: none
+}
+.footer-blue img{
+	width: 100%;
+}
+.content_img{
+	margin-bottom: -1em;
+	max-width: 100%;
+}
+.item_menu1{
+	width: 50%;
+}
+.content-bot ul{
+	display: flex;
+}
+.content-bot ul img{
+	max-width: 100%;
+	width: 90%;
+	border-radius: 2.5em;
+}
+ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+a img{
+	max-width: 100%;
+}
+@media screen and(max-width: 767px){
+
+}
