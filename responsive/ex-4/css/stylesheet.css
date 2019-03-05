@@ -48,9 +48,11 @@ body{
 .body__normal--pc{
 	display: none;
 }
-.body__normal,
+.body__normal{
+	padding: 2% 0;
+}
 .body__img{
-	padding-top: 2%;
+	padding: 2% 0;
 }
 .body__normal p,
 .body__img p{
