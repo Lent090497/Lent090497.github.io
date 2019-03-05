@@ -113,6 +113,9 @@ p{
 /*-----------PC-----------------------*/
 
 @media screen and (min-width: 1000px){
+	.body__normal{
+		padding: 0;
+	}
 	.top__left h2{
 		display: none;
 	}
