@@ -10,7 +10,7 @@ body{
 .container{
 	width: 100%;
 	margin: 0 auto;
-	max-width: 1280px;
+	max-width: 1600px;
 }
 .footer img{
 	width: 100%;
@@ -103,16 +103,18 @@ p{
 /*-----------Tablet------------------ */
 
 @media screen and (min-width: 768px){
-	
+	.main__body__normal--pc p{
+		text-align: left;
+	}
 	.header img{
 		margin-bottom: -0.3em;
 	}
 	.main__body__normal--pc{
-		padding-top: 5%;
+		padding-top: 6%;
 	}
 	.main__body{
 		background-color: #ffffff;
-        margin-top: 2%;
+        margin-top: 3%;
 
 	}
 	.main__share{
