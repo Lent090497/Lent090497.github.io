@@ -1,5 +1,5 @@
 body{
-	font-family: 'Roboto', serif;
+	font-family: 'Roboto';
 	font-weight: 330;
 	font-size: 14px;
 }
@@ -20,6 +20,7 @@ body{
 .header img{
 	max-width: 100%;
 	width: 100%;
+	margin-bottom: -0.3em;
 }
 .main{
 	width: 100%;
@@ -51,7 +52,8 @@ body{
 	display: block;
 }
 .main__body{
-	padding: 1% 3%;
+	padding: 0 6%;
+	padding-top: 3%;
 }
 .main__top{
 	display: flex;
@@ -99,15 +101,22 @@ p{
 
 
 /*-----------Responsive---------------*/
+/*-----------PC-----------------------*/
+
+@media screen and (min-width: 1000px){
+	.main__top__left h2{
+		display: none;
+	}
+	.main__top__left h1{
+		display: block;
+	}
+}
 
 /*-----------Tablet------------------ */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
 	.main__body__normal--pc p{
 		text-align: left;
-	}
-	.header img{
-		margin-bottom: -0.3em;
 	}
 	.main__body__normal--pc{
 		padding-top: 6%;
@@ -118,10 +127,10 @@ p{
 
 	}
 	.main__share{
-		padding: 5% 6%;
+		padding: 5% 10%;
 	}
 	.main__body__img--text {
-		width: 50%;
+		width: 65%;
 	}
 	.link--pc{
 		display: block;
@@ -142,16 +151,16 @@ p{
 	.link--sp{
 		display: none;
 	}
-	.main__body__img,
 	.main__body__normal{
-		padding: 2% 0;
+		padding-top: 1%;
 	}
-	.main__body__normal--pc,
-	.main__top__left h1{
+	.main__body__img{
+		padding-top: 2%;
+	}
+	.main__body__normal--pc{
 		display: block;
 	}
-	.main__body__normal--sp,
-	.main__top__left h2
+	.main__body__normal--sp
 	{
 		display: none;
 	}
