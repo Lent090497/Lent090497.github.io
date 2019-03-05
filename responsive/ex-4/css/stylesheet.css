@@ -37,6 +37,10 @@ body{
 	width: 100%;
 	max-width: 100%;
 }
+.main__inner{
+	width: 85%;
+	margin: 0 auto;
+}
 .main__body__img img,
 .main__body__normal img{
 	width: 100%;
@@ -52,7 +56,6 @@ body{
 	display: block;
 }
 .main__body{
-	padding: 0 6%;
 	padding-top: 3%;
 }
 .main__top{
