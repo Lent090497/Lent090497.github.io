@@ -1,7 +1,6 @@
 body{
-	font-family: 'Roboto';
+	font-family: 'Roboto',serif;
 	font-weight: 330;
-	font-size: 14px;
 }
 *{
 	margin: 0;
@@ -29,30 +28,34 @@ body{
 	display: flex;
 	padding: 5% 0;
 }
-.main__share--icon{
+.share--icon{
 	width: 31%;
 	padding-left: 2%;
 }
-.main__share--icon img{
+.share--icon img{
 	width: 100%;
 	max-width: 100%;
 }
 .main__inner{
-	width: 85%;
+	width: 94%;
 	margin: 0 auto;
 }
-.main__body__img img,
-.main__body__normal img{
+.body__img img,
+.body__normal img{
 	width: 100%;
 	max-width: 100%;
 }
-.main__body__normal--pc{
+.body__normal--pc{
 	display: none;
 }
-.main__body__normal,
-.main__body__normal--sp,
-.main__body__img,
-.main__body__img--text{
+.body__normal,
+.body__img{
+	padding-top: 2%;
+}
+.body__normal,
+.body__normal--sp,
+.body__img,
+.body__img--text{
 	display: block;
 }
 .main__body{
@@ -61,27 +64,23 @@ body{
 .main__top{
 	display: flex;
 }
-.main__top__left h1{
+.top__left h1{
 	display: none;
 }
-.main__top__left h2,h1{
+.top__left h2,h1{
 	color: #ffffff;
 	padding-top: 10%;
 	text-align: center;
 }
-.main__top__left{
+.top__left{
 	width: 40.6%;
 	background-color: #222222;
 	float: left;
 }
-.main__top__left h2{
-	color: #ffffff;
-	text-align: center;
-}
-.main__top__right{
+.top__right{
 	width: 59.4%;
 }
-.main__top__right img{
+.top__right img{
 	width: 100%;
 	max-width: 100%;
 }
@@ -107,21 +106,24 @@ p{
 /*-----------PC-----------------------*/
 
 @media screen and (min-width: 1000px){
-	.main__top__left h2{
+	.top__left h2{
 		display: none;
 	}
-	.main__top__left h1{
+	.top__left h1{
 		display: block;
+	}
+	.main__inner{
+		width: 85%;
 	}
 }
 
 /*-----------Tablet------------------ */
 
 @media screen and (min-width: 769px){
-	.main__body__normal--pc p{
+	.body__normal--pc p{
 		text-align: left;
 	}
-	.main__body__normal--pc{
+	.body__normal--pc{
 		padding-top: 3.5%;
 	}
 	.main__body{
@@ -132,7 +134,7 @@ p{
 	.main__share{
 		padding: 5% 10%;
 	}
-	.main__body__img--text {
+	.body__img--text {
 		width: 65%;
 	}
 	.link--pc{
@@ -148,26 +150,20 @@ p{
 		background: url(../images/pc/img_bg.png) no-repeat;
 		background-size: contain;
 	}
-	.main__body__img p{
+	.body__img p{
 		padding-right: 5%;
 	}
 	.link--sp{
 		display: none;
 	}
-	.main__body__normal{
-		padding-top: 1%;
-	}
-	.main__body__img{
-		padding-top: 2%;
-	}
-	.main__body__normal--pc{
+	.body__normal--pc{
 		display: block;
 	}
-	.main__body__normal--sp
+	.body__normal--sp
 	{
 		display: none;
 	}
-	.main__body__img{
+	.body__img{
 	 	display: flex;
 	 }
 }
@@ -175,7 +171,7 @@ p{
 /*-----------Mobile------------------*/
 
 @media screen and (max-width: 400px){
-	.main__top__left--text--sp{
+	.top__left--text--sp{
 		font-size: 100%;
 	}
 	.container{
