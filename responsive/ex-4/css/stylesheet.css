@@ -52,6 +52,11 @@ body{
 .body__img{
 	padding-top: 2%;
 }
+.body__normal p,
+.body__img p{
+	font-size: 14px;
+	padding: 2% 0;
+}
 .body__normal,
 .body__normal--sp,
 .body__img,
@@ -59,7 +64,7 @@ body{
 	display: block;
 }
 .main__body{
-	padding-top: 3%;
+	padding-top: 4%;
 }
 .main__top{
 	display: flex;
