@@ -10,6 +10,7 @@ body{
 .container{
 	width: 100%;
 	margin: 0 auto;
+	max-width: 1280px;
 }
 .footer img{
 	width: 100%;
@@ -92,14 +93,17 @@ a{
 }
 p{
 	text-align: justify;
-	padding: 2% 0;
+	padding: 1.6% 0;
+	line-height: 1.6em;
 }
+
 
 /*-----------Responsive---------------*/
 
 /*-----------Tablet------------------ */
 
 @media screen and (min-width: 768px){
+	
 	.header img{
 		margin-bottom: -0.3em;
 	}
