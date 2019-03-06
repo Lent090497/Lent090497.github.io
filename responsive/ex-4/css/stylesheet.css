@@ -167,7 +167,7 @@ p{
 	.main{
 		margin: 0 auto;
 		background: url(../images/pc/img_bg.png) no-repeat;
-		background-size: contain;
+		background-size: cover;
 	}
 	.body__img p{
 		padding-right: 5%;
