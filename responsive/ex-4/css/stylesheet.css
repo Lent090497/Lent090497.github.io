@@ -1,6 +1,7 @@
 body{
 	font-family: 'Roboto',serif;
 	font-weight: 330;
+	font-size: 14px;
 }
 *{
 	margin: 0;
@@ -49,14 +50,13 @@ body{
 	display: none;
 }
 .body__normal{
-	padding: 2% 0;
+	padding-top: 2%;
 }
 .body__img{
-	padding: 2% 0;
+	padding-top: 2%;
 }
 .body__normal p,
 .body__img p{
-	font-size: 14px;
 	padding: 2% 0;
 }
 .body__normal,
@@ -73,6 +73,9 @@ body{
 }
 .top__left h1{
 	display: none;
+}
+.top__left h2{
+	font-size: 28px;
 }
 .top__left h2,h1{
 	color: #ffffff;
@@ -130,6 +133,9 @@ p{
 /*-----------Tablet------------------ */
 
 @media screen and (min-width: 769px){
+	.top__left h2{
+		font-size: 18px;
+	}
 	.body__normal--pc p{
 		text-align: left;
 	}
@@ -180,7 +186,11 @@ p{
 
 /*-----------Mobile------------------*/
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
+	.top__left h2{
+		padding-top: 25%;
+		font-size: 16px;
+	}
 	.top__left--text--sp{
 		font-size: 100%;
 	}
