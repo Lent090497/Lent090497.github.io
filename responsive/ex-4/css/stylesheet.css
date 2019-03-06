@@ -2,6 +2,7 @@ body{
 	font-family: 'Roboto',serif;
 	font-weight: 330;
 	font-size: 14px;
+	color: #333333;
 }
 *{
 	margin: 0;
@@ -154,7 +155,7 @@ p{
 		padding: 5% 10%;
 	}
 	.body__img--text {
-		width: 65%;
+		width: 45%;
 	}
 	.link--pc{
 		display: block;
