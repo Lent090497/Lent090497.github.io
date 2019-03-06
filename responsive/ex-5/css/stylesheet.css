@@ -60,7 +60,7 @@ body{
 	padding-top: 2%;
 }
 .main__body{
-	padding-top: 7%;
+	padding-top: 3%;
 }
 .main__top{
 	display: flex;
@@ -69,11 +69,13 @@ body{
 	width: 86.5%;
 	margin: 0 auto;
 	padding-top: 20%;
+	font-family: 'Helvetica';
 	color: #ffffff;
 }
 .top__left{
 	width: 40.6%;
 	background-color: #222222;
+	margin-bottom: 0.5%;
 	float: left;
 }
 .top__right{
@@ -105,6 +107,9 @@ p{
 /*-----------PC-----------------------*/
 
 @media screen and (min-width: 1024px){
+	.main__body{
+		padding-top: 7%;
+	}
 	.title--pc{
 		display: block;
 	}
@@ -130,30 +135,19 @@ p{
 		width: 85%;
 	}
 	.body__img picture,
-	.bodya__img--pc
 	{
 		width: 55%;
-	}
-	.body__normal--pc p{
-		text-align: left;
-	}
-	.body__normal--pc{
-		padding-top: 3.5%;
 	}
 	.main__body{
 		background-color: #ffffff;
         margin-top: 3%;
-
+        margin-bottom:5%;
 	}
 	.main__share{
 		display: none;
 	}
 	.body__img--text {
 		width: 45%;
-	}
-	.link--pc{
-		display: block;
-		text-align: center;
 	}
 	.main{
 		margin: 0 auto;
@@ -162,16 +156,6 @@ p{
 	}
 	.body__img p{
 		padding-right: 5%;
-	}
-	.link--sp{
-		display: none;
-	}
-	.body__normal--pc{
-		display: block;
-	}
-	.body__normal--sp
-	{
-		display: none;
 	}
 	.body__img{
 	 	display: flex;
@@ -183,9 +167,6 @@ p{
 @media screen and (max-width: 500px){
 	.top__left h1{
 		font-size: 20px;
-	}
-	.top__left--text--sp{
-		font-size: 100%;
 	}
 	.container{
 		min-width: 320px;
