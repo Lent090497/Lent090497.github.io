@@ -56,7 +56,10 @@ body{
 	padding-top: 2%;
 }
 .body__normal p,
-.body__img p{
+.body__img p,
+.body__normal--sp p,
+.body__normal--pc p,
+{
 	padding: 2% 0;
 }
 .body__normal,
