@@ -76,6 +76,7 @@ body{
 	display: flex;
 }
 .top__left h1{
+	padding-top: 20%;
 	display: none;
 }
 .top__left h2{
@@ -119,26 +120,36 @@ p{
 /*-----------Responsive---------------*/
 /*-----------PC-----------------------*/
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1025px){
+
+	.content{
+		width: 65%;
+		margin: 0 auto;
+	}
 	.body__normal{
 		padding: 0;
 	}
-	.top__left h2{
-		display: none;
-	}
-	.top__left h1{
-		display: block;
-	}
 	.main__inner{
-		width: 85%;
+		width: 94%;
 	}
 }
 
 /*-----------Tablet------------------ */
 
 @media screen and (min-width: 769px){
+	.main__inner{
+		width: 85%;
+	}
+	.body__img picture,
+	.bodya__img--pc
+	{
+		width: 55%;
+	}
 	.top__left h2{
-		font-size: 18px;
+		display: none;
+	}
+	.top__left h1{
+		display: block;
 	}
 	.body__normal--pc p{
 		text-align: left;
@@ -160,10 +171,6 @@ p{
 	.link--pc{
 		display: block;
 		text-align: center;
-	}
-	.content{
-		width: 65%;
-		margin: 0 auto;
 	}
 	.main{
 		margin: 0 auto;
