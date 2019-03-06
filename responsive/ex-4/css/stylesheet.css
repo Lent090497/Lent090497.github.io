@@ -28,7 +28,7 @@ body{
 }
 .main__share{
 	display: flex;
-	padding: 5% 0;
+	padding: 4% 0;
 }
 .share--icon{
 	width: 31%;
@@ -152,7 +152,7 @@ p{
 
 	}
 	.main__share{
-		padding: 5% 10%;
+		padding: 4% 10%;
 	}
 	.body__img--text {
 		width: 45%;
