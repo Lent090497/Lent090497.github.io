@@ -156,6 +156,7 @@ p{
 	}
 	.body__img p{
 		padding-right: 5%;
+		padding-bottom: 3%;
 	}
 	.body__img{
 	 	display: flex;
