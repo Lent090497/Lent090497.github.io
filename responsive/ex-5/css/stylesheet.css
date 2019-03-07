@@ -66,10 +66,10 @@ body{
 	display: flex;
 }
 .top__left h1{
-	width: 86.5%;
+	width: 80%;
 	margin: 0 auto;
-	padding-top: 20%;
-	font-family: 'Helvetica';
+	padding-top: 15%;
+	font-family: 'Helvetica',serif;
 	color: #ffffff;
 }
 .top__left{
@@ -99,7 +99,7 @@ a{
 }
 p{
 	text-align: justify;
-	line-height: 1.6em;
+	line-height: 1.5em;
 }
 
 
@@ -140,7 +140,7 @@ p{
 	}
 	.main__body{
 		background-color: #ffffff;
-        margin-top: 3%;
+        margin-top: 2%;
         margin-bottom:5%;
 	}
 	.main__share{
@@ -155,8 +155,8 @@ p{
 		background-size: cover;
 	}
 	.body__img p{
-		padding-right: 5%;
-		padding-bottom: 3%;
+		padding-right: 7%;
+		padding-bottom: 5%;
 	}
 	.body__img{
 	 	display: flex;
