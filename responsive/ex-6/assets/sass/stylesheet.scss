@@ -189,16 +189,17 @@ body{
 	}
 }
 .text--table{
-	ul{
-		display: flex;
-		p{
-			margin-top: 1em;
-			margin-right: 1em;
-		}
-		img{
-			width: $width;
-			max-width: $max-width;
-		}
+	display: flex;
+	position: relative;
+	p{
+		position: absolute;
+		top: 40%;
+		padding-right: 1em;
+	}
+	img{
+		margin-left: 25%;
+		width: $width;
+		max-width: $max-width;
 	}
 }
 th:nth-child(5){

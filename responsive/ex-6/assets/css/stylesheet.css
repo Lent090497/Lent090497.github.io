@@ -216,16 +216,19 @@ table, tr, th, td {
   color: #e70517;
 }
 
-.text--table ul {
+.text--table {
   display: flex;
+  position: relative;
 }
 
-.text--table ul p {
-  margin-top: 1em;
-  margin-right: 1em;
+.text--table p {
+  position: absolute;
+  top: 40%;
+  padding-right: 1em;
 }
 
-.text--table ul img {
+.text--table img {
+  margin-left: 25%;
   width: 100%;
   max-width: 100%;
 }
