@@ -216,7 +216,22 @@ table, tr, th, td {
   color: #e70517;
 }
 
+.text--table ul {
+  display: flex;
+}
+
+.text--table ul p {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.text--table ul img {
+  width: 100%;
+  max-width: 100%;
+}
+
 th:nth-child(5) {
+  width: 35%;
   background: #253266;
   color: #ffffff;
 }
@@ -259,15 +274,6 @@ td:nth-child(2) {
 table {
   width: 100%;
   border-collapse: collapse;
-}
-
-table ul {
-  display: flex;
-}
-
-table ul p {
-  margin-top: 2em;
-  margin-right: 1em;
 }
 
 table td {
