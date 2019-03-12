@@ -332,7 +332,16 @@ a{
 		display: none;
 	}
 	
-	tr:nth-child(odd){
+	tr:nth-child(1),
+	tr:nth-child(3),
+	tr:nth-child(5),
+	tr:nth-child(7),
+	tr:nth-child(10),
+	tr:nth-child(11),
+	tr:nth-child(13),
+	tr:nth-child(15),
+	tr:nth-child(17),
+	tr:nth-child(19){
 		background-color: #f8f4f4;
 	}
 	.col--1{
