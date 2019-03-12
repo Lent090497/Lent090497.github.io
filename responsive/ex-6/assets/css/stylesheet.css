@@ -125,10 +125,8 @@ body {
 
 .box--grey__content ul {
   margin-bottom: -0.3em;
-}
-
-.box--grey__content ul img {
-  max-width: 100%;
+  display: flex img;
+  display-max-width: 100%;
 }
 
 .procedure {
