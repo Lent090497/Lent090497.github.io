@@ -442,8 +442,10 @@ a{
 			font-size: 10px;
 		}
 	}
-	.box--green{
-		width: 80%;
+	.box--green,
+	.box--pink,
+	.box--blue-dark{
+		width: auto;
 	}
 	.banner__left{
 		h1{
