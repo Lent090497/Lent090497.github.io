@@ -400,6 +400,7 @@ a {
   .details__wrap {
     width: 100%;
     border: 1px solid #2190c4;
+    padding-top: 2%;
   }
   .box--grey__content {
     width: 100%;
