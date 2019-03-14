@@ -326,6 +326,8 @@ a{
 
 @media #{$tablet}{
 	.list{
+		width: 80%;
+		margin: 0 auto;
 		margin-bottom: 3%;
 	}
 	.list--ticket{
@@ -342,8 +344,7 @@ a{
 		background: #1389c0;
 	}
 	.procedure,
-	.box--blue,
-	.js-list{
+	.box--blue{
 		width: 80%;
 		margin: 0 auto;
 	}
@@ -353,9 +354,6 @@ a{
 	}
 	.box--grey__content{
 		width: $width;
-		ul{
-			margin-bottom: -0.2em;
-		}
 	}
 	.box--grey{
 		border: 1px solid #ffffff;

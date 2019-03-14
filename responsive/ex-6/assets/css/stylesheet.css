@@ -324,7 +324,6 @@ table {
 }
 
 table td {
-  text-align: justify;
   padding: 2%;
 }
 
@@ -371,6 +370,8 @@ a {
 /*---------------Tablet----------------------*/
 @media (min-width: 679px) {
   .list {
+    width: 80%;
+    margin: 0 auto;
     margin-bottom: 3%;
   }
   .list--ticket ul li {
@@ -383,8 +384,7 @@ a {
     background: #1389c0;
   }
   .procedure,
-  .box--blue,
-  .js-list {
+  .box--blue {
     width: 80%;
     margin: 0 auto;
   }
@@ -394,9 +394,6 @@ a {
   }
   .box--grey__content {
     width: 100%;
-  }
-  .box--grey__content ul {
-    margin-bottom: -0.2em;
   }
   .box--grey {
     border: 1px solid #ffffff;
