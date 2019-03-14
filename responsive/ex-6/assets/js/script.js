@@ -36,6 +36,5 @@ $(document).ready(function() {
 		}
 		$('.js--list--ticket ul li').removeClass('active--ticket')
 		$('.js--list--ticket ul li').eq(index).addClass('active--ticket');
-		$('.js--list--ticket ul li').eq(0).addClass('no-active--ticket');
 	});
 });
