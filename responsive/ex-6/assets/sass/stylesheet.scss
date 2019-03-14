@@ -145,6 +145,7 @@ body{
 	img{
 		width: $width;
 		max-width: $max-width;
+		margin-bottom: -0.3em;
 	}
 	p{
 		margin: 0 auto;
@@ -153,12 +154,14 @@ body{
 }
 .list{
 	width: 100%;
+	padding-bottom: 5%;
 	ul{
 		padding-top: 2%;
 		display: flex;
 	}
 	li{
 		width: 15%;
+		margin-right: 0.5%;
 		text-align: center;
 	}
 	img{
@@ -176,7 +179,8 @@ body{
 			border-top: 0.5px solid #aaaaaa;
 			border-left: 0.5px solid #aaaaaa;
 			border-right: 0.5px solid #aaaaaa;
-			border-radius: 0.3em;
+			border-top-right-radius: 0.3em;
+			border-top-left-radius: 0.3em;
 		}
 		img{
 			cursor: pointer;
@@ -214,14 +218,7 @@ body{
 .footer{
 	@extend .header;
 }
-.table{
-	overflow-x: auto;
-	padding-top: 5%;
-	padding-bottom: 1%;
-}
-%table{
-	border: 1px solid #dddddd;
-}
+
 .text--center{
 	text-align: center;
 }
@@ -236,6 +233,15 @@ body{
 	span{
 		color: #e70517;
 	}
+}
+.table{
+	overflow-x: auto;
+	padding-top: 5%;
+	padding-bottom: 1%;
+	text-align: justify;
+}
+%table{
+	border: 1px solid #dddddd;
 }
 .text--table{
 	display: flex;
@@ -265,12 +271,13 @@ th:nth-child(3){
 	color: $color-text;
 }
 th:nth-child(3),
-th:nth-child(4){
-	width: 20%;
+th:nth-child(4),
+th:nth-child(5){
+	width: 22.5%;
 }
 th:nth-child(2){
 	color: #e70517 ;
-	width: 15%;
+	width: 22.5%;
 };
 th:nth-child(1){
 	width: 10%;
@@ -304,6 +311,9 @@ table{
 	}
 	th{
 		padding: 2% 0;
+	}
+	p{
+		padding-bottom: 5%;
 	}
 }
 table,tr,th,td{
