@@ -381,7 +381,9 @@ a{
 		border: 1px solid #ffffff;
 		background: $color-text;
 	}
-	.box--green{
+	.box--green,
+	.box--pink,
+	.box--blue-dark{
 		background-color: $color-text;
 		width: 80%;
 		margin-bottom: 0;

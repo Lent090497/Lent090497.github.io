@@ -426,16 +426,22 @@ a {
     border: 1px solid #ffffff;
     background: #ffffff;
   }
-  .box--green {
+  .box--green,
+  .box--pink,
+  .box--blue-dark {
     background-color: #ffffff;
     width: 80%;
     margin-bottom: 0;
     padding: 0;
   }
-  .box--green h2 {
+  .box--green h2,
+  .box--pink h2,
+  .box--blue-dark h2 {
     display: none;
   }
-  .box--green p {
+  .box--green p,
+  .box--pink p,
+  .box--blue-dark p {
     display: block;
   }
   th:nth-child(5),
