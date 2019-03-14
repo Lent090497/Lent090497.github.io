@@ -138,7 +138,9 @@ body{
 		}
 	}
 }
-.procedure{
+.procedure__suica,
+.procedure__pasmo,
+.procedure__rail-pass{
 	width: $width;
 	img{
 		width: $width;
@@ -351,7 +353,9 @@ a{
 	.active--ticket{
 		background: #1389c0;
 	}
-	.procedure,
+	.procedure__suica,
+	.procedure__pasmo,
+	.procedure__rail-pass,
 	.box--blue{
 		width: 80%;
 		margin: 0 auto;

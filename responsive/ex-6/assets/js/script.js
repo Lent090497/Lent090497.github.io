@@ -1,12 +1,20 @@
 $(document).ready(function() {
 	var num=0;
-	$('.js-list ul li').click(function(event) {
+	$('.js--list__suica ul li').click(function(event) {
+		var index=$('.js--list__suica ul li').index($(this));
 		//display procedure
-		var index=$('.js-list ul li').index($(this));
-		$('.js-list ul li').removeClass('active--list');
-		$('.js-list ul li').eq(index).addClass('active--list');
-		$('.procedure img').hide();
-		$('.procedure img').eq(index).show();
+		$('.js--list__suica ul li').removeClass('active--list');
+		$('.js--list__suica ul li').eq(index).addClass('active--list');
+		$('.procedure__suica img').hide();
+		$('.procedure__suica img').eq(index).show();
+	});
+	$('.js--list__passmo ul li').click(function(event) {
+		var index=$('.js--list__passmo ul li').index($(this));
+		//display procedure
+		$('.js--list__passmo ul li').removeClass('active--list');
+		$('.js--list__passmo ul li').eq(index).addClass('active--list');
+		$('.procedure__pasmo img').hide();
+		$('.procedure__pasmo img').eq(index).show();
 	});
 	$('.js--list--ticket ul li').click(function(event) {
 		//display ticket
