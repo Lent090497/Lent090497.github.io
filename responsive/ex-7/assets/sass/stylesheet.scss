@@ -14,7 +14,7 @@ body{
 	padding: 0;
 }
 .container{
-	width: 100%;
+	width: $width;
 	margin: 0 auto;
 }
 .header img{
@@ -50,7 +50,7 @@ body{
 	width:59.4%;
 	float: left;
 	img{
-		width: 100%;
+		width: $width;
 		@extend %img;
 	}
 }
@@ -84,7 +84,7 @@ body{
 	}
 	picture{
 		img{
-			width: 100%;
+			width: $width;
 		}
 	}
 }
@@ -108,7 +108,7 @@ body{
 	}
 }
 .content__img{
-	width: 100%;
+	width: $width;
 	display: flex;
 	padding-bottom: 3%;
 }
@@ -116,14 +116,14 @@ body{
 	display: flex;
 }
 .img__left-2{
-	width: 49%;
+	width: 50%;
 	margin-right: 1%;
 	img{
 		width: $width;
 	}
 }
 .img__right-2{
-	width: 49%;
+	width: 50%;
 	margin-left: 1%;
 	img{
 		width: $width;
@@ -133,14 +133,14 @@ body{
 	width: 35%;
 	margin-right: 1%;
 	img{
-		width: 100%;
+		width: $width;
 	}
 }
 .img__right{
 	width: 70%;
 	margin-left: 1%;
 	img{
-		width: 100%;
+		width: $width;
 	}
 }
 .box__comment{
@@ -196,11 +196,11 @@ body{
 	}
 }
 .content__img_1{
-	width: 100%;
+	width: $width;
 	margin: 0 auto;
 	padding-bottom: 3%;
 	img{
-		width: 100%;
+		width: $width;
 	}
 }
 .content__share{
@@ -216,14 +216,17 @@ body{
 	}
 }
 .list{
-	width: 10%;
+	width: 14%;
 	margin: 0 auto;
 	padding-top: 1%;
 	padding-bottom: 3%;
+	ul{
+		justify-content: center;
+	}
 }
 .slide{
 	img{
-		width: 100%;
+		width: $width;
 	}
 }
 %img{
@@ -259,7 +262,7 @@ img{
 	.content{
 		@extend %content--desk;
 		h1{
-			width: 60%;
+			width: 55%;
 			margin: 0 auto;
 		}
 	}
@@ -323,10 +326,10 @@ img{
 		float: left;
 	}
 	.info__text{
-		width: 100%;
+		width: $width;
 	}
 	.info__img{
-		width: 100%;
+		width: $width;
 		img{
 			padding-bottom: 3%;
 		}
