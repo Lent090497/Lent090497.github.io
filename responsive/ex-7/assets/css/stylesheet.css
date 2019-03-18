@@ -209,7 +209,7 @@ body {
 }
 
 .content__img_1 {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -287,6 +287,9 @@ img {
 }
 
 @media (min-width: 768px) {
+  .content__img_1 {
+    width: 80%;
+  }
   .content__intro {
     display: flex;
   }

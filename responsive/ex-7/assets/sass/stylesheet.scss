@@ -195,7 +195,7 @@ body{
 	}
 }
 .content__img_1{
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	img{
 		width: 100%;
@@ -271,6 +271,9 @@ img{
 }
 //----------------tablet--------------------//
 @media #{$tablet}{
+	.content__img_1{
+		width: 80%;
+	}
 	.content__intro{
 		display: flex;
 	}
