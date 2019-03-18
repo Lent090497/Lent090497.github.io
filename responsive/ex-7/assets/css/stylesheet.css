@@ -71,6 +71,7 @@ body {
 }
 
 .content picture img {
+  width: 100%;
   margin-bottom: 3%;
 }
 
@@ -185,6 +186,24 @@ body {
   display: none;
 }
 
+.content__img_9 {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.content__img_9 img {
+  width: 100%;
+}
+
+.content__img_1 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content__img_1 img {
+  width: 100%;
+}
+
 .content__share {
   display: flex;
   padding: 6% 0;
@@ -256,11 +275,12 @@ img {
 }
 
 @media (min-width: 768px) {
-  .content__img, .content__inner, .content__guide, .box__note {
+  .content__inner, .content__guide, .box__note {
     width: 85%;
     margin: 0 auto;
   }
   .slide,
+  .content__img,
   .content__2__img,
   .box__comment {
     width: 80%;
@@ -291,6 +311,7 @@ img {
   }
   .main {
     background: url(../images/img_bg.png) no-repeat top left;
+    background-size: cover;
   }
   .intro__text {
     width: 70%;

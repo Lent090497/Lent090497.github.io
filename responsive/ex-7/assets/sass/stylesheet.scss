@@ -74,6 +74,7 @@ body{
 	}
 	picture{
 		img{
+			width: 100%;
 			margin-bottom: 3%;
 		}
 	}
@@ -175,6 +176,20 @@ body{
 }
 .info__img--pc{
 	display: none;
+}
+.content__img_9{
+	width: 40%;
+	margin: 0 auto;
+	img{
+		width: $width;
+	}
+}
+.content__img_1{
+	width: 80%;
+	margin: 0 auto;
+	img{
+		width: 100%;
+	}
 }
 .content__share{
 	display: flex;
@@ -281,11 +296,9 @@ img{
 			padding-bottom: 0;
 		}
 	}
-	.content__img{
-		@extend %content--tablet;
-	}
 	.main{
 		background: url(../images/img_bg.png) no-repeat top left;
+		background-size: cover;
 	}
 	.intro__text{
 		width: 70%;
@@ -316,6 +329,7 @@ img{
 		margin-bottom: 2%;
 	}
 	.slide,
+	.content__img,
 	.content__2__img,
 	.box__comment{
 		@extend %content__img--tablet;
