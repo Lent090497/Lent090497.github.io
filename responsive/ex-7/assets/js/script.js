@@ -1,6 +1,8 @@
 $(document).ready(function() {
 	var num=0;
 	var imglast1=$('.js--slide-1 img:last').index('.js--slide-1 img');
+
+	//function setInterval
 	var myInterval1=setInterval(function(){
 		num++;
 		if(num>imglast1){
@@ -10,7 +12,7 @@ $(document).ready(function() {
 		slide2(num);
 		slide3(num);
 	},1000)
-
+	//function change slide
 	function slide1(index){
 		$('.js--slide-1 img').hide();
 		$('.js--slide-1 img').eq(index).show();

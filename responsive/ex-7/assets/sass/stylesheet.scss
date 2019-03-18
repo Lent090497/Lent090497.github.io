@@ -22,6 +22,10 @@ body{
 	max-width: $max-width;
 	margin-bottom: -0.25em;
 }
+.main{
+	max-width: 1600px;
+	margin: 0 auto;
+}
 .footer{
 	@extend .header;
 }
@@ -53,9 +57,15 @@ body{
 .intro__info{
 	display: flex;
 }
+.content__intro{
+	margin-bottom: 3%;
+}
 .info__img{
 	width: 50%;
 	margin-right: 3%;
+	img{
+		width: -webkit-fill-available;
+	}
 }
 .info__text{
 	width: 50%;
@@ -243,13 +253,15 @@ img{
 
 //-----------------Desktop------------------//
 @media #{$desktop}{
-	.main{
-		width: 98%;
-		margin: 0 auto;
-	}
-	.banner,
-	.content{
+	.banner{
 		@extend %content--desk; 
+	}
+	.content{
+		@extend %content--desk;
+		h1{
+			width: 60%;
+			margin: 0 auto;
+		}
 	}
 	%content--desk{
 		width: 67%;
@@ -259,6 +271,9 @@ img{
 }
 //----------------tablet--------------------//
 @media #{$tablet}{
+	.content__intro{
+		display: flex;
+	}
 	%content--tablet{
 		width: 85%;
 		margin: 0 auto;
@@ -291,7 +306,7 @@ img{
 		@extend %info__img;
 	}
 	.guide__info{
-		@extend .content__intro;
+		display: flex;
 		img{
 			padding-bottom: 0;
 		}
@@ -312,9 +327,6 @@ img{
 		img{
 			padding-bottom: 3%;
 		}
-	}
-	.content__intro{
-		display: flex;
 	}
 	.intro__info{
 		width: 30%;
@@ -345,6 +357,9 @@ img{
 }
 //---------------------mobile-------------------//
 @media #{$mobile}{
+	.main{
+		min-width: 300px;
+	}
 	.banner__left{
 		h2{
 			font-size: 14px;
