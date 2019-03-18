@@ -85,18 +85,16 @@ body{
 	picture{
 		img{
 			width: 100%;
-			margin-bottom: 3%;
 		}
 	}
 }
 .content__1,
 .content__2{
-	img{
-		padding-bottom: 3%;
-	}
+	padding-top: 3%;
 }
 .content__2__img{
 	display: flex;
+	margin-bottom: 3%;
 }
 .content__inner{
 	width: 94%;
@@ -111,6 +109,7 @@ body{
 .content__img{
 	width: 100%;
 	display: flex;
+	margin-bottom: 3%;
 }
 .content__img-2{
 	display: flex;
@@ -147,6 +146,7 @@ body{
 	background: #f9f8f8;
 	padding: 3% 2%;
 	font-style: italic;
+	margin-bottom: 3%;
 	h4{
 		text-align: center;
 	}
@@ -190,6 +190,7 @@ body{
 .content__img_9{
 	width: 40%;
 	margin: 0 auto;
+	margin-bottom: 3%;
 	img{
 		width: $width;
 	}
@@ -197,6 +198,7 @@ body{
 .content__img_1{
 	width: 100%;
 	margin: 0 auto;
+	margin-bottom: 3%;
 	img{
 		width: 100%;
 	}
@@ -217,8 +219,7 @@ body{
 	width: 20%;
 	margin: 0 auto;
 	ul{
-		margin-bottom: 3%;
-		margin-top: -5%;
+		margin: 3% 0;
 	}
 }
 .slide{
