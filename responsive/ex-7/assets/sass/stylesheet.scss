@@ -1,6 +1,6 @@
 $mobile: "(max-width: 475px)";
 $tablet: "(min-width: 768px)";
-$destop: "(min-width: 1024px)";
+$desktop: "(min-width: 1025px)";
 $width: 100%;
 $max-width: 100%;
 body{
@@ -20,6 +20,7 @@ body{
 .header img{
 	width: $width;
 	max-width: $max-width;
+	margin-bottom: -0.25em;
 }
 .footer{
 	@extend .header;
@@ -32,18 +33,22 @@ body{
 	width: 40.6%;
 	background: #222222;
 	float: left;
-	margin-bottom: 0.25em;
 	h2{
 		width: 80%;
 		margin: 0 auto;
 		padding-top: 40%;
 		font-family: 'Helvetica';
 		color: #ffffff;
+		text-align: center;
 	}
 }
 .banner__right{
 	width:59.4%;
-	float: left
+	float: left;
+	img{
+		width: 100%;
+		@extend %img;
+	}
 }
 .intro__info{
 	display: flex;
@@ -55,18 +60,32 @@ body{
 .info__text{
 	width: 50%;
 }
+
 .content{
-	p{
-		text-align: justify;
-		padding: 3% 0;
-	}
 	h4{
-		padding: 1% 0;
+		padding-bottom: 2%;
 	}
 	h1{
 		text-align: center;
 		padding: 5% 0;
 	}
+	img{
+		@extend %img;
+	}
+	picture{
+		img{
+			margin-bottom: 3%;
+		}
+	}
+}
+.content__1,
+.content__2{
+	img{
+		padding-bottom: 3%;
+	}
+}
+.content__2__img{
+	display: flex;
 }
 .content__inner{
 	width: 94%;
@@ -74,6 +93,9 @@ body{
 }
 .content__guide{
 	@extend .content__inner;
+	img{
+		@extend %img;
+	}
 }
 .content__img{
 	width: 100%;
@@ -83,23 +105,22 @@ body{
 	display: flex;
 }
 .img__left-2{
-	width: 50%;
+	width: 49%;
 	margin-right: 1%;
 	img{
 		width: $width;
 	}
 }
 .img__right-2{
-	width: 50%;
+	width: 49%;
 	margin-left: 1%;
 	img{
 		width: $width;
 	}
 }
 .img__left{
-	width: 30%;
+	width: 35%;
 	margin-right: 1%;
-	display: block;
 	img{
 		width: 100%;
 	}
@@ -107,7 +128,6 @@ body{
 .img__right{
 	width: 70%;
 	margin-left: 1%;
-	display: block;
 	img{
 		width: 100%;
 	}
@@ -123,12 +143,14 @@ body{
 .box__time{
 	background: #edeaea;
 	padding: 3% 2%;
+	margin-bottom: 3%;
 	border-radius: 0.5em;
 }
 .box__note{
 	@extend .content__inner;
 	background: #f8ecec;
 	padding-top: 3%;
+	margin-top: 3%;
 	h4{
 		color: #ee0202;
 	}
@@ -138,11 +160,21 @@ body{
 	margin: 0 auto;
 }
 .guide__info{
+	padding-top: 3%;
 	h4{
 		span{
 			color: #ff4242;
 		}
 	}
+	img{
+		padding-bottom: 3%;
+	}
+}
+.info__img--sp{
+	display: block;
+}
+.info__img--pc{
+	display: none;
 }
 .content__share{
 	display: flex;
@@ -159,14 +191,23 @@ body{
 .list{
 	width: 20%;
 	margin: 0 auto;
+	ul{
+		margin-bottom: 3%;
+		margin-top: -5%;
+	}
 }
 .slide{
 	img{
 		width: 100%;
 	}
 }
-#img_pc{
-	display: none;
+%img{
+	margin: 0 auto;
+	display: block;
+}
+p{
+	text-align: justify;
+	padding-bottom: 2%;
 }
 ul{
 	list-style-type: none;
@@ -178,14 +219,123 @@ ul{
 a{
 	color: #0bacff;
 	word-break: break-all;
+	text-decoration: none;
 }
 img{
 	max-width: $max-width;
-	margin: 0 auto;
-	display: block;
-	padding: 2% 0;
 }
+//----------------Responsive----------------//
+
+//-----------------Desktop------------------//
+@media #{$desktop}{
+	.main{
+		width: 98%;
+		margin: 0 auto;
+	}
+	.banner,
+	.content{
+		@extend %content--desk; 
+	}
+	%content--desk{
+		width: 67%;
+		margin: 0 auto;
+	}
+
+}
+//----------------tablet--------------------//
+@media #{$tablet}{
+	%content--tablet{
+		width: 85%;
+		margin: 0 auto;
+	}
+	%content__img--tablet{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.guide__info--img{
+		@extend %info__img;
+		padding-right: 3%;
+	}
+	.guide__info--text{
+		width: 55%;
+	}
+	%info__img{
+		width: 45%;
+		img{
+			width: $width;
+			max-width: $max-width;
+		}
+	}
+	.info__img--sp{
+		display: none;
+		@extend %info__img;
+	}
+	.info__img--pc{
+		padding-left: 3%;
+		display: block;
+		@extend %info__img;
+	}
+	.guide__info{
+		@extend .content__intro;
+		img{
+			padding-bottom: 0;
+		}
+	}
+	.content__img{
+		@extend %content--tablet;
+	}
+	.main{
+		background: url(../images/img_bg.png) no-repeat top left;
+	}
+	.intro__text{
+		width: 70%;
+		float: left;
+	}
+	.info__text{
+		width: 100%;
+	}
+	.info__img{
+		width: 100%;
+		img{
+			padding-bottom: 3%;
+		}
+	}
+	.content__intro{
+		display: flex;
+	}
+	.intro__info{
+		width: 30%;
+		display: block;
+		padding-left: 3%;
+	}
+	.content{
+		background-color: #ffffff;
+		margin-bottom: 5%;
+	}
+	.banner{
+		margin-bottom: 2%;
+	}
+	.slide,
+	.content__2__img,
+	.box__comment{
+		@extend %content__img--tablet;
+	}
+	.content__inner,
+	.content__guide{
+		@extend %content--tablet;
+	}
+	.content__share{
+		display: none;
+	}
+
+}
+//---------------------mobile-------------------//
 @media #{$mobile}{
+	.banner__left{
+		h2{
+			font-size: 14px;
+		}
+	}
 }
 
 

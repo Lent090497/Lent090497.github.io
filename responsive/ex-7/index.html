@@ -10,7 +10,11 @@
 <body>
 	<div class="container">
 		<div class="header">
-			<img src="assets/images/header.png">
+			<picture>
+				<source srcset="assets/images/pc/img_pc_header.png" media="(min-width: 768px)">
+				<source src="assets/images/header.png">
+				<img src="assets/images/header.png">
+			</picture>
 		</div>
 		<div class="main">
 			<div class="banner">
@@ -18,13 +22,18 @@
 					<h2>Thưởng ngoạn mùa thu lá đỏ tại vùng Chubu</h2>
 				</div>
 				<div class="banner__right">
-					<img src="assets/images/img_banner.png">
+					<picture>
+						<source srcset="assets/images/pc/img_banner_pc.png" media="(min-width: 768px)">
+						<source srcset="assets/images/img_banner.png">
+						<img src="assets/images/img_banner.png">
+					</picture>
+					
 				</div>
 			</div>
 			<div class="content">
 				<div class="content__inner">
 					<h1>Thưởng ngoạn mùa thu lá đỏ trên thành phố Toyota </h1>
-					<div class="cotent__intro">
+					<div class="content__intro">
 						<div class="intro__text">
 							<p><b>Toyota là một thành phố công nghiệp nổi tiếng của tỉnh Aichi, miền Trung Nhật Bản. Ở một vùng đất mà lịch sử phát triển kinh tế mang đậm dấu ấn của nhà sản xuất xe hơi hàng đầu thế giới - Toyota Motor Corporation, thật không quá ngạc nhiên khi thành phố ấy sở hữu một lượng lớn các bảo tàng và trung tâm triển lãm tầm cỡ về công nghệ ô-tô. Tuy nhiên, ít ai biết được rằng, bên cạnh hơi thở của một thủ đô công nghiệp, nơi đây còn sở hữu những cảnh đẹp thiên nhiên vô cùng độc đáo. Nhờ cơ duyên cùng “Cảm nhận Nhật Bản”, mình đã có một ngày du lịch trải nghiệm hai điểm đến trứ danh: công viên Obara Fureai và thung lũng Korankei, được cảm nhận vẻ đẹp mùa thu thơ mộng của thành phố này.</b></p>
 							<p>Trong "Nhật Bản Du Ký" số này, bạn Trung - hiện đang du học ngành kỹ thuật điều khiển robot tại trường Đại học Công nghiệp Nagoya - sẽ có một ngày trải nghiệm hai thắng cảnh nổi tiếng của thành phố Toyota, tỉnh Aichi để cảm nhận vẻ đẹp của mùa thu Nhật Bản. Hãy cùng bạn Trung thưởng ngoạn những bức tranh thiên nhiên tuyệt sắc và lắng nghe những câu chuyện về các món ăn địa phương, lịch sử và văn hóa của vùng đất này nhé.</p>
@@ -138,10 +147,13 @@
 						<img src="assets/images/img_9.png">
 						<p>Còn về món cơm nắm nướng cá hồi Sakeyaki-onigiri, lớp ngoài của miếng cơm nắm được rưới một lớp nước tương Shoyu ăn khá đậm đà. Tiếp đó, mình cũng đã kịp thưởng thức thêm món Shu-cream bày bán ở một cửa hiệu hamburger có tấm vải đỏ quảng cáo khá bắt mắt. Chiếc bánh Shu-cream này được tạo hình giống bánh Hamburger và nhân kem nhìn cũng rất giống với nhân thịt. Vỏ bánh mỏng, mềm và nhân kem ngọt, ngậy xứng đáng là món tráng miệng mà bạn không nên bỏ qua khi đến với Korankei nhé.</p>
 						<p>Từ quảng trường Korankei Hiroba đi tiếp vào trong bạn cũng dễ dàng bắt gặp khu vực bày bán đồ lưu niệm, phổ biến là các loại bánh trái, vật dụng trang trí và sản phẩm thủ công của làng nghề. </p>
-						<ul>
-							<li class="img__left"><img src="assets/images/img_13.png"><li>
-							<li class="img__right"><img src="assets/images/img_14.png"></li>
-						</ul>
+						<div class="content__2__img">
+							<div class="img__left">
+								<img srcset="assets/images/img_13.png">
+							</div>
+							<div class="img__right">
+								<img srcset="assets/images/img_14.png">
+							</div>
 						</div>
 						<p> Một điểm thú vị là hầu hết các đồ lưu niệm ở đây được tạo kiểu dáng theo hình lá phong để gợi nhớ về nét đặc trưng của thung lũng lá đỏ Momiji trong lòng du khách bốn phương.</p>
 					</div>
@@ -153,7 +165,9 @@
 				<div class="content__guide">
 					<h4>Thông tin chi tiết các điểm tham quan trong bài</h4>
 					<div class="guide__info">
-						<img src="assets/images/img_15.png">
+						<div class="guide__info--img">
+							<img src="assets/images/img_15.png">
+						</div>
 						<div class="guide__info--text">
 							<div class="box__time">
 								<h4>Công viên Obara Fureai</h4>
@@ -165,7 +179,9 @@
 						</div>
 					</div>
 					<div class="guide__info">
-						<img src="assets/images/img_16.png" id="img_sp">
+						<div class="info__img--sp">
+							<img src="assets/images/img_16.png">
+						</div>
 						<div class="guide__info--text">
 							<div class="box__time">
 								<h4>Thung lũng Korankei</h4>
@@ -175,13 +191,17 @@
 							<p>Từ ga Meitetsu Nagoya, lên tàu tuyến Meitetsu Nagoya Main Line, xuống ga Higashi-okazaki, rồi lên xe Meitetsu Bus tuyến Okazaki-Asuke (岡崎・足助線) đi Asuke (足助) và xuống điểm dừng Korankei (香嵐渓).</p>
 							<h4>Cách đi từ công viên Obara Fureai:</h4>
 							<p>Từ điểm dừng xe buýt Obara Okusa  (小原大草) gần công viên, lên xe Toyota Oiden Bus tuyến Obara-Toyota (小原・豊田線) đi Toyotashi (豊田市), xuống điểm dừng Shigo (四郷) đổi tuyến Sanage-Asuke (さなげ・足助線) đi Hyakunenso (百年草) và xuống điểm dừng Korankei (香嵐渓).</p>
-							<h4><i><span>*</span> Trong khoảng 10/11-30/11, sẽ có tuyến xe buýt non-stop đặc biệt của Ohwa Bus chạy thẳng từ công viên Obara Fureai đến Korankei và ngược lại, tiết kiệm được một nửa thời gian và chi phí so với cách đi theo tuyến buýt thông thường kể trên.</i></h4>
-							<p>URL: <a href="http://asuke.info/foreign/english.html"> http://asuke.info/foreign/english.html </a>(tiếng Anh)</p>
 						</div>
-						<img src="assets/images/img_16.png" id="img_pc">
+						<div class="info__img--pc">
+							<img src="assets/images/img_16.png" id="img_pc">
+						</div>
 					</div>
+					<h4><i><span>*</span> Trong khoảng 10/11-30/11, sẽ có tuyến xe buýt non-stop đặc biệt của Ohwa Bus chạy thẳng từ công viên Obara Fureai đến Korankei và ngược lại, tiết kiệm được một nửa thời gian và chi phí so với cách đi theo tuyến buýt thông thường kể trên.</i></h4>
+							<p>URL: <a href="http://asuke.info/foreign/english.html"> http://asuke.info/foreign/english.html </a>(tiếng Anh)</p>
 					<div class="guide__info">
-						<img src="assets/images/img_17.png">
+						<div class="guide__info--img">
+							<img src="assets/images/img_17.png">
+						</div>
 						<div class="guide__info--text">
 							<div class="box__time">
 								<h4>Làng cổ Sanshu Asuke Yashiki: </h4>
@@ -219,8 +239,16 @@
 			</div>
 		</div>
 		<div class="footer">
-			<img src="assets/images/img_banner_footer.png">
-			<img src="assets/images/img_footer.png">
+			<picture>
+				<source srcset="assets/images/pc/img_footer_baner_pc.png" media="(min-width: 769px)">
+				<source srcset="assets/images/img_banner_footer.png">
+				<img src="assets/images/img_banner_footer.png">
+			</picture>
+			<picture>
+				<source srcset="assets/images/pc/img_footer_pc.png" media="(min-width: 769px)">
+				<source srcset="assets/images/img_footer.png">
+				<img src="assets/images/img_footer.png">
+			</picture>
 		</div>
 	</div>
 </body>
