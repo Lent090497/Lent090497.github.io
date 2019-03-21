@@ -188,7 +188,7 @@ body{
 	display: none;
 }
 .content__img_9{
-	width: 40%;
+	width: 38%;
 	margin: 0 auto;
 	padding-bottom: 3%;
 	img{
@@ -274,9 +274,6 @@ img{
 }
 //----------------tablet--------------------//
 @media #{$tablet}{
-	.content__img_1{
-		width: 80%;
-	}
 	.content__intro{
 		display: flex;
 	}
@@ -285,7 +282,7 @@ img{
 		margin: 0 auto;
 	}
 	%content__img--tablet{
-		width: 80%;
+		width: 68%;
 		margin: 0 auto;
 	}
 	.guide__info--img{
@@ -349,6 +346,7 @@ img{
 	.slide,
 	.content__img,
 	.content__2__img,
+	.content__img_1,
 	.box__comment{
 		@extend %content__img--tablet;
 	}
