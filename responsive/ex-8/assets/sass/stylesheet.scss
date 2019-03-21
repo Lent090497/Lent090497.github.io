@@ -1,0 +1,178 @@
+$mobile: "(max-width: 475px)";
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1024px)";
+$width: 100%;
+$font-family: "はれのそら明朝",serif;
+body{
+	font: {
+		family: 'Hiragino Kaku Gothic Pro',serif;
+		weight: normal;
+		size: 16px;
+	}
+	color: #000000;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	max-width: 2560px;
+	width: 100%;
+	margin: 0 auto;
+}
+.banner{
+	background: url(../images/img_banner_1.png) no-repeat top left;
+	background-size: cover;
+}
+.content__banner{
+	padding-top: 49.6%;
+}
+.product-intro{
+	width: 67.36%;
+	margin: 0 auto;
+	padding-top: 5%;
+	background: #ffffff ;
+	p{
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+.content{
+	width: 67.36%;
+	margin: 0 auto;
+	padding-bottom: 10%;
+}
+.details-product{
+	display: flex;
+	padding-bottom: 10%;
+}
+.title__product{
+	width: 2.5%;
+}
+.content__details{
+	width: 62.38%;
+	padding-left: 13%;
+	padding-right: 1%;
+}
+.details__img{
+	width: 35.12%;
+}
+.details__text{
+	font-size: 20px;
+	padding-bottom: 5%;
+}
+.border--fax{
+	border-top: 1px solid #151d1d;
+	border-bottom: 1px solid #b8bbbb; 
+	img{
+		padding-left: 0.25%;
+	}
+}
+.border{
+	border-top: 1px solid #b8bbbb;
+	border-bottom: 1px solid #b8bbbb;
+	padding: 0.1% 0;
+}
+.fax__img{
+	display: flex;
+}
+.fax__img_3{
+	width: 36%;
+	padding: 2% 0;
+	img{
+		width: $width;
+	}
+}
+.fax__img_2{
+	@extend .fax__img_1;
+}
+.fax__img_1{
+	width: 32%;
+	padding:2% 0;
+	img{
+		width: $width;
+	}
+}
+.border__title{
+	border-top: 1px solid #b2b2b2;
+	font-family: $font-family;
+	font-size: 22px;
+}
+.spirits{
+	ul{
+		display: flex;
+	}
+
+	li{
+		padding: 0 0.5%;
+	}
+}
+.company__img{
+	display: flex;
+}
+.img__left{
+	width: 50%;
+	padding-right: 0.5%;
+	img{
+		width: $width;
+	}
+}
+.img__right{
+	width: 50%;
+	padding-left: 0.5%;
+	img{
+		width: $width;
+	}
+}
+.title{
+	font-family: $font-family;
+	font-size: 30px;
+	text-align: center;
+	span{
+		font-size: 15px;
+		color: #d31f1e;
+	}
+}
+.border__table{
+	border-bottom: 1px solid #b0b0b0;
+}
+.title__footer{
+	p{
+		text-align: center;
+		color: #999999;
+		font-size: 13px;
+	}
+}
+.footer{
+	background: #000000;
+	margin-top: 1%;
+	padding: 1% 0;
+	p{
+		text-align: center;
+		color: #ffffff;
+		font-size: 12px;
+		padding: 0 4%;
+	}
+}
+img{
+	max-width: $width;
+}
+ul{
+	list-style-type: none;
+}
+table{
+	width: 100%;
+	td:nth-child(1){
+		width: 15%;
+	};
+	td:nth-child(2){
+		width: 85%;
+	};
+	td{
+		border-bottom: 1px dotted #7f7f7f;
+		padding: 1.5% 0;
+	}
+	u{
+
+	}
+}
