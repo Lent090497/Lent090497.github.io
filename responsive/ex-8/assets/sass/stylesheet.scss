@@ -1,6 +1,5 @@
 $mobile: "(max-width: 475px)";
-$tablet: "(min-width: 768px)";
-$desktop: "(min-width: 1024px)";
+$tablet: "(max-width: 1024px)";
 $width: 100%;
 $font-family: "はれのそら明朝",serif;
 body{
@@ -175,4 +174,18 @@ table{
 	u{
 
 	}
+}
+//------------------Responsive-------------------//
+//------------------tablet-----------------------//
+@media #{$tablet}{
+	.banner{
+		background-size: contain;
+	}
+	.content{
+		width: 80%;
+	}
+	.product-intro{
+		width: 100%;
+	}
+
 }

@@ -199,3 +199,15 @@ table td {
   border-bottom: 1px dotted #7f7f7f;
   padding: 1.5% 0;
 }
+
+@media (max-width: 1024px) {
+  .banner {
+    background-size: contain;
+  }
+  .content {
+    width: 80%;
+  }
+  .product-intro {
+    width: 100%;
+  }
+}
