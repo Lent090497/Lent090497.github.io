@@ -379,7 +379,7 @@ img {
 }
 
 @media (max-width: 475px) {
-  .main {
+  .container {
     min-width: 300px;
   }
   .banner__left h2 {

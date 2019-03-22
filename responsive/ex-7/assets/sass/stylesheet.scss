@@ -371,7 +371,7 @@ img{
 }
 //---------------------mobile-------------------//
 @media #{$mobile}{
-	.main{
+	.container{
 		min-width: 300px;
 	}
 	.banner__left{
