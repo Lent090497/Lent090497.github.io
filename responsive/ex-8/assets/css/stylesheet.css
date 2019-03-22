@@ -41,7 +41,7 @@ body {
 .content {
   width: 67.36%;
   margin: 0 auto;
-  padding-bottom: 10%;
+  padding: 10% 0;
 }
 
 .details-product {
@@ -111,6 +111,10 @@ body {
   font-size: 22px;
 }
 
+.spirits {
+  padding: 8% 0;
+}
+
 .spirits ul {
   display: flex;
 }
@@ -119,13 +123,17 @@ body {
   padding: 0 0.5%;
 }
 
+.company {
+  padding-bottom: 8%;
+}
+
 .company__img {
   display: flex;
 }
 
 .img__left {
   width: 50%;
-  padding-right: 0.5%;
+  padding-right: 5px;
 }
 
 .img__left img {
@@ -134,7 +142,7 @@ body {
 
 .img__right {
   width: 50%;
-  padding-left: 0.5%;
+  padding-left: 5px;
 }
 
 .img__right img {
@@ -145,11 +153,13 @@ body {
   font-family: "はれのそら明朝", serif;
   font-size: 30px;
   text-align: center;
+  padding-bottom: 3%;
 }
 
 .title span {
   font-size: 15px;
   color: #d31f1e;
+  font-style: italic;
 }
 
 .border__table {
@@ -185,6 +195,7 @@ ul {
 
 table {
   width: 100%;
+  margin-top: -3%;
 }
 
 table td:nth-child(1) {
@@ -193,11 +204,13 @@ table td:nth-child(1) {
 
 table td:nth-child(2) {
   width: 85%;
+  text-decoration: underline;
+  text-decoration-color: #b0b0b0;
 }
 
 table td {
   border-bottom: 1px dotted #7f7f7f;
-  padding: 1.5% 0;
+  padding: 1% 0;
 }
 
 @media (max-width: 1024px) {
