@@ -13,6 +13,7 @@ body {
 
 .container {
   max-width: 2560px;
+  min-width: 300px;
   width: 100%;
   margin: 0 auto;
 }
@@ -159,6 +160,7 @@ body {
 
 .title {
   font-family: "はれのそら明朝", serif;
+  font-weight: normal;
   font-size: 30px;
   text-align: center;
   padding-bottom: 3%;
