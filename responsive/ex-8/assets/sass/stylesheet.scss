@@ -48,6 +48,14 @@ body{
 .title__product{
 	width: 2.5%;
 }
+.title__product-1{
+	@extend .title__product;
+	padding-top: 4%;
+}
+.content__details-1{
+	@extend .content__details;
+	padding-top: 4%;
+}
 .content__details{
 	width: 62.38%;
 	padding-left: 13%;

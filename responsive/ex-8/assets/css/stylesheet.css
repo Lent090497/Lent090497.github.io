@@ -49,11 +49,19 @@ body {
   padding-bottom: 10%;
 }
 
-.title__product {
+.title__product, .title__product-1 {
   width: 2.5%;
 }
 
-.content__details {
+.title__product-1 {
+  padding-top: 4%;
+}
+
+.content__details-1 {
+  padding-top: 4%;
+}
+
+.content__details, .content__details-1 {
   width: 62.38%;
   padding-left: 13%;
   padding-right: 1%;
