@@ -352,8 +352,12 @@ img{
 	.content__img,
 	.content__2__img,
 	.content__img_1,
-	.box__comment{
+	{
 		@extend %content__img--tablet;
+	}
+	.box__comment{
+		width: 81%;
+		margin: 0 auto;
 	}
 	.content__inner,
 	.content__guide{

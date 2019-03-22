@@ -309,8 +309,7 @@ img {
   .slide,
   .content__img,
   .content__2__img,
-  .content__img_1,
-  .box__comment {
+  .content__img_1 {
     width: 68%;
     margin: 0 auto;
   }
@@ -368,6 +367,10 @@ img {
   }
   .banner {
     margin-bottom: 2%;
+  }
+  .box__comment {
+    width: 81%;
+    margin: 0 auto;
   }
   .content__share {
     display: none;
