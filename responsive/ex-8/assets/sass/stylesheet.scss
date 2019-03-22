@@ -16,7 +16,6 @@ body{
 }
 .container{
 	max-width: 2560px;
-	min-width: 300px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -204,4 +203,9 @@ table{
 		width: 100%;
 	}
 
+}
+@media #{$mobile}{
+	.container{
+		min-width: 300px;
+	}
 }

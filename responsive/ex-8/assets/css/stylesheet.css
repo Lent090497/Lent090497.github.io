@@ -13,7 +13,6 @@ body {
 
 .container {
   max-width: 2560px;
-  min-width: 300px;
   width: 100%;
   margin: 0 auto;
 }
@@ -232,5 +231,11 @@ table td {
   }
   .product-intro {
     width: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    min-width: 300px;
   }
 }
