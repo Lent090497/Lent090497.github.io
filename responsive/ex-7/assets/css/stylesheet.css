@@ -254,6 +254,10 @@ body {
   width: 100%;
 }
 
+.details span {
+  font-family: "Hiragino Kaku Gothic Pro",serif;
+}
+
 .banner__right img, .content img, .content__guide img {
   margin: 0 auto;
   display: block;
