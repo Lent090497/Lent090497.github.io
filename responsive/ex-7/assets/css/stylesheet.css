@@ -84,6 +84,7 @@ body {
 }
 
 .content picture img {
+  padding-bottom: 2%;
   width: 100%;
 }
 
@@ -265,7 +266,7 @@ body {
 
 p {
   text-align: justify;
-  padding-bottom: 2%;
+  padding-bottom: 3%;
 }
 
 ul {
