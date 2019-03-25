@@ -44,7 +44,6 @@ body{
 }
 .details-product{
 	display: flex;
-	padding-bottom: 10%;
 }
 .title__product{
 	width: 4%;
@@ -65,6 +64,8 @@ body{
 }
 .details__info{
 	width: 65%;
+	padding-top: 3%;
+	padding-bottom: 5%;
 	display: flex;
 }
 .details__img{
@@ -85,6 +86,9 @@ body{
 	border-top: 1px solid #b8bbbb;
 	border-bottom: 1px solid #b8bbbb;
 	padding: 0.1% 0;
+}
+.fax{
+	padding-top: 5%;
 }
 .fax__img{
 	display: flex;
@@ -185,6 +189,7 @@ table{
 	margin-top: -3%;
 	td:nth-child(1){
 		width: 15%;
+		color: #999999;
 	};
 	td:nth-child(2){
 		width: 85%;
@@ -200,10 +205,10 @@ table{
 //------------------tablet-----------------------//
 @media #{$tablet}{
 	.img__left{
-		padding-right: 2px;
+		padding-right: 4px;
 	}
 	.img__right{
-		padding-left: 2px;
+		padding-left: 4px;
 	}
 	.details__img{
 		width: 90%;
@@ -231,6 +236,12 @@ table{
 	}
 }
 @media #{$mobile}{
+	.img__left{
+		padding-right: 3px;
+	}
+	.img__right{
+		padding-left: 3px;
+	}
 	.container{
 		min-width: 300px;
 	}
