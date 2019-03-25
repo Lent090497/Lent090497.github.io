@@ -210,7 +210,7 @@ body {
 }
 
 .content__img_9 {
-  width: 38%;
+  width: 50%;
   margin: 0 auto;
   padding-bottom: 3%;
 }
@@ -304,9 +304,13 @@ img {
 }
 
 @media (min-width: 768px) {
+  .content__img_9 {
+    width: 34%;
+  }
   .content__intro {
     display: flex;
   }
+  .box__comment,
   .content__inner, .content__guide, .box__note {
     width: 85%;
     margin: 0 auto;
@@ -372,10 +376,6 @@ img {
   }
   .banner {
     margin-bottom: 2%;
-  }
-  .box__comment {
-    width: 81%;
-    margin: 0 auto;
   }
   .content__share {
     display: none;

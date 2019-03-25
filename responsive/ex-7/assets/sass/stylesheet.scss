@@ -192,7 +192,7 @@ body{
 	display: none;
 }
 .content__img_9{
-	width: 38%;
+	width: 50%;
 	margin: 0 auto;
 	padding-bottom: 3%;
 	img{
@@ -283,6 +283,9 @@ img{
 }
 //----------------tablet--------------------//
 @media #{$tablet}{
+	.content__img_9{
+		width: 34%;
+	}
 	.content__intro{
 		display: flex;
 	}
@@ -359,10 +362,7 @@ img{
 	{
 		@extend %content__img--tablet;
 	}
-	.box__comment{
-		width: 81%;
-		margin: 0 auto;
-	}
+	.box__comment,
 	.content__inner,
 	.content__guide{
 		@extend %content--tablet;
