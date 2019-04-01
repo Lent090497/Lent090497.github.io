@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 $mobile: "(max-width: 475px)";
-$tablet: "(max-width: 1024px)";
+$tablet: "(max-width: 767.98px)";
 html,body{
 	width: 100%;
 	height: 100%;
@@ -18,7 +18,9 @@ html,body{
 		}
 	}
 }
-
+.sp{
+	display: none;
+}
 table{
 	td:nth-child(1){
 		color: #acacac;
@@ -26,5 +28,13 @@ table{
 	td:nth-child(2){
 		color: #333333;
 	};
+}
+@media #{$tablet}{
+	.pc{
+		display: none;
+	}
+	.sp{
+		display: block;
+	}
 }
 

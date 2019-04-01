@@ -12,10 +12,23 @@ html, body {
   color: #d4000f;
 }
 
+.sp {
+  display: none;
+}
+
 table td:nth-child(1) {
   color: #acacac;
 }
 
 table td:nth-child(2) {
   color: #333333;
+}
+
+@media (max-width: 767.98px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
 }
