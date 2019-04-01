@@ -11,25 +11,89 @@ html,body{
 	};
 	color: #333333;
 }
+.banner{
+	max-width: 2208px;
+	padding: 0;
+}
+.bg{
+	@extend .banner;
+}
+.wrap{
+	width: 100%;
+}
+.inner{
+	width: 63%;
+	margin: 0 auto;
+}
 .title{
 	h1{
-		strong{
+		span{
 			color: #d4000f;
+			font-weight: 600;
 		}
 	}
 }
+.post{
+	padding: 0 3px;
+}
 .sp{
 	display: none;
+}
+.background-grey{
+	background: #f6f6f6;
+	padding-right: 0;
+}
+.row{
+	padding:{
+		top: 5%;
+		bottom: 5%;
+	};
+}
+h1{
+	
 }
 table{
 	td:nth-child(1){
 		color: #acacac;
 	}
 	td:nth-child(2){
-		color: #333333;
+		
 	};
+	a{
+		color: #333333 !important;
+		text-decoration: none !important;
+	}
+}
+#prev{
+	position: absolute;
+	top: 10%;
+	left: -3%;
+	cursor: pointer;
+}
+#next{
+	position: absolute;
+	top: 10%;
+	right: -3%;
+	cursor: pointer;
+}
+.border-news{
+	border: 2px solid #eaeaea;
+	padding: 3% 0;
+	margin:{
+		top: 3%;
+		bottom: 3%;
+	}
 }
 @media #{$tablet}{
+	.background-grey{
+		padding-right: 15px;
+	}
+	.padding{
+		padding-left: 0;
+	}
+	.inner{
+		width: 94%;
+	}
 	.pc{
 		display: none;
 	}
