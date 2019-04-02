@@ -10,4 +10,12 @@ $(document).ready(function() {
 	  nextArrow: $('#next'),
 	  prevArrow: $('#prev'),
 	});
+	$('.logo-slide').slick({
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
+	  nextArrow: $('#next-logo'),
+	  prevArrow: $('#prev-logo'),
+	});
 });
