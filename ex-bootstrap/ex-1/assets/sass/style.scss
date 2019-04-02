@@ -12,6 +12,10 @@ html,body{
 	color: #333333;
 	font-weight: 330;
 }
+.banner{
+	position: absolute;
+	z-index: -1;
+}
 .inner-1{
 	width: 63%;
 	margin: 0 auto;
