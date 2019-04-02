@@ -88,21 +88,6 @@ table a {
   padding-right: 0;
 }
 
-.unique-venu img {
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-}
-
-.unique-venu img:hover {
-  transform: scale(1.2, 1.2);
-  -webkit-transform: scale(1.2, 1.2);
-  -moz-transform: scale(1.2, 12);
-  -o-transform: scale(1.2, 1.2);
-  -ms-transform: scale(1.2, 1.2);
-}
-
 .logo-slide a {
   color: #333333 !important;
   text-decoration: none !important;
@@ -134,9 +119,6 @@ hr {
 }
 
 .footer-contacts {
-  background-image: url(../images/img_footer.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   font-size: 14px;
   padding-bottom: 13%;
 }
@@ -155,10 +137,10 @@ hr {
 @media (max-width: 1024px) {
   .inner-1,
   hr {
-    width: 80%;
+    width: 90%;
   }
   .inner-2 {
-    width: 82%;
+    width: 92%;
   }
 }
 
@@ -186,7 +168,9 @@ hr {
   #next, #next-logo, #prev, #prev-logo {
     top: 20%;
   }
-  .logo,
+  .logo {
+    font-size: 10px;
+  }
   .post {
     font-size: 12px;
   }
