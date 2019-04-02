@@ -42,14 +42,14 @@ table a {
 
 #prev, #prev-logo {
   position: absolute;
-  top: 10%;
+  top: 30%;
   left: -3%;
   cursor: pointer;
 }
 
 #next, #next-logo {
   position: absolute;
-  top: 10%;
+  top: 30%;
   right: -3%;
   cursor: pointer;
 }
