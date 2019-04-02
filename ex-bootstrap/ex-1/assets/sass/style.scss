@@ -175,8 +175,13 @@ hr{
 }
 /* -----------------mobile----------------- */
 @media #{$mobile}{
-	.logo{
-		font-size: 10px;
+	#next,
+	#prev{
+		top: 20%;
+	}
+	.logo,
+	.post{
+		font-size: 12px;
 	}
 }
 

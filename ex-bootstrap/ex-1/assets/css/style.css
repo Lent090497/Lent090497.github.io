@@ -178,7 +178,11 @@ hr {
 
 /* -----------------mobile----------------- */
 @media (max-width: 475px) {
-  .logo {
-    font-size: 10px;
+  #next, #next-logo, #prev, #prev-logo {
+    top: 20%;
+  }
+  .logo,
+  .post {
+    font-size: 12px;
   }
 }
