@@ -155,8 +155,9 @@ hr{
 	background-color: #333333;
 	a{
 		color: #b4b4cd !important;
+		text-decoration: none !important;
 		&:hover{
-			color:  #88000a;
+			color:  #88000a !important;
 		};
 	}
 	span{
