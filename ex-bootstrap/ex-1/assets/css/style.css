@@ -8,6 +8,10 @@ html, body {
   font-weight: 330;
 }
 
+.container {
+  max-width: 1200px;
+}
+
 .banner {
   position: absolute;
   z-index: -1;
@@ -45,6 +49,18 @@ table a {
   text-decoration: none !important;
 }
 
+.post a {
+  text-decoration: none !important;
+}
+
+.post a:hover {
+  color: #88000a !important;
+}
+
+.post span {
+  color: #333333;
+}
+
 #prev, #prev-logo {
   position: absolute;
   top: 30%;
@@ -63,31 +79,6 @@ table a {
   border: 2px solid #eaeaea;
 }
 
-.btn-primary {
-  background-color: #d4000f;
-  color: #ffffff;
-  border-color: #ffffff;
-}
-
-.btn-primary:hover {
-  color: #d4000f;
-  background-color: #ffffff;
-  border-color: #ffffff;
-}
-
-.btn-sm {
-  padding: .25rem 1rem;
-}
-
-.btn {
-  font-size: 12px;
-}
-
-.edit-padding {
-  padding-left: 4.5%;
-  padding-right: 0;
-}
-
 .logo-slide a {
   color: #333333 !important;
   text-decoration: none !important;
@@ -99,10 +90,12 @@ table a {
 
 #next-logo {
   top: 25%;
+  right: -1%;
 }
 
 #prev-logo {
   top: 25%;
+  left: -1%;
 }
 
 a:hover {
@@ -110,8 +103,7 @@ a:hover {
 }
 
 hr {
-  width: 63%;
-  border: 1px solid #acacac;
+  border: 0.7px solid #acacac;
 }
 
 .bg-contacts {
@@ -119,8 +111,9 @@ hr {
 }
 
 .footer-contacts {
-  font-size: 14px;
-  padding-bottom: 13%;
+  background: url(../images/footer.png) no-repeat left bottom;
+  background-size: cover;
+  padding-bottom: 15%;
 }
 
 .footer-contacts a {
@@ -132,46 +125,96 @@ hr {
   font-weight: 450;
 }
 
-/* ------------------Media-------------------*/
-/* ------------------pc------------------- */
-@media (max-width: 1024px) {
-  .inner-1,
-  hr {
-    width: 90%;
-  }
-  .inner-2 {
-    width: 92%;
-  }
+.unique-venu img {
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
 }
 
-/* ------------------tablet---------------- */
-@media (max-width: 767.98px) {
-  .edit-padding {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .inner-1,
-  .inner-2,
-  hr {
-    width: 94%;
-  }
+.unique-venu:hover img {
+  transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+  -moz-transform: scale(1.5, 1.5);
+  -o-transform: scale(1.5, 1.5);
+  -ms-transform: scale(1.5, 1.5);
+}
+
+.btn-primary {
+  background: #d4000f;
+  border-color: rgba(255, 255, 255, 0);
+  border-radius: 0;
+}
+
+.btn-primary:hover {
+  background: rgba(255, 255, 255, 0);
+  color: #d4000f;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.edit-btn {
+  padding: 0 .75rem;
+}
+
+.bg-footer {
+  background-color: #333333;
+}
+
+.bg-footer a {
+  color: #b4b4cd !important;
+}
+
+.bg-footer a:hover {
+  color: #88000a;
+}
+
+.bg-footer span {
+  font-weight: 450;
+}
+
+.edit-padding {
+  padding-left: 4.5%;
+  padding-right: 0;
+}
+
+.edit-container {
+  padding-left: 0;
+}
+
+.edit-pad-vue {
+  padding: 0;
+}
+
+/* ------------------Media-------------------*/
+/* ----------------------------------------- */
+/* ------------------pc------------------- */
+@media (max-width: 575.98px) {
   .pc {
     display: none;
   }
   .sp {
     display: block;
   }
-}
-
-/* -----------------mobile----------------- */
-@media (max-width: 475px) {
-  #next, #next-logo, #prev, #prev-logo {
-    top: 20%;
-  }
-  .logo {
+  .logo-slide,
+  .post {
     font-size: 10px;
   }
-  .post {
-    font-size: 12px;
+}
+
+@media (max-width: 991.98px) {
+  .edit-pad-vue {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .edit-container {
+    padding-left: 15px;
+  }
+  .edit-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer-contacts {
+    background-size: contain;
+    padding-bottom: 17%;
   }
 }
