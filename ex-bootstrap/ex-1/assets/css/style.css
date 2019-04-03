@@ -165,12 +165,12 @@ hr {
   text-decoration: none !important;
 }
 
-.bg-footer a:hover {
-  color: #88000a !important;
-}
-
 .bg-footer span {
   font-weight: 450;
+}
+
+.bg-footer a:hover {
+  color: #88000a !important;
 }
 
 .edit-padding {

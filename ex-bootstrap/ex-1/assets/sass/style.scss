@@ -156,12 +156,12 @@ hr{
 	a{
 		color: #b4b4cd !important;
 		text-decoration: none !important;
-		&:hover{
-			color:  #88000a !important;
-		};
 	}
 	span{
 		font-weight: 450;
+	}
+	a:hover{
+		color:  #88000a !important;
 	}
 }
 .edit-padding{
