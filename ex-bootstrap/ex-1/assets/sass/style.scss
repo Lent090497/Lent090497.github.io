@@ -138,8 +138,9 @@ hr{
 			-ms-transform: scale(1.5,1.5);
 		};
 }
-.btn-primary{
+.btn-light{
 	background: #d4000f;
+	color: #ffffff;
 	border-color: rgba(255,255,255,0);
 	border-radius: 0;
 	&:hover{

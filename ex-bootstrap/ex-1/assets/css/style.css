@@ -140,13 +140,14 @@ hr {
   -ms-transform: scale(1.5, 1.5);
 }
 
-.btn-primary {
+.btn-light {
   background: #d4000f;
+  color: #ffffff;
   border-color: rgba(255, 255, 255, 0);
   border-radius: 0;
 }
 
-.btn-primary:hover {
+.btn-light:hover {
   background: rgba(255, 255, 255, 0);
   color: #d4000f;
   border-color: rgba(255, 255, 255, 0);
