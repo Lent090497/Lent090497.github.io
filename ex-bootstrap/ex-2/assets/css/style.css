@@ -27,6 +27,12 @@ body {
   padding-top: 3.08%;
 }
 
+@media (max-width: 575.98px) {
+  .content-1:before {
+    background: #ffffff;
+  }
+}
+
 .content-2 {
   position: relative;
 }
@@ -46,11 +52,17 @@ body {
   padding-top: 10.38%;
 }
 
+@media (max-width: 575.98px) {
+  .content-2:before {
+    background: #ffffff;
+  }
+}
+
 .content-3 {
   position: relative;
 }
 
-.content-3:after {
+.content-3:before {
   width: 50.42%;
   height: 76.31%;
   position: absolute;
@@ -58,18 +70,25 @@ body {
   z-index: -1;
   background-color: #f0f0f0;
   top: 17%;
-  right: 1%;
+  right: 8.5%;
 }
 
 .content-3__padding-h3 {
   padding-top: 10.38%;
 }
 
-.content-4 {
-  position: relative;
+@media (max-width: 575.98px) {
+  .content-3:before {
+    background: #ffffff;
+  }
 }
 
-.content-4:after {
+.content-4 {
+  position: relative;
+  padding-top: 2.16%;
+}
+
+.content-4:before {
   width: 49.58%;
   height: 89.5%;
   position: absolute;
@@ -81,21 +100,49 @@ body {
 }
 
 .content-4__padding-h3 {
-  padding-top: 10.38%;
+  padding-top: 5.5%;
 }
 
-.icon-play {
+@media (max-width: 575.98px) {
+  .content-4:before {
+    background: #ffffff;
+  }
+}
+
+.video {
+  position: relative;
+}
+
+.video i {
+  position: absolute;
   font-size: 60px;
-  left: 70% !important;
+  color: #ffffff;
+  bottom: 5%;
+  right: 14%;
 }
 
-.edit-btn-2 {
+.btn-padding-1 {
+  margin-bottom: 1%;
+}
+
+.btn-edit-1 {
+  background-color: #ffffff !important;
+  border-radius: 2rem !important;
+  font-size: 12px;
+}
+
+.btn-edit-1:hover {
+  background-color: #dc3545 !important;
+}
+
+.btn-edit-2 {
   border-radius: 0 !important;
 }
 
-.edit-btn-1 {
-  border-radius: 2rem !important;
-  font-size: 12px;
+@media (max-width: 575.98px) {
+  .btn {
+    font-size: 12px !important;
+  }
 }
 
 .bg-header {
@@ -103,13 +150,19 @@ body {
   font-size: 10px;
 }
 
-.bg-dark a {
+.contacts a {
   text-decoration: none !important;
   color: #ffffff;
 }
 
-.bg-dark a:hover {
+.contacts a:hover {
   color: #88000a !important;
+}
+
+@media (max-width: 575.98px) {
+  .contacts {
+    font-size: 12px;
+  }
 }
 
 .note a {
@@ -125,16 +178,21 @@ body {
   padding-bottom: 23%;
 }
 
+.bg-contacts-edit-1 {
+  margin-left: 8.08%;
+}
+
+@media (max-width: 575.98px) {
+  .bg-contacts {
+    font-size: 12px;
+  }
+  .bg-contacts-edit-1 {
+    margin-left: 0;
+  }
+}
+
 .fa-comment-alt, .bg-contacts span {
   color: #d20005;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
-}
-
-h3 {
-  color: #e5010e;
 }
 
 .container {
@@ -169,6 +227,14 @@ h3 {
   left: 25%;
 }
 
+@media (max-width: 575.98px) {
+  .list-img li p {
+    font-size: 12px;
+    top: 5%;
+    left: 5%;
+  }
+}
+
 .img_3 {
   position: absolute;
   z-index: -1;
@@ -176,6 +242,41 @@ h3 {
 
 .img_2 {
   margin-top: 22%;
+}
+
+@media (max-width: 575.98px) {
+  .img_3 {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  .img_2 {
+    width: 100%;
+    margin-top: 5%;
+  }
+}
+
+.title-h3 {
+  font-size: 38px !important;
+  color: #e5010e;
+}
+
+.title-h2 {
+  padding-top: 7.83%;
+  padding-bottom: 7.83%;
+}
+
+.title-h2 h2 {
+  font-size: 38px;
+}
+
+.title-h1 {
+  padding-top: 8%;
+  padding-bottom: 6.5%;
+}
+
+.title-h1 h1 {
+  font-size: 38px !important;
 }
 
 ul {
@@ -186,4 +287,10 @@ ul {
 ul li {
   width: 33%;
   display: inline-block;
+}
+
+@media (max-width: 991.98px) {
+  li {
+    width: 49% !important;
+  }
 }
