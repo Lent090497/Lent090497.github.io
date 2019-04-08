@@ -33,7 +33,7 @@ a:hover {
 
 @media (max-width: 991.98px) {
   .list-img__left-1 {
-    left: 17.15%;
+    left: 10.15%;
   }
 }
 
@@ -53,7 +53,7 @@ a:hover {
 
 @media (max-width: 991.98px) {
   .list-img__left-3 {
-    left: 21.75%;
+    left: 16.75%;
   }
 }
 
@@ -97,6 +97,12 @@ a:hover {
 @media (max-width: 991.98px) {
   .list-img li p {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .list-img li p {
+    top: 21.5%;
   }
 }
 

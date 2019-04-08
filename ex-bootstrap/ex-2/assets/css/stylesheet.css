@@ -20,6 +20,12 @@
   color: #fff !important;
 }
 
+@media (max-width: 575.98px) {
+  .btn__list {
+    font-size: 12px !important;
+  }
+}
+
 .title-h1 {
   padding-top: 8.33%;
   padding-bottom: 5.42%;
@@ -169,7 +175,7 @@
 @media (max-width: 575.98px) {
   .content-2__img-2 {
     width: 100%;
-    padding-top: 0;
+    padding-top: 2%;
   }
 }
 
@@ -202,12 +208,6 @@
   .content-3 img {
     display: block;
     margin: 0 auto;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .content-3 img {
-    width: 100%;
   }
 }
 
@@ -278,6 +278,6 @@
 
 @media (max-width: 575.98px) {
   .contacts {
-    font-size: 12px;
+    font-size: 10px;
   }
 }

@@ -47,7 +47,7 @@ a{
 	&__left-1{
 		left: 10%;
 		@include tab{
-			left: 17.15%;
+			left: 10.15%;
 		}
 	}
 	&__left-2{
@@ -59,7 +59,7 @@ a{
 	&__left-3{
 		left: 14.75%;
 		@include tab{
-			left: 21.75%;
+			left: 16.75%;
 		}
 	}
 	ul{
@@ -93,6 +93,9 @@ a{
 				top: 31.5%;
 				@include tab{
 					font-size: 12px;
+				}
+				@include mobile{
+					top: 21.5%;
 				}
 			}
 			@include tab{
