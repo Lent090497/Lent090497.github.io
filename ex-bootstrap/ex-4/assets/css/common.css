@@ -1,0 +1,182 @@
+@import url("https://fonts.google.com/specimen/Noto+Sans");
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Helvetica',serif !important;
+  font-size: 16px !important;
+  color: #333333 !important;
+  border: 1px solid green;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.bg-header {
+  background: #2b2b2b;
+  font-size: 12px;
+  padding-left: 2.1%;
+}
+
+.bg-header a {
+  text-decoration: none !important;
+  border-bottom: 1px dashed #ffffff;
+}
+
+a:hover {
+  color: #88000a !important;
+}
+
+.list-img {
+  padding-top: 10.41%;
+  padding-bottom: 5.21%;
+}
+
+.list-img__left-1 {
+  left: 10%;
+}
+
+@media (max-width: 991.98px) {
+  .list-img__left-1 {
+    left: 10.15%;
+  }
+}
+
+.list-img__left-2 {
+  left: 25.75%;
+}
+
+@media (max-width: 991.98px) {
+  .list-img__left-2 {
+    left: 31.75%;
+  }
+}
+
+.list-img__left-3 {
+  left: 14.75%;
+}
+
+@media (max-width: 991.98px) {
+  .list-img__left-3 {
+    left: 16.75%;
+  }
+}
+
+.list-img ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.list-img li {
+  padding: 1.25%;
+  position: relative;
+  width: 33%;
+  display: inline-block;
+}
+
+.list-img li img {
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.list-img li:hover img {
+  transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+  -moz-transform: scale(1.5, 1.5);
+  -o-transform: scale(1.5, 1.5);
+  -ms-transform: scale(1.5, 1.5);
+}
+
+.list-img li p {
+  color: #fff;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  top: 28.5%;
+  font-size: 24px;
+  top: 31.5%;
+}
+
+@media (max-width: 991.98px) {
+  .list-img li p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .list-img li p {
+    top: 21.5%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .list-img li {
+    width: 32%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .list-img li {
+    width: 49%;
+  }
+}
+
+.inner-list {
+  width: 100%;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.bg-contacts {
+  background: url(../images/bg_footer.png) no-repeat left bottom;
+  background-size: contain;
+  padding-bottom: 14.34%;
+}
+
+.bg-contacts span {
+  color: #cf0000;
+}
+
+@media (max-width: 575.98px) {
+  .bg-contacts {
+    padding-bottom: 20%;
+  }
+}
+
+.contacts {
+  padding: 5.7% 0;
+}
+
+.contacts a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contacts a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+  .contacts {
+    font-size: 10px;
+  }
+}
+
+.btn__list {
+  border-radius: 0 !important;
+}
+
+.btn__list:hover {
+  color: #fff !important;
+}
+
+@media (max-width: 575.98px) {
+  .btn__list {
+    font-size: 12px !important;
+  }
+}

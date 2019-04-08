@@ -1,0 +1,20 @@
+$height-li: 50%;
+.list-info{
+	ul{
+		list-style-type: none;
+		padding-left: 0;
+		li{
+			background-color: #f7f7f7;
+			display: inline-block;
+			margin: 0.833%;
+		}
+	}
+}
+.card{
+	&__edit{
+		border: hidden !important;
+		border-radius: 0 !important;
+		background-color: #f7f7f7 !important;
+		width: 22.3rem;
+	}
+}
