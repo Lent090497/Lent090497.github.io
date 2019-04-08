@@ -1,12 +1,17 @@
 
 $mobile: 575.98px;
+$sm: 767.98px;
 $tab: 991.98px;
 @mixin mobile {
   @media (max-width: #{$mobile}) {
   	@content;
   }
 }
-
+@mixin sm {
+  @media (max-width: #{$sm}) {
+  	@content;
+  }
+}
 @mixin tab {
   @media (max-width: #{$tab}) {
   	@content;
@@ -50,6 +55,18 @@ $tab: 991.98px;
 		top: 80%;
 		font-size: 73px;
 		color: #fff;
+		@include tab{
+			font-size: 68px;
+			top: 70%;
+		}
+		@include sm{
+			font-size: 48px;
+			top: 70%;
+		}
+		@include mobile{
+			font-size: 38px;
+			top: 70%;
+		}
 	}
 }
 %title-h3{
@@ -81,7 +98,7 @@ $tab: 991.98px;
  		right: 13.48%;
  		top: 14.42%;
  		content: "";
- 		@include mobile{
+ 		@include sm{
 			background-color: #fff;
 		}
 	}
@@ -91,7 +108,7 @@ $tab: 991.98px;
 	&__right{
 		padding-left: 4.26%;
 	}
-	@include mobile{
+	@include tab{
 		img{
 			width: 100%;
 		}
@@ -115,7 +132,7 @@ $tab: 991.98px;
  		left: 13.65%;
  		top: 10.15%;
  		content: "";
- 		@include mobile{
+ 		@include sm{
 			background-color: #fff;
 		}
 	}
@@ -139,12 +156,6 @@ $tab: 991.98px;
 			padding-top: 0;
 		}
 	}
-	@include mobile{
-		  display: -webkit-flex; /* Safari */
-		  -webkit-flex-direction: row-reverse; /* Safari 6.1+ */
-		  display: flex;
-		  flex-direction: row-reverse;
-			}
 }
 .content-3{
 	position: relative;
@@ -157,7 +168,7 @@ $tab: 991.98px;
  		right: 9.95%;
  		top: 14.84%;
  		content: "";
- 		@include mobile{
+ 		@include sm{
 			background-color: #fff;
 		}
 	}
@@ -168,6 +179,12 @@ $tab: 991.98px;
 		@extend %title-h3;
 		padding-top: 11.83%;
 		padding-bottom: 3.17%
+	}
+	@include tab{
+		img{
+			display: block;
+			margin: 0 auto;
+		}
 	}
 	@include mobile{
 		img{
@@ -185,7 +202,7 @@ $tab: 991.98px;
  		left: 6.65%;
  		top: 18.32%;
  		content: "";
- 		@include mobile{
+ 		@include sm{
 			background-color: #fff;
 		}
 		@include tab{
@@ -216,6 +233,7 @@ $tab: 991.98px;
 }
 .contacts{
 	a{
+		font-size: 14px;
 		color:#fff;
 		text-decoration: none;
 		&:hover{
@@ -223,4 +241,3 @@ $tab: 991.98px;
 		};
 	}
 }
-

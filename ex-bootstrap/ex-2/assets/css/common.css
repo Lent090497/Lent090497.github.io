@@ -13,6 +13,11 @@ body {
   padding-left: 2.1%;
 }
 
+.bg-header a {
+  text-decoration: none !important;
+  border-bottom: 1px dashed #ffffff;
+}
+
 a:hover {
   color: #88000a !important;
 }
@@ -20,6 +25,36 @@ a:hover {
 .list-img {
   padding-top: 10.41%;
   padding-bottom: 5.21%;
+}
+
+.list-img__left-1 {
+  left: 10%;
+}
+
+@media (max-width: 991.98px) {
+  .list-img__left-1 {
+    left: 17.15%;
+  }
+}
+
+.list-img__left-2 {
+  left: 25.75%;
+}
+
+@media (max-width: 991.98px) {
+  .list-img__left-2 {
+    left: 31.75%;
+  }
+}
+
+.list-img__left-3 {
+  left: 14.75%;
+}
+
+@media (max-width: 991.98px) {
+  .list-img__left-3 {
+    left: 21.75%;
+  }
 }
 
 .list-img ul {
@@ -54,6 +89,15 @@ a:hover {
   position: absolute;
   z-index: 10;
   text-align: center;
+  top: 28.5%;
+  font-size: 24px;
+  top: 31.5%;
+}
+
+@media (max-width: 991.98px) {
+  .list-img li p {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -70,7 +114,7 @@ a:hover {
 
 .inner-list {
   width: 100%;
-  max-width: 1230px;
+  max-width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
