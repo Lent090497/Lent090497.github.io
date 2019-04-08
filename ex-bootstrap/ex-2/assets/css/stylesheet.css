@@ -16,6 +16,10 @@
   border-radius: 0 !important;
 }
 
+.btn__list:hover {
+  color: #fff !important;
+}
+
 .title-h1 {
   padding-top: 8.33%;
   padding-bottom: 5.42%;
@@ -259,12 +263,21 @@
   }
 }
 
+.contacts {
+  padding: 5.7% 0;
+}
+
 .contacts a {
-  font-size: 14px;
   color: #fff;
   text-decoration: none;
 }
 
 .contacts a:hover {
   text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+  .contacts {
+    font-size: 12px;
+  }
 }

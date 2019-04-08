@@ -34,6 +34,9 @@ $tab: 991.98px;
 		}
 	&__list{
 		border-radius: 0 !important;
+		&:hover{
+			color: #fff !important;
+		};
 	}
 }
 .title-h1{
@@ -236,12 +239,15 @@ $tab: 991.98px;
 	}
 }
 .contacts{
+	padding: 5.7% 0;
 	a{
-		font-size: 14px;
 		color:#fff;
 		text-decoration: none;
 		&:hover{
 			text-decoration:none;
 		};
+	}
+	@include mobile{
+		font-size: 12px;
 	}
 }
