@@ -23,22 +23,30 @@ $lg: 991.98px;
 	}
 }
 .banner{
+	position: relative;
 	font-size: 48px;
 	a{
 		color: #fff;
 		font-weight: 500;
 	}
 	&__text{
+		font-size: 38px;
 		text-transform: uppercase;
-		@include sm{
-			display: none;
-		}
 		@include lg{
 			font-size: 30px;
 		}
+		@include sm{
+			font-size: 28px;
+		}
 	}
 	&__caption{
-		bottom: 111px;
+		bottom: 32%;
+		@include sm{
+			bottom: -14%;
+			p{
+				margin-bottom: 0;
+			}
+		}
 	}
 	
 }
@@ -132,5 +140,16 @@ $lg: 991.98px;
 		color: #959595;
 		padding: 3.34% 0;
 		font-size: 12px;
+	}
+}
+.icon-pc{
+	@include sm{
+		display: none;
+	}
+}
+.icon-sp{
+	display: none;
+	@include sm{
+		display: block;
 	}
 }
