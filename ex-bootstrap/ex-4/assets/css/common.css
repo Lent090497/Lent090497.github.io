@@ -200,6 +200,7 @@ a:hover {
 
 .btn__list {
   border-radius: 0 !important;
+  margin-top: 3%;
 }
 
 .btn__list:hover {

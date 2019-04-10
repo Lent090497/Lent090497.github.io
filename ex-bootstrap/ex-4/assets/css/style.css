@@ -27,6 +27,14 @@
   margin-bottom: 2.2%;
 }
 
+.card-body__text a {
+  color: #333333 !important;
+}
+
+.card-body__text a:hover {
+  text-decoration: none !important;
+}
+
 .card__edit {
   width: 100%;
   border: hidden !important;

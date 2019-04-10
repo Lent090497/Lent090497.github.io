@@ -17,20 +17,7 @@ $xl: 1199.98px;
 		@content;
 	}
 }
-.h1{
-	h1{
-		font-size: 48pt;
-		font-weight: 500;
-		@include sm{
-			font-size: 40pt;
-		}
-	}
-	span{
-		padding-top: 0.5%;
-	}
-	padding-bottom: 7.83%;
-	color: #000000;
-}
+
 .bg-content{
 	background-color: #f4f4f4;
 	padding: 2.58% 1.5%;
@@ -63,13 +50,6 @@ $xl: 1199.98px;
 	text-decoration: none !important;
 }
 .container{
-	&__padding{
-		padding: 0 !important;
-		@include md{
-			padding-left: 15px !important;
-			padding-right: 15px !important;
-		}
-	}
 	&__title{
 		@include xl{
 			padding: 0 1.5%;
@@ -98,8 +78,8 @@ $xl: 1199.98px;
 		background-color: #c22822 !important;
 		color: #fff !important;
 		@include md{
-			padding-left: 1.66% !important;
-			padding-right: 1.66% !important;
+			padding-left: 1.66%;
+			padding-right: 1.66%;
 		}
 	}
 }
