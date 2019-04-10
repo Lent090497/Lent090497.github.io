@@ -65,16 +65,19 @@
 }
 
 .btn__back {
-  padding-left: 5.66% !important;
-  padding-right: 5.66% !important;
   background-color: #c22822 !important;
   color: #fff !important;
 }
 
-@media (max-width: 767.98px) {
-  .btn__back {
-    padding-left: 1.66%;
-    padding-right: 1.66%;
+.btn-padding {
+  margin-top: -0.5rem;
+  padding: 1rem 5rem !important;
+}
+
+@media (max-width: 991.98px) {
+  .btn-padding {
+    margin-top: 0;
+    padding: 0.5rem 1rem !important;
   }
 }
 

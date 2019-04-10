@@ -17,6 +17,11 @@ $xl: 1199.98px;
 		@content;
 	}
 }
+@mixin lg{
+	@media (max-width: #{$lg}){
+		@content;
+	}
+}
 
 .bg-content{
 	background-color: #f4f4f4;
@@ -73,13 +78,15 @@ $xl: 1199.98px;
 		}
 	}
 	&__back{
-		padding-left: 5.66% !important;
-		padding-right: 5.66% !important;
 		background-color: #c22822 !important;
 		color: #fff !important;
-		@include md{
-			padding-left: 1.66%;
-			padding-right: 1.66%;
+	}
+	&-padding{
+		margin-top: -0.5rem;
+		padding: 1rem 5rem !important;
+		@include lg{
+			margin-top: 0;
+			padding: 0.5rem 1rem !important;
 		}
 	}
 }
