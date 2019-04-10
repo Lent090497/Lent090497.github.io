@@ -1,17 +1,96 @@
 .list-info ul {
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 .list-info ul li {
+  width: 31.2%;
   background-color: #f7f7f7;
   display: inline-block;
   margin: 0.833%;
 }
 
+@media (max-width: 767.98px) {
+  .list-info ul li {
+    width: 47.5% !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .list-info ul li {
+    width: 100% !important;
+  }
+}
+
+.card-deck__edit {
+  margin-bottom: 2.2%;
+}
+
 .card__edit {
+  width: 100%;
   border: hidden !important;
   border-radius: 0 !important;
   background-color: #f7f7f7 !important;
-  width: 22.3rem;
+}
+
+.card__edit img {
+  transition: all 1s ease !important;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.card__edit:hover img {
+  transform: scale(1.5, 1.5) !important;
+  -webkit-transform: scale(1.5, 1.5);
+  -moz-transform: scale(1.5, 1.5);
+  -o-transform: scale(1.5, 1.5);
+  -ms-transform: scale(1.5, 1.5);
+}
+
+.card__edit-2 {
+  width: 100%;
+  border: hidden !important;
+  border-radius: 0 !important;
+}
+
+.card__padding-1 {
+  padding-bottom: 13.03%;
+}
+
+.card__padding-2 {
+  padding-bottom: 13.4%;
+}
+
+.text {
+  padding-left: 0.833%;
+}
+
+.h1__padding {
+  padding-bottom: 7.83%;
+}
+
+.list-img {
+  padding-top: 2.41%;
+}
+
+@media (max-width: 767.98px) {
+  .pc {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .sp {
+    display: block;
+  }
+}
+
+.card-title__h5 {
+  font-size: 21px;
 }

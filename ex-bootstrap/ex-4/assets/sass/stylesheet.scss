@@ -1,0 +1,118 @@
+$sm: 575.98px;
+$md: 767.98px;
+$lg: 991.98px;
+$xl: 1199.98px;
+@mixin sm {
+  @media (max-width: #{$sm}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (max-width: #{$xl}) {
+    @content;
+  }
+}
+@mixin md{
+	@media (max-width: #{$md}){
+		@content;
+	}
+}
+.h1{
+	h1{
+		font-size: 48pt;
+		font-weight: 500;
+		@include sm{
+			font-size: 40pt;
+		}
+	}
+	span{
+		padding-top: 0.5%;
+	}
+	padding-bottom: 7.83%;
+	color: #000000;
+}
+.bg-content{
+	background-color: #f4f4f4;
+	padding: 2.58% 1.5%;
+	margin-bottom: 2.17%;
+	&__b{
+	    font-size: 21px;
+	  }
+	&__details{
+		font-size: 18px;
+		padding-top: 2.25%;
+	a{
+		color: #c33125 !important;
+		&:hover{
+			text-decoration: none;
+		};
+	}
+	}
+}
+.bg-btn{
+	padding: 5.08% 0;
+	margin: 3.33% 0;
+	text-align: center;
+	color: #fff;
+	font-weight: 600 !important;
+	font-size: 38pt;
+	background-color: #b3b3b3;
+}
+.btn-omission{
+	cursor: pointer;
+	text-decoration: none !important;
+}
+.container{
+	&__padding{
+		padding: 0 !important;
+		@include md{
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+		}
+	}
+	&__title{
+		@include xl{
+			padding: 0 1.5%;
+		}
+    	b{
+    		font-size: 26px;
+		}
+    	&__p{
+	      font-size: 20px;
+	    }
+	}
+}
+.btn{
+	&__list{
+		border-radius: 0 !important;
+		&:hover{
+			color: #fff !important;
+		};
+		@include sm{
+			font-size: 8px !important;
+		}
+	}
+	&__back{
+		padding-left: 5.66% !important;
+		padding-right: 5.66% !important;
+		background-color: #c22822 !important;
+		color: #fff !important;
+		@include md{
+			padding-left: 1.66% !important;
+			padding-right: 1.66% !important;
+		}
+	}
+}
+.content-btn{
+	padding-bottom: 4.67%;
+	&__center{
+		display: table; 
+    	margin: auto; 
+    	b{
+    		font-size: 12px;
+    		@include sm{
+    			font-size: 8px;
+    		}
+    	}
+	}
+}

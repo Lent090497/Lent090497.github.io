@@ -1,20 +1,102 @@
 $height-li: 50%;
+$sm: 575.98px;
+$md: 767.98px;
+$lg: 991.98px;
+$xl: 1199.98px;
+@mixin sm {
+  @media (max-width: #{$sm}) {
+    @content;
+  }
+}
+@mixin md{
+	@media (max-width: #{$md}){
+		@content;
+	}
+}
 .list-info{
 	ul{
 		list-style-type: none;
 		padding-left: 0;
+		margin-bottom: 0;
 		li{
+			width: 31.2%;
 			background-color: #f7f7f7;
 			display: inline-block;
 			margin: 0.833%;
+			@include md{
+				width: 47.5% !important;
+			}
+			@include sm{
+				width: 100% !important;
+			}
+
 		}
+	}
+}
+.card-deck{
+	&__edit{
+		margin-bottom: 2.2%;
 	}
 }
 .card{
 	&__edit{
+		width: 100%;
 		border: hidden !important;
 		border-radius: 0 !important;
 		background-color: #f7f7f7 !important;
-		width: 22.3rem;
+		img{
+			transition: all 1s ease !important;
+			-webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-o-transition: all 1s ease;
+		}
+		&:hover img{
+			transform: scale(1.5,1.5) !important;
+			-webkit-transform: scale(1.5,1.5);
+			-moz-transform: scale(1.5,1.5);
+			-o-transform: scale(1.5,1.5);
+			-ms-transform: scale(1.5,1.5);
+		};
+		
+	}
+	&__edit-2{
+		width: 100%;
+		border: hidden !important;
+		border-radius: 0 !important;
+		
+	}
+	&__padding-1{
+		padding-bottom: 13.03%;
+	}
+	&__padding-2{
+		padding-bottom: 13.4%;
+	}
+}
+
+.text{
+	padding-left: 0.833%;
+}
+.h1{
+  &__padding{
+    padding-bottom: 7.83%;
+  }
+}
+.list-img{
+	padding-top: 2.41%;
+}
+.pc{
+	@include md{
+		display: none;
+	}
+}
+.sp{
+	display: none;
+	@include md{
+		display: block;
+	}
+}
+.card-title{
+	&__h5{
+		font-size: 21px;
 	}
 }

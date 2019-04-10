@@ -1,0 +1,129 @@
+.h1 {
+  padding-bottom: 7.83%;
+  color: #000000;
+}
+
+.h1 h1 {
+  font-size: 48pt;
+  font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+  .h1 h1 {
+    font-size: 40pt;
+  }
+}
+
+.h1 span {
+  padding-top: 0.5%;
+}
+
+.bg-content {
+  background-color: #f4f4f4;
+  padding: 2.58% 1.5%;
+  margin-bottom: 2.17%;
+}
+
+.bg-content__b {
+  font-size: 21px;
+}
+
+.bg-content__details {
+  font-size: 18px;
+  padding-top: 2.25%;
+}
+
+.bg-content__details a {
+  color: #c33125 !important;
+}
+
+.bg-content__details a:hover {
+  text-decoration: none;
+}
+
+.bg-btn {
+  padding: 5.08% 0;
+  margin: 3.33% 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 600 !important;
+  font-size: 38pt;
+  background-color: #b3b3b3;
+}
+
+.btn-omission {
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.container__padding {
+  padding: 0 !important;
+}
+
+@media (max-width: 767.98px) {
+  .container__padding {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .container__title {
+    padding: 0 1.5%;
+  }
+}
+
+.container__title b {
+  font-size: 26px;
+}
+
+.container__title__p {
+  font-size: 20px;
+}
+
+.btn__list {
+  border-radius: 0 !important;
+}
+
+.btn__list:hover {
+  color: #fff !important;
+}
+
+@media (max-width: 575.98px) {
+  .btn__list {
+    font-size: 8px !important;
+  }
+}
+
+.btn__back {
+  padding-left: 5.66% !important;
+  padding-right: 5.66% !important;
+  background-color: #c22822 !important;
+  color: #fff !important;
+}
+
+@media (max-width: 767.98px) {
+  .btn__back {
+    padding-left: 1.66% !important;
+    padding-right: 1.66% !important;
+  }
+}
+
+.content-btn {
+  padding-bottom: 4.67%;
+}
+
+.content-btn__center {
+  display: table;
+  margin: auto;
+}
+
+.content-btn__center b {
+  font-size: 12px;
+}
+
+@media (max-width: 575.98px) {
+  .content-btn__center b {
+    font-size: 8px;
+  }
+}

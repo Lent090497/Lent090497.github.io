@@ -1,19 +1,19 @@
 @import url("https://fonts.google.com/specimen/Noto+Sans");
-$mobile: 575.98px;
-$sm: 767.98px;
-$tab: 991.98px;
-@mixin mobile {
-  @media (max-width: #{$mobile}) {
-    @content;
-  }
-}
-@mixin tab {
+$sm: 575.98px;
+$md: 767.98px;
+$lg: 991.98px;
+@mixin sm {
   @media (max-width: #{$sm}) {
     @content;
   }
 }
-@mixin tab {
-  @media (max-width: #{$tab}) {
+@mixin md {
+  @media (max-width: #{$md}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: #{$lg}) {
     @content;
   }
 }
@@ -22,11 +22,35 @@ body {
   height: 100%;
   font-family: 'Helvetica',serif !important;
   font-size: 16px !important;
-  color: #333333 !important;
+  color: #525252 !important;
   border: 1px solid green;
+  @include sm{
+    min-width: 300px;
+  }
 }
 .container{
-  max-width: 1200px;
+  max-width: 1200px !important;
+  &__padding{
+    padding: 0 !important;
+    @include md{
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+}
+.h1{
+  h1{
+    font-size: 48pt;
+    font-weight: 500;
+    @include sm{
+      font-size: 40pt;
+    }
+  }
+  span{
+    padding-top: 0.5%;
+  }
+  padding-bottom: 7.83%;
+  color: #000000;
 }
 .bg-header{
   background: #2b2b2b;
@@ -44,25 +68,21 @@ a{
   };
 }
 .list-img{
-  padding:{
-    top: 10.41%;
-    bottom: 5.21%;
-  };
   &__left-1{
     left: 10%;
-    @include tab{
+    @include md{
       left: 10.15%;
     }
   }
   &__left-2{
     left: 25.75%;
-    @include tab{
+    @include md{
       left: 31.75%;
     }
   }
   &__left-3{
     left: 14.75%;
-    @include tab{
+    @include md{
       left: 16.75%;
     }
   }
@@ -95,17 +115,17 @@ a{
         text-align: center;       top: 28.5%;
         font-size: 24px;
         top: 31.5%;
-        @include tab{
+        @include md{
           font-size: 12px;
         }
-        @include mobile{
+        @include sm{
           top: 21.5%;
         }
       }
-      @include tab{
+      @include lg{
         width: 32%;
       }
-      @include mobile{
+      @include sm{
         width: 49%;
       }
     }
@@ -121,11 +141,11 @@ a{
 .bg-contacts{
   background: url(../images/bg_footer.png) no-repeat left bottom;
   background-size: contain;
-  padding-bottom: 14.34%;
+  padding-bottom: 16.34%;
   span{
     color: #cf0000;
   }
-  @include mobile{
+  @include sm{
     padding-bottom: 20%;
   }
 }
@@ -138,7 +158,7 @@ a{
       text-decoration:none;
     };
   }
-  @include mobile{
+  @include sm{
     font-size: 10px;
   }
 }
@@ -148,7 +168,7 @@ a{
     &:hover{
       color: #fff !important;
     };
-    @include mobile{
+    @include sm{
       font-size: 12px !important;
     }
   }
