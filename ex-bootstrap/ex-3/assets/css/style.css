@@ -1,7 +1,139 @@
-.list-header__icon {
-  color: #b2b2b2;
+@import url("https://fonts.google.com/specimen/Noto+Sans");
+.nav-link__color {
+  color: #6b6b6b !important;
+}
+
+.banner {
+  font-size: 48px;
+}
+
+.banner a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.banner__text {
+  text-transform: uppercase;
+}
+
+@media (max-width: 575.98px) {
+  .banner__text {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .banner__text {
+    font-size: 30px;
+  }
 }
 
 .banner__caption {
-  bottom: 300px;
+  bottom: 111px;
+}
+
+.breadcrumb__bg {
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 14px;
+}
+
+.breadcrumb__bg a {
+  color: #a3a3a3;
+  text-decoration: none;
+}
+
+.inner {
+  width: 71.96%;
+  margin: 0 auto;
+}
+
+@media (max-width: 575.98px) {
+  .inner {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.inner__text-1 {
+  padding-top: 3.8%;
+}
+
+.inner__h1 {
+  padding: 5.97% 0;
+}
+
+.item-bg__padding {
+  padding-top: 5.36%;
+  padding-bottom: 5.36%;
+}
+
+.item-bg__1 {
+  width: 100%;
+  height: 500px;
+  background: url(../images/img_1.png) center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 767.98px) {
+  .item-bg__1 {
+    background-size: contain;
+    height: 350px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .item-bg__1 {
+    background-size: contain;
+    height: 250px;
+  }
+}
+
+.item-bg__3 {
+  width: 100%;
+  height: 500px;
+  background: url(../images/img_3.png) center no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 767.98px) {
+  .item-bg__3 {
+    background-size: contain;
+    height: 350px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .item-bg__3 {
+    background-size: contain;
+    height: 250px;
+  }
+}
+
+.contacts__bg {
+  padding: 2.34% 0;
+  background-color: #2b2b2b;
+  font-size: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.contacts__menu {
+  padding-top: 26px;
+}
+
+.contacts__menu p, .contacts__menu i {
+  padding: 0 10px;
+  color: #9c9c9c;
+}
+
+.contacts__menu a {
+  text-decoration: none;
+}
+
+.footer__bg {
+  background-color: #000000;
+  color: #959595;
+  padding: 3.34% 0;
+  font-size: 12px;
 }

@@ -1,10 +1,136 @@
-.list-header{
-	&__icon{
-		color: #b2b2b2;
+@import url("https://fonts.google.com/specimen/Noto+Sans");
+$sm: 575.98px;
+$md: 767.98px;
+$lg: 991.98px;
+@mixin sm {
+  @media (max-width: #{$sm}) {
+    @content;
+  }
+}
+@mixin md {
+  @media (max-width: #{$md}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (max-width: #{$lg}) {
+    @content;
+  }
+}
+.nav-link{
+	&__color{
+		color: #6b6b6b !important;
 	}
 }
 .banner{
+	font-size: 48px;
+	a{
+		color: #fff;
+		font-weight: 500;
+	}
+	&__text{
+		text-transform: uppercase;
+		@include sm{
+			display: none;
+		}
+		@include lg{
+			font-size: 30px;
+		}
+	}
 	&__caption{
-		bottom: 300px;
+		bottom: 111px;
+	}
+	
+}
+.breadcrumb{
+	&__bg{
+		background-color: rgba(255,255,255,0);
+		font-size: 14px;
+		a{
+			color: #a3a3a3;
+			text-decoration: none;
+		}
+	}
+}
+.inner{
+	width: 71.96%;
+	margin: 0 auto;
+	@include sm{
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&__text-1{
+		padding-top: 3.8%;
+	}
+	&__h1{
+		padding: 5.97% 0;
+	}
+	&__text{
+		
+	}
+}
+.item-bg{
+	&__padding{
+		padding-top: 5.36%;
+		padding-bottom: 5.36%;
+	}
+	&__1{
+		width: 100%;
+		height: 500px;
+		background: url(../images/img_1.png) center no-repeat;
+		background-size: cover;
+		@include md{
+			background-size: contain;
+			height: 350px;
+		}
+		@include sm{
+			background-size: contain;
+			height: 250px;
+		}
+	}
+	&__2{
+
+	}
+	&__3{
+		width: 100%;
+		height: 500px;
+		background: url(../images/img_3.png) center no-repeat;
+		background-size: cover;
+		@include md{
+			background-size: contain;
+			height: 350px;
+		}
+		@include sm{
+			background-size: contain;
+			height: 250px;
+		}
+	}
+}
+.contacts{
+	&__bg{
+		padding: 2.34% 0;
+		background-color: rgb(43,43,43);
+		font-size: 12px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&__menu{
+		padding-top: 26px;
+		p,i{
+			padding: 0 10px;
+			color: #9c9c9c;
+		}
+		a{
+			text-decoration: none;
+		}
+	}
+}
+.footer{
+	&__bg{
+		background-color: #000000;
+		color: #959595;
+		padding: 3.34% 0;
+		font-size: 12px;
 	}
 }
