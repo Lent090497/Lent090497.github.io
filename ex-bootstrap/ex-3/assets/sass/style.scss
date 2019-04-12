@@ -24,7 +24,7 @@ $lg: 991.98px;
 }
 .banner{
 	position: relative;
-	font-size: 48px;
+	font-size: 48px !important;
 	a{
 		color: #fff;
 		font-weight: 500;
@@ -71,8 +71,17 @@ $lg: 991.98px;
 	&__text-1{
 		padding-top: 3.8%;
 	}
-	&__h1{
+	&__h2{
+		text-transform: uppercase;
+		font-size: 26px;
 		padding: 5.97% 0;
+		text-transform: uppercase;
+		@include md{
+			font-size: 13px;
+		}
+		@include sm{
+			font-size: 10px;
+		}
 	}
 	&__text{
 		
@@ -151,5 +160,12 @@ $lg: 991.98px;
 	display: none;
 	@include sm{
 		display: block;
+	}
+}
+.nav{
+	&__padding{
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 18px;
 	}
 }
