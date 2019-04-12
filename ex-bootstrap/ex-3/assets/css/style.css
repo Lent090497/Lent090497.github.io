@@ -14,19 +14,13 @@
 }
 
 .banner__text {
-  font-size: 38px;
+  font-size: 48px;
   text-transform: uppercase;
-}
-
-@media (min-width: 991.98px) {
-  .banner__text {
-    font-size: 30px;
-  }
 }
 
 @media (max-width: 575.98px) {
   .banner__text {
-    font-size: 28px;
+    font-size: 16px;
   }
 }
 
@@ -91,8 +85,12 @@
 }
 
 .item-bg__padding {
-  padding-top: 5.36%;
-  padding-bottom: 5.36%;
+  padding-top: 59px;
+  padding-bottom: 86px;
+}
+
+.item-bg__video {
+  padding-bottom: 98px;
 }
 
 .item-bg__1 {
@@ -140,7 +138,7 @@
 .contacts__bg {
   padding: 2.34% 0;
   background-color: #2b2b2b;
-  font-size: 12px;
+  font-size: 15px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -156,6 +154,10 @@
 
 .contacts__menu a {
   text-decoration: none;
+}
+
+.contacts__icon:before {
+  font-size: 23px;
 }
 
 .footer__bg {
@@ -197,4 +199,8 @@
   padding-right: 0 !important;
   color: #9c9c9c;
   font-weight: bold;
+}
+
+p {
+  margin-bottom: 26px !important;
 }
