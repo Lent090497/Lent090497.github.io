@@ -71,7 +71,7 @@ $lg: 991.98px;
 	&__text-1{
 		padding-top: 3.8%;
 	}
-	&__h2{
+	&__h3{
 		text-transform: uppercase;
 		font-size: 26px;
 		padding: 5.97% 0;
@@ -168,4 +168,12 @@ $lg: 991.98px;
 		padding-right: 15px;
 		font-size: 18px;
 	}
+}
+.search{
+	position: relative;
+	&:before{
+		content:"";
+		clear: both;
+		position: absolute;
+	};
 }

@@ -5,7 +5,7 @@
 
 .banner {
   position: relative;
-  font-size: 48px;
+  font-size: 48px !important;
 }
 
 .banner a {
@@ -70,8 +70,23 @@
   padding-top: 3.8%;
 }
 
-.inner__h1 {
+.inner__h3 {
+  text-transform: uppercase;
+  font-size: 26px;
   padding: 5.97% 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767.98px) {
+  .inner__h3 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .inner__h3 {
+    font-size: 10px;
+  }
 }
 
 .item-bg__padding {
@@ -163,4 +178,20 @@
   .icon-sp {
     display: block;
   }
+}
+
+.nav__padding {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+}
+
+.search {
+  position: relative;
+}
+
+.search:before {
+  content: "";
+  clear: both;
+  position: absolute;
 }
