@@ -39,10 +39,10 @@ body {
 }
 .h1{
   h1{
-    font-size: 48pt;
+    font-size: 48px;
     font-weight: 500;
     @include sm{
-      font-size: 40pt;
+      font-size: 40px;
     }
   }
   span{
@@ -172,4 +172,15 @@ a{
       font-size: 12px !important;
     }
   }
+}
+.inner-list{
+  width: 100%;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.list-img{
+  padding-top: 100px;
 }
