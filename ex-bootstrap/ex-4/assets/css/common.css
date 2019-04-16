@@ -171,6 +171,7 @@ a:hover {
 
 .bg-contacts span {
   color: #cf0000;
+  font-weight: 550 !important;
 }
 
 @media (max-width: 575.98px) {
@@ -201,6 +202,7 @@ a:hover {
 .btn__list {
   border-radius: 0 !important;
   margin-top: 3%;
+  font-weight: 550 !important;
 }
 
 .btn__list:hover {

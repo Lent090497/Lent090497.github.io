@@ -143,6 +143,7 @@ a{
   padding-bottom: 16.34%;
   span{
     color: #cf0000;
+    font-weight: 550 !important;
   }
   @include sm{
     padding-bottom: 20%;
@@ -165,6 +166,7 @@ a{
   &__list{
     border-radius: 0 !important;
     margin-top: 3%;
+    font-weight: 550 !important;
     &:hover{
       color: #fff !important;
     };

@@ -109,6 +109,10 @@
   background-color: #f0f0f0;
 }
 
+.bg-grey b {
+  font-size: 18px;
+}
+
 .bg-bread {
   background-color: #ebebeb;
 }
